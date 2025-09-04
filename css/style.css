@@ -31,9 +31,20 @@ h1 {
   font-size: 1.25rem;
 }
 [role="toolbar"] {
+  flex-grow: 1;
+
   display: flex;
   flex-flow: row nowrap;
+  justify-content: end;
   align-items: stretch;
+}
+button {
+  font: inherit;
+
+  user-select: none;
+}
+select {
+  font: inherit;
 }
 aside {
   overflow-y: auto;
@@ -44,7 +55,7 @@ aside {
   background-color: #EEE;
   
   font-family: 'Source Han Sans KR', 'Source Han Sans', 'Source Han Sans TC', 'Source Han Sans SC', 'Source Han Sans';
-  font-weight: 300;
+  font-weight: 350;
   font-size: 1.5em;
   line-height: 1.5;
   
@@ -266,9 +277,6 @@ main {
     width: 60em;
   }
 }
-button {
-  font: inherit;
-}
 [role="tablist"] {
   padding-top: .25em;
 
@@ -319,4 +327,36 @@ button {
 }
 [role="tabpanel"][hidden] {
   display: none !important;
+}
+
+dialog {
+  max-height: calc(100vh - 4rem);
+  padding: 0;
+
+  &[open] { display: flex; }
+  flex-flow: column nowrap;
+  align-items: stretch;
+  overflow-y: hidden;
+
+  border: none;
+  border-radius: 1em;
+
+  user-select: none;
+}
+.dialog-header {
+  padding: 2em 2em 1em;
+}
+.dialog-header-title {
+  font-weight: 600;
+  font-size: 1.25em;
+}
+.dialog-body {
+  padding: .5em 2em;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow-y: auto;
+}
+.dialog-footer {
+  padding: 1em 2em 2em;
 }

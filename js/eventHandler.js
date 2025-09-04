@@ -1,7 +1,3 @@
-let caretPosition = 0;
-const processedText = [];
-let currentInputSource;
-
 window.addEventListener('keydown', (e) => {
   if (!(e.keyCode === 82 && e.metaKey) && !(e.keyCode === 82 && e.ctrlKey))
     e.preventDefault();
@@ -154,3 +150,91 @@ window.addEventListener('keyup', (e) => {
       targetKey.classList.remove('pressed');
   }
 });
+
+for (let button of document.querySelectorAll('button[aria-controls]')) {
+  const dialogId = button.getAttribute('aria-controls');
+  const dialog = document.getElementById(dialogId);
+  if (dialog && dialog.nodeName === 'DIALOG') {
+    button.addEventListener('click', (e) => {dialog.showModal()});
+  }
+}
+
+const initializeInputSourceSelector = (sources = inputSources) => {
+  const scripts = new Set();
+  for (let source of Object.values(sources))
+    scripts.add(source.script);
+  
+  const form = document.getElementById('inputSourceSelector-form');
+  form.script.innerHTML = '';
+  form.language.innerHTML = '';
+  form.name.innerHTML = '';
+
+  for (let script of scripts) {
+    const option = document.createElement('option');
+    option.textContent = script;
+    form.script.append(option);
+  }
+  form.script.value = '';
+}
+const updateScriptInputSourceSelector = (sources = inputSources) => {
+  const form = document.getElementById('inputSourceSelector-form');
+
+  const script = form.script.value;
+
+  form.language.innerHTML = '';
+  form.name.innerHTML = '';
+
+  const languages = new Set();
+  for (let source of Object.values(sources).filter((x) => x.script === script))
+    languages.add(source.language);
+
+  for (let language of languages) {
+    const option = document.createElement('option');
+    option.textContent = language;
+    form.language.append(option);
+  }
+  form.language.value = '';
+}
+const updateLanguageInputSourceSelector = (sources = inputSources) => {
+  const form = document.getElementById('inputSourceSelector-form');
+
+  const script = form.script.value;
+  const language = form.language.value;
+
+  form.name.innerHTML = '';
+
+  const names = new Set();
+  for (let source of Object.values(sources).filter((x) => x.script === script && x.language === language))
+    names.add(source.name);
+
+  for (let name of names) {
+    const option = document.createElement('option');
+    option.textContent = name;
+    form.name.append(option);
+  }
+  form.name.value = '';
+}
+
+document.querySelector('button[aria-controls="inputSourceSelector-dialog"]').addEventListener('click', (e) => {initializeInputSourceSelector(inputSources)});
+document.getElementById('inputSourceSelector-form').addEventListener('change', (e) => {
+  if (e.target === e.currentTarget.script)
+    updateScriptInputSourceSelector(inputSources);
+  else if (e.target === e.currentTarget.language)
+    updateLanguageInputSourceSelector(inputSources);
+});
+
+document.getElementById('inputSourceSelector-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  if (form.script.value && form.language.value && form.name.value) {
+    const source = Object.values(inputSources).filter((x) => x.script === form.script.value && x.language === form.language.value && x.name === form.name.value)[0];
+    setInputSource(source);
+
+    document.getElementById('inputSourceSelector-dialog').close();
+  }
+})
+
+document.getElementById('inputSourceSelector-form').cancel.addEventListener('click', (e) => {
+  document.getElementById('inputSourceSelector-dialog').close();
+})

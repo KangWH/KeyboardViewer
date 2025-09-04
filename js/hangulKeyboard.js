@@ -15,9 +15,19 @@ class HangulComposer {
     this.composingRule = composingRule;
     this.composingUnit = composingUnit;
     // 0: 낱자, 1: 단어
+
+    this.composingMode = 2;
+    // 0: KS X 1001 2350자
+    // 1: Adobe-KR-0 2780자
+    // 2: 현대 한글 11172자
+    // 3: 현대 한글 + 제주 PUA
+    // 4: 현대 한글 + 한양 PUA
+    // 5: 현대 한글 + 한양 PUA + 첫가끝 옛한글
+    // 6: 현대 한글 + 첫가끝 옛한글
+    // 7: 현대 한글도 첫가끝 자모로
   }
 
-  buildSyllable (l, v, t = null, m = null, only2350 = false, HPUA = false, JPUA = false) {
+  buildSyllable (l, v, t = null, m = null, HPUA = false, JPUA = false) {
     const result = [];
 
     // 초중종 모두 현대 한글 낱자인지 판단
@@ -27,6 +37,13 @@ class HangulComposer {
     if (choseongIndex >= 0 && jungseongIndex >= 0 && jongseongIndex >= 0) {
       let syllableUnicode = 44032 + choseongIndex * 21 * 28 + jungseongIndex * 28 + jongseongIndex;
       return [String.fromCodePoint(syllableUnicode) + (m ? m : '')];
+    }
+    if (this.composingMode < 3) {
+      if (choseongIndex >= 0 && jungseongIndex >= 0) {
+        let syllableUnicode = 44032 + choseongIndex * 21 * 28 + jungseongIndex * 28;
+        return [String.fromCodePoint(syllableUnicode), t];
+      } else
+        return [l, v, t];
     }
 
     // 초성, 중성, 종성 중 하나라도 옛한글 낱자이거나, 초성/중성 중 하나 이상 없을 때

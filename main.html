@@ -10,6 +10,9 @@
   <body>
     <header>
       <h1><span style="font-weight: 300;">Keyboard</span><span style="font-weight: 500;">Viewer</span></h1>
+      <div role="toolbar">
+        <button aria-controls="inputSourceSelector-dialog">Change Input Source</button>
+      </div>
     </header>
     <aside>
       <div id="wordBuffer">&nbsp;</div>
@@ -785,7 +788,33 @@
         </div>
       </div>
     </main>
-    <script src="js/eventHandler.js"></script>
+    <dialog id="inputSourceSelector-dialog" style="min-width: 24em;">
+      <div class="dialog-header">
+        <div class="dialog-header-title">Change Input Source</div>
+      </div>
+      <form class="dialog-body" id="inputSourceSelector-form">
+        <div style="display: flex; flex-flow: row nowrap; gap: 1em;">
+          <div style="flex-basis: 5em; flex-grow: 1; display: flex; flex-flow: column nowrap; align-items: stretch; gap: .5em;">
+            <label>Script</label>
+            <select name="script"></select>
+          </div>
+          <div style="flex-basis: 5em; flex-grow: 1; display: flex; flex-flow: column nowrap; align-items: stretch; gap: .5em;">
+            <label>Language</label>
+            <select name="language"></select>
+          </div>
+          <div style="flex-basis: 5em; flex-grow: 1; display: flex; flex-flow: column nowrap; align-items: stretch; gap: .5em;">
+            <label>Input Source</label>
+            <select name="name"></select>
+          </div>
+        </div>
+      </form>
+      <div class="dialog-footer">
+        <div class="dialog-footer-controls">
+          <button type="button" name="cancel" form="inputSourceSelector-form">Cancel</button>
+          <button type="submit" form="inputSourceSelector-form">OK</button>
+        </div>
+      </div>
+    </dialog>
     <script src="js/tabEvent.js"></script>
     <script src="js/keyboard.js"></script>
     <script src="js/hangulKeyboard.js"></script>
@@ -793,5 +822,6 @@
     <script src="js/keyboards/hangul-korean-dubeolsik.js"></script>
     <script src="js/keyboards/hangul-korean-sebeolsik391.js"></script>
     <script src="js/keyboards/hangul-korean-dubeolsikYetgul.js"></script>
+    <script src="js/eventHandler.js"></script>
   </body>
 </html>

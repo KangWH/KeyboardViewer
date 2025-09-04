@@ -116,4 +116,5 @@ const dubeolsikYetgul = new HangulInputSource('Dubeolsik Yetgul', 'Hangul', 'Kor
   'ㅣ2ㅣ2': 'ퟄ2',
   'ㆍ2ㅣ2': 'ㆎ2',
 });
+dubeolsikYetgul.composer.composingMode = 6;
 inputSources.DubeolsikYetgul = dubeolsikYetgul;
