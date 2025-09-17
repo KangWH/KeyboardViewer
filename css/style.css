@@ -188,7 +188,9 @@ main {
   line-height: 1;
   color: var(--key-color);
 
+  -webkit-user-select: none;
   user-select: none;
+  cursor: default;
 
   transition: background-color .2s, border-color .2s, color .2s;
 
