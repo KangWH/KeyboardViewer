@@ -130,9 +130,18 @@ main {
 .keycell-11fr {
   width: 11em;
 }
-@media (max-width: 68rem) {
+@media (max-width: 1199px) {
+  :root {
+    font-size: 14px;
+  }
+  [role="tablist"] {
+    flex-flow: row wrap !important;
+  }
+  main [role="tabpanel"] {
+    padding-block: .5em;
+  }
   .keyboard {
-    width: 100% !important;
+    max-width: 100% !important;
   }
   .keycell-2fr {
     width: calc(100% / 60 * 2);
@@ -160,6 +169,41 @@ main {
   }
   .keycell-11fr {
     width: calc(100% / 60 * 11);
+  }
+  .key {
+    margin: 1px !important;
+    padding: .15em !important;
+  }
+  #macANSI,
+  #macISO,
+  #macJIS {
+    & .keycell-2fr {
+      width: calc(100% / 58 * 2);
+    }
+    & .keycell-3fr {
+      width: calc(100% / 58 * 3);
+    }
+    & .keycell-4fr {
+      width: calc(100% / 58 * 4);
+    }
+    & .keycell-5fr {
+      width: calc(100% / 58 * 5);
+    }
+    & .keycell-6fr {
+      width: calc(100% / 58 * 6);
+    }
+    & .keycell-7fr {
+      width: calc(100% / 58 * 7);
+    }
+    & .keycell-8fr {
+      width: calc(100% / 58 * 8);
+    }
+    & .keycell-9fr {
+      width: calc(100% / 58 * 9);
+    }
+    & .keycell-11fr {
+      width: calc(100% / 58 * 11);
+    }
   }
 }
 .keycell-space {
