@@ -11,13 +11,15 @@
     <header>
       <h1><span style="font-weight: 300;">Keyboard</span><span style="font-weight: 500;">Viewer</span></h1>
       <div role="toolbar">
-        <button aria-controls="inputSourceSelector-dialog">Change Input Source</button>
+        <button style="display: none;">Copy Text</button>
+        <button aria-controls="inputSourceSelector-dialog">Input Source</button>
       </div>
     </header>
     <aside>
       <div id="wordBuffer">&nbsp;</div>
-      <div id="processedText">&nbsp;</div>
-      <div id="keyField">&nbsp;</div>
+      <div id="processedText" tabindex="0">&nbsp;</div>
+      <div id="keyField" style="display: none;">&nbsp;</div>
+      <p style="text-align: center; font-weight: 200;">NOTE: This page is currently not fully implemented and experimental.</p>
     </aside>
     <main>
       <div role="tablist">

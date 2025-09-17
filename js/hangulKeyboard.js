@@ -54,10 +54,22 @@ class HangulComposer {
       choseongUnicode = 4447;
     else {
       switch (l) {
+        case 'ㅥ':
+          choseongUnicode = 4372; break;
+        case 'ㅦ':
+          choseongUnicode = 4373; break;
+        case 'ㅧ':
+          choseongUnicode = 4443; break;
+        case 'ㅪ':
+          choseongUnicode = 0xA966; break;
+        case 'ㅱ':
+          choseongUnicode = 4381; break;
         case 'ㅳ':
           choseongUnicode = 4384; break;
         case 'ㅄ':
           choseongUnicode = 4385; break;
+        case 'ㅴ':
+          choseongUnicode = 4386; break;
         case 'ㅸ':
           choseongUnicode = 4395; break;
         case 'ㅹ':
@@ -70,6 +82,10 @@ class HangulComposer {
           choseongUnicode = 4423; break;
         case 'ㆁ':
           choseongUnicode = 4428; break;
+        case 'ㆄ':
+          choseongUnicode = 0x1157; break;
+        case 'ㆅ':
+          choseongUnicode = 4440; break;
         case 'ㆆ':
           choseongUnicode = 4441; break;
       }
@@ -97,12 +113,26 @@ class HangulComposer {
       jongseongUnicode = -1;
     else {
       switch (t) {
+        case 'ᄓ':
+          jongseongUnicode = 4549; break;
+        case 'ㅥ':
+          jongseongUnicode = 4607; break;
+        case 'ㅦ':
+          jongseongUnicode = 4550; break;
+        case 'ㅧ':
+          jongseongUnicode = 4551; break;
+        case 'ㅨ':
+          jongseongUnicode = 4552; break;
         case 'ㄸ':
           jongseongUnicode = 55245; break;
-        case 'ㅩ': // ㄹㄱㅅ
+        case 'ㅩ':
           jongseongUnicode = 4556; break;
+        case 'ㅪ':
+          jongseongUnicode = 0x11CE; break;
         case 'ㅭ':
           jongseongUnicode = 4569; break;
+        case 'ㅱ':
+          jongseongUnicode = 4578; break;
         case 'ㅳ':
           jongseongUnicode = 55267; break;
         case 'ㅃ':
@@ -117,6 +147,8 @@ class HangulComposer {
           jongseongUnicode = 4592; break;
         case 'ㅉ':
           jongseongUnicode = 55289; break;
+        case 'ㆄ':
+          jongseongUnicode = 0x11F4; break;
         case 'ㆆ':
           jongseongUnicode = 4601; break;
       }

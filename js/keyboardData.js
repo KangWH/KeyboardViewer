@@ -176,15 +176,18 @@ const qwerty = new InputSource('Qwerty', 'Latin', 'English', {
 });
 inputSources.Qwerty = qwerty;
 
-let caretPosition = 0;
+let beginCaretPosition = 0;
+let endCaretPosition = 0;
+let caretDirection = 0; // -1 for left, 1 for right
 const processedText = [];
 let currentInputSource = {};
 const fallBackInputSource = qwerty;
 const setInputSource = (source) => {
   if (currentInputSource.composer) {
     const str = currentInputSource.composer.endCompose();
-    processedText.splice(caretPosition, 0, ...str);
-    caretPosition += str.length;
+    processedText.splice(endCaretPosition, 0, ...str);
+    endCaretPosition += str.length;
+    beginCaretPosition = endCaretPosition;
   }
   currentInputSource = source;
   fallBackInputSource.load();

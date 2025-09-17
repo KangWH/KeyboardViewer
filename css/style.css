@@ -17,7 +17,7 @@ body {
   height: 100vh;
 
   display: grid;
-  grid-template-rows: auto 2fr 3fr;
+  grid-template-rows: auto 1fr auto;
   overflow: hidden;
 }
 header {
@@ -41,6 +41,7 @@ h1 {
 button {
   font: inherit;
 
+  -webkit-user-select: none;
   user-select: none;
 }
 select {
@@ -54,7 +55,7 @@ aside {
 
   background-color: #EEE;
   
-  font-family: 'Source Han Sans KR', 'Source Han Sans', 'Source Han Sans TC', 'Source Han Sans SC', 'Source Han Sans';
+  font-family: 'Source Han Sans KR', 'Source Han Sans', 'Source Han Sans TC', 'Source Han Sans SC', 'Source Sans';
   font-weight: 350;
   font-size: 1.5em;
   line-height: 1.5;
@@ -65,6 +66,7 @@ aside {
 .caret {
   margin-inline: -1px;
 
+  background-color: rgba(0, 0, 255, 0.2);
   border-left: 1px solid blue;
   border-right: 1px solid blue;
 }
@@ -82,6 +84,8 @@ main {
 
   & [role="tabpanel"] {
     flex-grow: 1;
+    padding-block: 2em;
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -94,6 +98,10 @@ main {
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
+
+  &:first-child {
+    display: none;
+  }
 }
 .keycell-2fr {
   width: 2em;
@@ -121,6 +129,38 @@ main {
 }
 .keycell-11fr {
   width: 11em;
+}
+@media (max-width: 68rem) {
+  .keyboard {
+    width: 100% !important;
+  }
+  .keycell-2fr {
+    width: calc(100% / 60 * 2);
+  }
+  .keycell-3fr {
+    width: calc(100% / 60 * 3);
+  }
+  .keycell-4fr {
+    width: calc(100% / 60 * 4);
+  }
+  .keycell-5fr {
+    width: calc(100% / 60 * 5);
+  }
+  .keycell-6fr {
+    width: calc(100% / 60 * 6);
+  }
+  .keycell-7fr {
+    width: calc(100% / 60 * 7);
+  }
+  .keycell-8fr {
+    width: calc(100% / 60 * 8);
+  }
+  .keycell-9fr {
+    width: calc(100% / 60 * 9);
+  }
+  .keycell-11fr {
+    width: calc(100% / 60 * 11);
+  }
 }
 .keycell-space {
   flex: 8em 1 0;
@@ -265,7 +305,7 @@ main {
 #macISO,
 #macJIS {
   & .keyboard {
-    width: 58em;
+    max-width: 58em;
   }
 }
 #winANSI,
@@ -274,7 +314,7 @@ main {
 #winKS,
 #winJIS {
   & .keyboard {
-    width: 60em;
+    max-width: 60em;
   }
 }
 [role="tablist"] {
@@ -359,4 +399,14 @@ dialog {
 }
 .dialog-footer {
   padding: 1em 2em 2em;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.dialog-footer-controls {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: .5em;
+  align-items: stretch;
 }
