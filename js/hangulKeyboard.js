@@ -62,32 +62,56 @@ class HangulComposer {
           choseongUnicode = 4443; break;
         case 'ㅪ':
           choseongUnicode = 0xA966; break;
+        case 'ㄻ':
+          choseongUnicode = 0xA968; break;
+        case 'ㄼ':
+          choseongUnicode = 0xA969; break;
+        case 'ㅮ':
+          choseongUnicode = 0x111C; break;
+        case 'ㅯ':
+          choseongUnicode = 0xA971; break;
         case 'ㅱ':
-          choseongUnicode = 4381; break;
+          choseongUnicode = 0x111D; break;
+        case 'ㅲ':
+          choseongUnicode = 0x111E; break;
         case 'ㅳ':
-          choseongUnicode = 4384; break;
+          choseongUnicode = 0x1120; break;
         case 'ㅄ':
-          choseongUnicode = 4385; break;
+          choseongUnicode = 0x1121; break;
         case 'ㅴ':
-          choseongUnicode = 4386; break;
+          choseongUnicode = 0x1122; break;
+        case 'ㅵ':
+          choseongUnicode = 0x1123; break;
+        case 'ㅶ':
+          choseongUnicode = 0x1127; break;
+        case 'ㅷ':
+          choseongUnicode = 0x1129; break;
         case 'ㅸ':
-          choseongUnicode = 4395; break;
+          choseongUnicode = 0x112B; break;
         case 'ㅹ':
-          choseongUnicode = 4396; break;
+          choseongUnicode = 0x112C; break;
+        case 'ㅺ':
+          choseongUnicode = 0x112D; break;
+        case 'ㅻ':
+          choseongUnicode = 0x112E; break;
         case 'ㅼ':
-          choseongUnicode = 4399; break;
+          choseongUnicode = 0x112F; break;
+        case 'ㅽ':
+          choseongUnicode = 0x1132; break;
+        case 'ㅾ':
+          choseongUnicode = 0x1136; break;
         case 'ㅿ':
-          choseongUnicode = 4416; break;
+          choseongUnicode = 0x1140; break;
         case 'ㆀ':
-          choseongUnicode = 4423; break;
+          choseongUnicode = 0x1147; break;
         case 'ㆁ':
-          choseongUnicode = 4428; break;
+          choseongUnicode = 0x114C; break;
         case 'ㆄ':
           choseongUnicode = 0x1157; break;
         case 'ㆅ':
-          choseongUnicode = 4440; break;
+          choseongUnicode = 0x1158; break;
         case 'ㆆ':
-          choseongUnicode = 4441; break;
+          choseongUnicode = 0x1159; break;
       }
     }
 
@@ -98,10 +122,22 @@ class HangulComposer {
       jungseongUnicode = 4448;
     else {
       switch (v) {
+        case 'ㆇ':
+          jungseongUnicode = 0x1184; break;
+        case 'ㆈ':
+          jungseongUnicode = 0x1185; break;
+        case 'ㆉ':
+          jungseongUnicode = 0x1188; break;
+        case 'ㆊ':
+          jungseongUnicode = 0x1191; break;
+        case 'ㆋ':
+          jungseongUnicode = 0x1192; break;
+        case 'ㆌ':
+          jungseongUnicode = 0x1194; break;
         case 'ㆍ':
-          jungseongUnicode = 4510; break;
+          jungseongUnicode = 0x119E; break;
         case 'ㆎ':
-          jungseongUnicode = 4513; break;
+          jungseongUnicode = 0x11A1; break;
       }
     }
 
@@ -114,43 +150,99 @@ class HangulComposer {
     else {
       switch (t) {
         case 'ᄓ':
-          jongseongUnicode = 4549; break;
+          jongseongUnicode = 0x11C5; break;
         case 'ㅥ':
-          jongseongUnicode = 4607; break;
+          jongseongUnicode = 0x11FF; break;
         case 'ㅦ':
-          jongseongUnicode = 4550; break;
+          jongseongUnicode = 0x11C6; break;
         case 'ㅧ':
-          jongseongUnicode = 4551; break;
+          jongseongUnicode = 0x11C7; break;
         case 'ㅨ':
-          jongseongUnicode = 4552; break;
+          jongseongUnicode = 0x11C8; break;
+        case 'ᄗ':
+          jongseongUnicode = 0x11CA; break;
         case 'ㄸ':
-          jongseongUnicode = 55245; break;
+          jongseongUnicode = 0xD7CD; break;
+        case 'ᅞ':
+          jongseongUnicode = 0x11CB; break;
+        case 'ꥡ':
+          jongseongUnicode = 0xD7CF; break;
+        case 'ꥢ':
+          jongseongUnicode = 0xD7D0; break;
+        case 'ꥣ':
+          jongseongUnicode = 0xD7D2; break;
+        case 'ꥥ':
+          jongseongUnicode = 0xD7D5; break;
         case 'ㅩ':
-          jongseongUnicode = 4556; break;
+          jongseongUnicode = 0x11CC; break;
+        case 'ᄘ':
+          jongseongUnicode = 0x11CD; break;
         case 'ㅪ':
           jongseongUnicode = 0x11CE; break;
+        case 'ᄙ':
+          jongseongUnicode = 0x11D0; break;
+        case 'ꥫ':
+          jongseongUnicode = 0x11D5; break;
+        case 'ꥮ':
+          jongseongUnicode = 0x11D8; break;
         case 'ㅭ':
-          jongseongUnicode = 4569; break;
+          jongseongUnicode = 0x11D9; break;
+        case 'ᄛ':
+          jongseongUnicode = 0xD7DD; break;
+        case 'ꥯ':
+          jongseongUnicode = 0x11DA; break;
+        case 'ㅮ':
+          jongseongUnicode = 0x11DC; break;
+        case 'ㅯ':
+          jongseongUnicode = 0x11DD; break;
         case 'ㅱ':
-          jongseongUnicode = 4578; break;
+          jongseongUnicode = 0x11E2; break;
         case 'ㅳ':
-          jongseongUnicode = 55267; break;
+          jongseongUnicode = 0xD7E3; break;
         case 'ㅃ':
-          jongseongUnicode = 55270; break;
+          jongseongUnicode = 0xD7E6; break;
+        case 'ㅵ':
+          jongseongUnicode = 0xD7E7; break;
+        case 'ㅶ':
+          jongseongUnicode = 0xD7E8; break;
+        case 'ᄨ':
+          jongseongUnicode = 0xD7E9; break;
+        case 'ᄪ':
+          jongseongUnicode = 0x11E4; break;
+        case 'ꥴ':
+          jongseongUnicode = 0x11E5; break;
         case 'ㅸ':
-          jongseongUnicode = 4582; break;
+          jongseongUnicode = 0x11E6; break;
+        case 'ㅺ':
+          jongseongUnicode = 0x11E7; break;
         case 'ㅼ':
-          jongseongUnicode = 4584; break;
+          jongseongUnicode = 0x11E8; break;
+        case 'ᄰ':
+          jongseongUnicode = 0x11E9; break;
+        case 'ᄱ':
+          jongseongUnicode = 0xD7EA; break;
+        case 'ㅽ':
+          jongseongUnicode = 0x11EA; break;
+        case 'ㅾ':
+          jongseongUnicode = 0xD7EF; break;
+        case 'ᄷ':
+          jongseongUnicode = 0xD7F0; break;
+        case 'ᄹ':
+          jongseongUnicode = 0xD7F1; break;
+        case 'ᄻ':
+          jongseongUnicode = 0xD7F2; break;
         case 'ㅿ':
-          jongseongUnicode = 4587; break;
+          jongseongUnicode = 0x11EB; break;
         case 'ㆁ':
-          jongseongUnicode = 4592; break;
+          jongseongUnicode = 0x11F0; break;
         case 'ㅉ':
-          jongseongUnicode = 55289; break;
+          jongseongUnicode = 0xD7F9; break;
+        case 'ᅖ':
+          jongseongUnicode = 0x11F3; break;
         case 'ㆄ':
           jongseongUnicode = 0x11F4; break;
         case 'ㆆ':
-          jongseongUnicode = 4601; break;
+          jongseongUnicode = 0x11F9; break;
       }
     }
 
