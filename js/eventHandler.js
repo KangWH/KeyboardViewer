@@ -150,11 +150,24 @@ window.addEventListener('keydown', (e) => {
       const key = currentInputSource.keys[e.code] || fallBackInputSource.keys[e.code];
       if (key) { // if statement used to filter 'undefined' case; occured by caps-lock key on mac used as input source changer
         let keyValue;
-        if (e.shiftKey && key.getKeyValues().length > 1)
+        if (e.altKey && e.shiftKey)
+          keyValue = key.getKeyValues()[key.getKeyValues().length - 1];
+        else if (e.altKey && !e.shiftKey)
+          keyValue = key.getKeyValues().length > 2 ? key.getKeyValues()[2] : key.getKeyValues()[0];
+        else if (!e.altKey && e.shiftKey && key.getKeyValues().length > 1)
           keyValue = key.getKeyValues()[1];
         else
           keyValue = key.getKeyValues()[0];
-        if (keyValue.type !== 2) {
+        switch (keyValue.type) {
+        case 1:
+          break;
+
+        case 2:
+          currentInputSource.composer.composing = true;
+          currentInputSource.composer.composingBuffer.push({value: keyValue.value, position: keyValue.position});
+          break;
+        
+        default:
           if (currentInputSource.composer) {
             if (currentInputSource.composer.composing) {
               const composingResult = currentInputSource.composer.endCompose();
@@ -166,9 +179,6 @@ window.addEventListener('keydown', (e) => {
           processedText.splice(endCaretPosition, 0, keyValue.value);
           endCaretPosition++;
           beginCaretPosition = endCaretPosition;
-        } else {
-          currentInputSource.composer.composing = true;
-          currentInputSource.composer.composingBuffer.push({value: keyValue.value, position: keyValue.position});
         }
       }
     }
@@ -307,63 +317,68 @@ document.getElementById('inputSourceSelector-form').addEventListener('submit', (
 
     document.getElementById('inputSourceSelector-dialog').close();
   }
-})
+});
 
 document.getElementById('inputSourceSelector-form').cancel.addEventListener('click', (e) => {
   document.getElementById('inputSourceSelector-dialog').close();
-})
+});
 
 // 클릭한 지점으로 캐럿 이동
 let dragging = false;
-document.addEventListener('mousedown', (e) => {
+document.getElementById('processedText').addEventListener('mousedown', (e) => {
   const x = e.clientX;
   const y = e.clientY;
-  const caretPosition = document.caretPositionFromPoint(x, y);
 
-  if (caretPosition) {
-    const textNode = caretPosition.offsetNode;
-    let offset = caretPosition.offset;
+  let textNode, offset;
+  if (document.caretPositionFromPoint) {
+    const caretPosition = document.caretPositionFromPoint(x, y);
+    textNode = caretPosition.offsetNode;
+    offset = caretPosition.offset;
+  } else {
+    const caretPosition = document.caretRangeFromPoint(x, y);
+    textNode = caretPosition.startContainer;
+    offset = caretPosition.startOffset;
+  }
 
-    if (textNode.nodeType === Node.TEXT_NODE) {
-      caretDirection = 0;
-      dragging = true;
-      const processedTextElement = document.getElementById('processedText');
-      if (processedTextElement.contains(textNode)) {
-        if (textNode.parentNode === processedTextElement.childNodes[1])
-          offset += beginCaretPosition;
-        if (textNode.parentNode === processedTextElement.childNodes[2])
-          offset += endCaretPosition;
-        beginCaretPosition = offset;
-        endCaretPosition = offset;
+  if (textNode.nodeType === Node.TEXT_NODE) {
+    caretDirection = 0;
+    dragging = true;
+    const processedTextElement = document.getElementById('processedText');
+    if (processedTextElement.contains(textNode)) {
+      if (textNode.parentNode === processedTextElement.childNodes[1])
+        offset += beginCaretPosition;
+      if (textNode.parentNode === processedTextElement.childNodes[2])
+        offset += endCaretPosition;
+      beginCaretPosition = offset;
+      endCaretPosition = offset;
 
-        /* 처리된 텍스트를 표시 */
-        const preCaretText = processedText.slice(0, beginCaretPosition).join('');
-        const preCaretElement = document.createElement('span');
-        preCaretElement.textContent = preCaretText;
+      /* 처리된 텍스트를 표시 */
+      const preCaretText = processedText.slice(0, beginCaretPosition).join('');
+      const preCaretElement = document.createElement('span');
+      preCaretElement.textContent = preCaretText;
 
-        const selectedText = processedText.slice(beginCaretPosition, endCaretPosition).join('');
-        const selectedTextElement = document.createElement('span');
-        selectedTextElement.classList.add('caret');
-        selectedTextElement.textContent = selectedText;
-        
-        const postCaretText = processedText.slice(endCaretPosition).join('');
-        const postCaretElement = document.createElement('span');
-        postCaretElement.textContent = postCaretText;
+      const selectedText = processedText.slice(beginCaretPosition, endCaretPosition).join('');
+      const selectedTextElement = document.createElement('span');
+      selectedTextElement.classList.add('caret');
+      selectedTextElement.textContent = selectedText;
+      
+      const postCaretText = processedText.slice(endCaretPosition).join('');
+      const postCaretElement = document.createElement('span');
+      postCaretElement.textContent = postCaretText;
 
-        const composedTextElement = document.createElement('span');
-        if (currentInputSource.composer && currentInputSource.composer.composing) {
-          const currentlyComposedText = currentInputSource.composer.compose().join('');
-          composedTextElement.classList.add('composing');
-          composedTextElement.textContent = currentlyComposedText;
-        }
-
-        processedTextElement.innerHTML = '';
-        processedTextElement.append(preCaretElement);
-        if (composedTextElement.textContent)
-          processedTextElement.append(composedTextElement);
-        processedTextElement.append(selectedTextElement);
-        processedTextElement.append(postCaretElement);
+      const composedTextElement = document.createElement('span');
+      if (currentInputSource.composer && currentInputSource.composer.composing) {
+        const currentlyComposedText = currentInputSource.composer.compose().join('');
+        composedTextElement.classList.add('composing');
+        composedTextElement.textContent = currentlyComposedText;
       }
+
+      processedTextElement.innerHTML = '';
+      processedTextElement.append(preCaretElement);
+      if (composedTextElement.textContent)
+        processedTextElement.append(composedTextElement);
+      processedTextElement.append(selectedTextElement);
+      processedTextElement.append(postCaretElement);
     }
   }
 });
@@ -373,59 +388,64 @@ document.addEventListener('mousemove', (e) => {
 
   const x = e.clientX;
   const y = e.clientY;
-  const caretPosition = document.caretPositionFromPoint(x, y);
 
-  if (caretPosition) {
-    const textNode = caretPosition.offsetNode;
-    let offset = caretPosition.offset;
+  let textNode, offset;
+  if (document.caretPositionFromPoint) {
+    const caretPosition = document.caretPositionFromPoint(x, y);
+    textNode = caretPosition.offsetNode;
+    offset = caretPosition.offset;
+  } else {
+    const caretPosition = document.caretRangeFromPoint(x, y);
+    textNode = caretPosition.startContainer;
+    offset = caretPosition.startOffset;
+  }
 
-    if (textNode.nodeType === Node.TEXT_NODE) {
-      const processedTextElement = document.getElementById('processedText');
-      if (processedTextElement.contains(textNode)) {
-        if (textNode.parentNode === processedTextElement.childNodes[1])
-          offset += beginCaretPosition;
-        if (textNode.parentNode === processedTextElement.childNodes[2])
-          offset += endCaretPosition;
-        if ((caretDirection === 0 && endCaretPosition < offset) || caretDirection === 1) {
-          caretDirection = 1;
-          endCaretPosition = offset;
-        } else if ((caretDirection === 0 && beginCaretPosition > offset) || caretDirection === -1) {
-          caretDirection = -1;
-          beginCaretPosition = offset;
-        }
-        if (beginCaretPosition === endCaretPosition)
-          caretDirection = 0;
-        else if (beginCaretPosition > endCaretPosition)
-          caretDirection *= -1;
-
-        /* 처리된 텍스트를 표시 */
-        const preCaretText = processedText.slice(0, beginCaretPosition).join('');
-        const preCaretElement = document.createElement('span');
-        preCaretElement.textContent = preCaretText;
-
-        const selectedText = processedText.slice(beginCaretPosition, endCaretPosition).join('');
-        const selectedTextElement = document.createElement('span');
-        selectedTextElement.classList.add('caret');
-        selectedTextElement.textContent = selectedText;
-        
-        const postCaretText = processedText.slice(endCaretPosition).join('');
-        const postCaretElement = document.createElement('span');
-        postCaretElement.textContent = postCaretText;
-
-        const composedTextElement = document.createElement('span');
-        if (currentInputSource.composer && currentInputSource.composer.composing) {
-          const currentlyComposedText = currentInputSource.composer.compose().join('');
-          composedTextElement.classList.add('composing');
-          composedTextElement.textContent = currentlyComposedText;
-        }
-
-        processedTextElement.innerHTML = '';
-        processedTextElement.append(preCaretElement);
-        if (composedTextElement.textContent)
-          processedTextElement.append(composedTextElement);
-        processedTextElement.append(selectedTextElement);
-        processedTextElement.append(postCaretElement);
+  if (textNode.nodeType === Node.TEXT_NODE) {
+    const processedTextElement = document.getElementById('processedText');
+    if (processedTextElement.contains(textNode)) {
+      if (textNode.parentNode === processedTextElement.childNodes[1])
+        offset += beginCaretPosition;
+      if (textNode.parentNode === processedTextElement.childNodes[2])
+        offset += endCaretPosition;
+      if ((caretDirection === 0 && endCaretPosition < offset) || caretDirection === 1) {
+        caretDirection = 1;
+        endCaretPosition = offset;
+      } else if ((caretDirection === 0 && beginCaretPosition > offset) || caretDirection === -1) {
+        caretDirection = -1;
+        beginCaretPosition = offset;
       }
+      if (beginCaretPosition === endCaretPosition)
+        caretDirection = 0;
+      else if (beginCaretPosition > endCaretPosition)
+        caretDirection *= -1;
+
+      /* 처리된 텍스트를 표시 */
+      const preCaretText = processedText.slice(0, beginCaretPosition).join('');
+      const preCaretElement = document.createElement('span');
+      preCaretElement.textContent = preCaretText;
+
+      const selectedText = processedText.slice(beginCaretPosition, endCaretPosition).join('');
+      const selectedTextElement = document.createElement('span');
+      selectedTextElement.classList.add('caret');
+      selectedTextElement.textContent = selectedText;
+      
+      const postCaretText = processedText.slice(endCaretPosition).join('');
+      const postCaretElement = document.createElement('span');
+      postCaretElement.textContent = postCaretText;
+
+      const composedTextElement = document.createElement('span');
+      if (currentInputSource.composer && currentInputSource.composer.composing) {
+        const currentlyComposedText = currentInputSource.composer.compose().join('');
+        composedTextElement.classList.add('composing');
+        composedTextElement.textContent = currentlyComposedText;
+      }
+
+      processedTextElement.innerHTML = '';
+      processedTextElement.append(preCaretElement);
+      if (composedTextElement.textContent)
+        processedTextElement.append(composedTextElement);
+      processedTextElement.append(selectedTextElement);
+      processedTextElement.append(postCaretElement);
     }
   }
 });
