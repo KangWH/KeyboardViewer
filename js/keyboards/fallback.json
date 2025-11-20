@@ -60,7 +60,6 @@
     ],
     "Backspace": [
       {
-        "label": "<-",
         "type": "delete",
         "subtype": "character"
       }
@@ -217,7 +216,6 @@
 
     "Delete": [
       {
-        "label": "->",
         "type": "delete",
         "subtype": "character"
       }
