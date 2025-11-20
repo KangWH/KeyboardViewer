@@ -61,7 +61,8 @@
     "Backspace": [
       {
         "type": "delete",
-        "subtype": "character"
+        "subtype": "character",
+        "value": -1
       }
     ],
 
@@ -217,7 +218,8 @@
     "Delete": [
       {
         "type": "delete",
-        "subtype": "character"
+        "subtype": "character",
+        "value": 1
       }
     ]
   }
