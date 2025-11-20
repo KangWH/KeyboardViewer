@@ -227,11 +227,21 @@
         "type": "move",
         "subtype": "end",
         "value": -1
+      },
+      {
+        "type": "select",
+        "subtype": "end",
+        "value": -1
       }
     ],
     "End": [
       {
         "type": "move",
+        "subtype": "end",
+        "value": 1
+      },
+      {
+        "type": "select",
         "subtype": "end",
         "value": 1
       }
@@ -241,11 +251,21 @@
         "type": "move",
         "subtype": "page",
         "value": -1
+      },
+      {
+        "type": "select",
+        "subtype": "page",
+        "value": -1
       }
     ],
     "PageDown": [
       {
         "type": "move",
+        "subtype": "page",
+        "value": -1
+      },
+      {
+        "type": "select",
         "subtype": "page",
         "value": -1
       }
