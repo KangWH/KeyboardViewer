@@ -1,9 +1,9 @@
 {
   "identifier": "fallback",
-  "langid": "en-us",
+  "langid": "en",
   "names": {
-    "en-us": "Fallback",
-    "ko-kr": "초기 설정"
+    "en": "Fallback layout",
+    "ko": "대체 레이아웃"
   },
   "keys": {
     "Backquote": [
