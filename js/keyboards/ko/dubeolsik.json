@@ -1,0 +1,99 @@
+{
+  "identifier": "dubeolsik",
+  "langid": "ko",
+  "names": {
+    "default": "Dubeolsik",
+    "ko": "두벌식"
+  },
+  "keys": {
+    "KeyQ": [
+      {"character": "ㅂ", "type": "composeChar", "subtype": "ja"},
+      {"character": "ㅃ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyW": [
+      {"character": "ㅈ", "type": "composeChar", "subtype": "ja"},
+      {"character": "ㅉ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyE": [
+      {"character": "ㄷ", "type": "composeChar", "subtype": "ja"},
+      {"character": "ㄸ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyR": [
+      {"character": "ㄱ", "type": "composeChar", "subtype": "ja"},
+      {"character": "ㄲ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyT": [
+      {"character": "ㅅ", "type": "composeChar", "subtype": "ja"},
+      {"character": "ㅆ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyY": [
+      {"character": "ㅛ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyU": [
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyI": [
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyO": [
+      {"character": "ㅐ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅒ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyP": [
+      {"character": "ㅔ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅖ", "type": "composeChar", "subtype": "jung"}
+    ],
+
+    "KeyA": [
+      {"character": "ㅁ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyS": [
+      {"character": "ㄴ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyD": [
+      {"character": "ㅇ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyF": [
+      {"character": "ㄹ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyG": [
+      {"character": "ㅎ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyH": [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyJ": [
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyK": [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyL": [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+
+    "KeyZ": [
+      {"character": "ㅋ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyX": [
+      {"character": "ㅌ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyC": [
+      {"character": "ㅊ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyV": [
+      {"character": "ㅍ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyB": [
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyN": [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyM": [
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"}
+    ]
+  },
+  "composingRules": {"presets": ["modernhanguljamo"]},
+  "composer": "modernHangul"
+}
