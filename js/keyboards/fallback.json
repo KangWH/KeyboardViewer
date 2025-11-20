@@ -221,6 +221,83 @@
         "subtype": "character",
         "value": 1
       }
+    ],
+    "Home": [
+      {
+        "type": "move",
+        "subtype": "end",
+        "value": -1
+      }
+    ],
+    "End": [
+      {
+        "type": "move",
+        "subtype": "end",
+        "value": 1
+      }
+    ],
+    "PageUp": [
+      {
+        "type": "move",
+        "subtype": "page",
+        "value": -1
+      }
+    ],
+    "PageDown": [
+      {
+        "type": "move",
+        "subtype": "page",
+        "value": -1
+      }
+    ],
+
+    "ArrowUp": [
+      {
+        "type": "move",
+        "subtype": "line",
+        "value": -1
+      },
+      {
+        "type": "select",
+        "subtype": "line",
+        "value": -1
+      }
+    ],
+    "ArrowLeft": [
+      {
+        "type": "move",
+        "subtype": "character",
+        "value": -1
+      },
+      {
+        "type": "select",
+        "subtype": "character",
+        "value": -1
+      }
+    ],
+    "ArrowRight": [
+      {
+        "type": "move",
+        "subtype": "character",
+        "value": 1
+      },
+      {
+        "type": "select",
+        "subtype": "character",
+        "value": 1
+      }
+    ],
+    "ArrowDown": [
+      {
+        "type": "move",
+        "subtype": "line",
+        "value": 1
+      },
+      {
+        "type": "select",
+        "subtype": "line",
+        "value": 1
+      }
     ]
   }
 }
