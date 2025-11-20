@@ -94,6 +94,6 @@
       {"character": "ㅡ", "type": "composeChar", "subtype": "jung"}
     ]
   },
-  "composingRules": {"presets": ["modernhanguljamo"]},
+  "composingRulePresets": ["modernhanguljamo"],
   "composer": "modernHangul"
 }
