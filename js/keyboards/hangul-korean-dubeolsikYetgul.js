@@ -15,13 +15,13 @@ const dubeolsikYetgul = new HangulInputSource('Dubeolsik Yetgul', 'Hangul', 'Kor
     default: [new HangulKeyValue('ㅅ', 4), new HangulKeyValue('ㅆ', 4)]
   }),
   'KeyY': new Key('KeyY', {
-    default: [new HangulKeyValue('ㅛ', 2), new HangulKeyValue(String.fromCharCode(12335), 5)] // 거성 방점
+    default: [new HangulKeyValue('ㅛ', 2), new HangulKeyValue(String.fromCharCode(12335), 5, ':○')] // 거성 방점
   }),
   'KeyU': new Key('KeyU', {
-    default: [new HangulKeyValue('ㅕ', 2), new HangulKeyValue(String.fromCharCode(12334), 5)] // 상성 방점
+    default: [new HangulKeyValue('ㅕ', 2), new HangulKeyValue(String.fromCharCode(12334), 5, '·○')] // 상성 방점
   }),
   'KeyI': new Key('KeyI', {
-    default: [new HangulKeyValue('ㅑ', 2), new HangulKeyValue('', 5)] // 평성 방점 (조합 중지 역할)
+    default: [new HangulKeyValue('ㅑ', 2), new HangulKeyValue('', 5, '○')] // 평성 방점 (조합 중지 역할)
   }),
   'KeyO': new Key('KeyO', {
     default: [new HangulKeyValue('ㅐ', 2), new HangulKeyValue('ㅒ', 2)]
