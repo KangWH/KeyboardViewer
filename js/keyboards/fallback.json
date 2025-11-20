@@ -58,12 +58,6 @@
       {"character": "="},
       {"character": "+"}
     ],
-    "Backspace": [
-      {
-        "type": "delete",
-        "subtype": "character"
-      }
-    ],
 
     "Tab": [
       {"character": "\u0009"}
@@ -212,13 +206,6 @@
     
     "Space": [
       {"character": " "}
-    ],
-
-    "Delete": [
-      {
-        "type": "delete",
-        "subtype": "character"
-      }
     ]
   }
 }
