@@ -1,0 +1,96 @@
+{
+  "identifier": "fallback",
+  "langid": "en-us",
+  "names": {
+    "en-us": "Fallback",
+    "ko-kr": "초기 설정"
+  },
+  "keys": {
+    "Backquote": [
+      {"character": "`"},
+      {"character": "~"}
+    ],
+    "Digit1": [
+      {"character": "1"},
+      {"character": "!"}
+    ],
+    "Digit2": [
+      {"character": "2"},
+      {"character": "@"}
+    ],
+    "Digit3": [
+      {"character": "3"},
+      {"character": "#"}
+    ],
+    "Digit4": [
+      {"character": "4"},
+      {"character": "$"}
+    ],
+    "Digit5": [
+      {"character": "5"},
+      {"character": "%"}
+    ],
+    "Digit6": [
+      {"character": "6"},
+      {"character": "^"}
+    ],
+    "Digit7": [
+      {"character": "7"},
+      {"character": "&"}
+    ],
+    "Digit8": [
+      {"character": "8"},
+      {"character": "*"}
+    ],
+    "Digit9": [
+      {"character": "9"},
+      {"character": "("}
+    ],
+    "Digit0": [
+      {"character": "0"},
+      {"character": ")"}
+    ],
+    "Minus": [
+      {"character": "-"},
+      {"character": "_"}
+    ],
+    "Equal": [
+      {"character": "="},
+      {"character": "+"}
+    ],
+    "Backspace": [
+      {
+        "label": "<-",
+        "type": "delete",
+        "subtype": "character"
+      }
+    ],
+
+    "Tab": [
+      {
+        "character": "\u0009",
+        "label": "Tab"
+      }
+    ],
+
+    "KeyA": [
+      {
+        "character": "a",
+        "label": " "
+      },
+      {"character": "A"}
+    ],
+
+    "Space": [
+      {"character": " "}
+    ],
+
+    "Delete": [
+      {
+        "label": "->",
+        "type": "delete",
+        "subtype": "character"
+      }
+    ]
+  }
+}
