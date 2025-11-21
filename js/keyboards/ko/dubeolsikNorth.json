@@ -1,0 +1,184 @@
+{
+  "identifier": "dubeolsikNorth",
+  "langid": "ko",
+  "names": {
+    "default": "Dubeolsik (North Korea)",
+    "ko": "두벌식 (북한)"
+  },
+  "keys": {
+    "Backquote": [
+      {"character": "`"},
+      {"character": "~"}
+    ],
+    "Digit1": [
+      {"character": "1"},
+      {"character": "!"}
+    ],
+    "Digit2": [
+      {"character": "2"},
+      {"character": "@"}
+    ],
+    "Digit3": [
+      {"character": "3"},
+      {"character": "#"}
+    ],
+    "Digit4": [
+      {"character": "4"},
+      {"character": "$"}
+    ],
+    "Digit5": [
+      {"character": "5"},
+      {"character": "%"}
+    ],
+    "Digit6": [
+      {"character": "6"},
+      {"character": "^"}
+    ],
+    "Digit7": [
+      {"character": "7"},
+      {"character": "&"}
+    ],
+    "Digit8": [
+      {"character": "8"},
+      {"character": "*"}
+    ],
+    "Digit9": [
+      {"character": "9"},
+      {"character": "("}
+    ],
+    "Digit0": [
+      {"character": "0"},
+      {"character": ")"}
+    ],
+    "Minus": [
+      {"character": "-"},
+      {"character": "_"}
+    ],
+    "Equal": [
+      {"character": "="},
+      {"character": "+"}
+    ],
+
+    "KeyQ": [
+      {"character": "ㅂ", "type": "composeChar", "subtype": "ja"},
+      {"character": "ㅃ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyW": [
+      {"character": "ㅁ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyE": [
+      {"character": "ㄷ", "type": "composeChar", "subtype": "ja"},
+      {"character": "ㄸ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyR": [
+      {"character": "ㄹ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyT": [
+      {"character": "ㅎ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyY": [
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyU": [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyI": [
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyO": [
+      {"character": "ㅐ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅒ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyP": [
+      {"character": "ㅔ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅖ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "BracketLeft": [
+      {"character": "["},
+      {"character": "{"}
+    ],
+    "BracketRight": [
+      {"character": "]"},
+      {"character": "}"}
+    ],
+    "Backslash": [
+      {"character": "\\"},
+      {"character": "|"}
+    ],
+
+    "KeyA": [
+      {"character": "ㅈ", "type": "composeChar", "subtype": "ja"},
+      {"character": "ㅉ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyS": [
+      {"character": "ㄱ", "type": "composeChar", "subtype": "ja"},
+      {"character": "ㄲ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyD": [
+      {"character": "ㅇ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyF": [
+      {"character": "ㄴ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyG": [
+      {"character": "ㅅ", "type": "composeChar", "subtype": "ja"},
+      {"character": "ㅆ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyH": [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyJ": [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyK": [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyL": [
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "Semicolon": [
+      {"character": ";"},
+      {"character": ":"}
+    ],
+    "Quote": [
+      {"character": "'"},
+      {"character": "\""}
+    ],
+
+    "KeyZ": [
+      {"character": "ㅋ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyX": [
+      {"character": "ㅌ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyC": [
+      {"character": "ㅊ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyV": [
+      {"character": "ㅍ", "type": "composeChar", "subtype": "ja"}
+    ],
+    "KeyB": [
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyN": [
+      {"character": "ㅛ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "KeyM": [
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "Comma": [
+      {"character": ","},
+      {"character": "<"}
+    ],
+    "Period": [
+      {"character": "."},
+      {"character": ">"}
+    ],
+    "Slash": [
+      {"character": "/"},
+      {"character": "?"}
+    ]
+  },
+  "composingRulePresets": ["modernHangul"],
+  "composer": "modernHangul"
+}
