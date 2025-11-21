@@ -194,7 +194,7 @@
       {"character": ">"}
     ],
     "Slash": [
-      {"character": "/"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
       {"character": "?"}
     ]
   },
