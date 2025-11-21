@@ -279,7 +279,7 @@
       {"character": " "},
       {"character": " "},
       {"character": " "},
-      {"character": " "}
+      {"value": 8239}
     ]
   },
   "composingRulePresets": ["deadkeyLatin1"],
