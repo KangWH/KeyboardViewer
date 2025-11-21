@@ -171,11 +171,11 @@
     ],
     "KeyB": [
       {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ᅔ", "type": "composeChar", "subtype": "jung"}
+      {"character": "ᅔ", "type": "composeChar", "subtype": "ja"}
     ],
     "KeyN": [
       {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ᅕ", "type": "composeChar", "subtype": "jung"}
+      {"character": "ᅕ", "type": "composeChar", "subtype": "ja"}
     ],
     "KeyM": [
       {"character": "ㅡ", "type": "composeChar", "subtype": "jung"}
