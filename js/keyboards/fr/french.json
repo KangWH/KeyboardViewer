@@ -3,7 +3,8 @@
   "langid": "fr",
   "keys": {
     "Backquote": [
-      {"character": "²"}
+      {"character": "²"},
+      {"character": ""}
     ],
     "Digit1": [
       {"character": "&"},
@@ -12,7 +13,7 @@
     "Digit2": [
       {"character": "é"},
       {"character": "2"},
-      {"character": "~"}
+      {"character": "~", "type": "dead"}
     ],
     "Digit3": [
       {"character": "\""},
@@ -37,12 +38,12 @@
     "Digit7": [
       {"character": "è"},
       {"character": "7"},
-      {"character": "`"}
+      {"character": "`", "type": "dead"}
     ],
     "Digit8": [
       {"character": "_"},
-      {"character": "\\"},
-      {"character": "8"}
+      {"character": "8"},
+      {"character": "\\"}
     ],
     "Digit9": [
       {"character": "ç"},
