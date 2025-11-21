@@ -61,37 +61,43 @@
 
     "KeyQ": [
       {"character": "ㅋ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅋ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅋ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyW": [
-      {"character": "w", "type": "composeChar", "subtype": "jung"}
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "label": " ", "type": "composeChar", "subtype": "mo"}
     ],
     "KeyE": [
-      {"character": "ㅔ", "type": "composeChar", "subtype": "jung"}
+      {"character": "ㅔ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅔ", "label": " ", "type": "composeChar", "subtype": "mo"}
     ],
     "KeyR": [
       {"character": "ㄹ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㄹ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㄹ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyT": [
       {"character": "ㅌ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅌ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅌ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyY": [
-      {"character": "y", "type": "composeChar", "subtype": "jung"}
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "label": " ", "type": "composeChar", "subtype": "mo"}
     ],
     "KeyU": [
-      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "label": " ", "type": "composeChar", "subtype": "mo"}
     ],
     "KeyI": [
-      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "label": " ", "type": "composeChar", "subtype": "mo"}
     ],
     "KeyO": [
-      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "label": " ", "type": "composeChar", "subtype": "mo"}
     ],
     "KeyP": [
       {"character": "ㅍ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅍ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅍ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "BracketLeft": [
       {"character": "["},
@@ -107,39 +113,40 @@
     ],
 
     "KeyA": [
-      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "label": " ", "type": "composeChar", "subtype": "mo"}
     ],
     "KeyS": [
       {"character": "ㅅ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅅ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅅ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyD": [
       {"character": "ㄷ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㄷ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㄷ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyF": [
       {"character": "ㅍ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅍ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅍ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyG": [
       {"character": "ㄱ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㄱ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㄱ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyH": [
       {"character": "ㅎ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅎ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅎ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyJ": [
       {"character": "ㅈ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅈ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅈ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyK": [
       {"character": "ㅋ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅋ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅋ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyL": [
       {"character": "ㄹ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㄹ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㄹ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "Semicolon": [
       {"character": ";"},
@@ -152,30 +159,30 @@
 
     "KeyZ": [
       {"character": "ㅈ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅈ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅈ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyX": [
       {"character": "ㅇ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyC": [
-      {"character": "ㅊ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅊ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㄲ", "type": "composeChar", "subtype": "ja"},
+      {"character": "ㄲ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyV": [
       {"character": "ㅂ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅂ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅂ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyB": [
       {"character": "ㅂ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅂ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅂ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyN": [
       {"character": "ㄴ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㄴ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㄴ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "KeyM": [
       {"character": "ㅁ", "type": "composeChar", "subtype": "ja"},
-      {"character": "ㅁ", "type": "composeChar", "subtype": "cho"}
+      {"character": "ㅁ", "label": " ", "type": "composeChar", "subtype": "cho"}
     ],
     "Comma": [
       {"character": ","},
@@ -191,5 +198,5 @@
     ]
   },
   "composingRulePresets": ["romajaHangul"],
-  "composer": "modernHangul"
+  "composer": "romajaHangul"
 }
