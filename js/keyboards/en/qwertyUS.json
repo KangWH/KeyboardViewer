@@ -65,7 +65,7 @@
     ],
 
     "KeyQ": [
-      {"character": "q"},
+      {"character": "q", "label": ""},
       {"character": "Q"}
     ],
     "KeyW": [
