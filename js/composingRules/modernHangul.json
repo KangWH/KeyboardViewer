@@ -193,7 +193,7 @@
       {"character": "ㄹ", "type": "composeChar", "subtype": "jong"},
       {"character": "ㅁ", "type": "composeChar", "subtype": "jong"}
     ],
-    {"character": "ㄻ", "type": "composeChar", "subtype": "jong"}
+    [{"character": "ㄻ", "type": "composeChar", "subtype": "jong"}]
   ],
   [
     [
