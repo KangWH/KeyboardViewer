@@ -165,8 +165,8 @@
       {"character": "Ñ"}
     ],
     "Quote": [
-      {"character": "´"},
-      {"character": "¨"},
+      {"character": "´", "type": "dead"},
+      {"character": "¨", "type": "dead"},
       {"character": "{"}
     ],
 
