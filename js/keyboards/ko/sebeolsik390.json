@@ -1,61 +1,61 @@
 {
-  "identifier": "sebeolsik391",
+  "identifier": "sebeolsik390",
   "langid": "ko",
   "names": {
-    "default": "Sebeolsik 3-91",
-    "ko": "세벌식 3-91"
+    "default": "Sebeolsik 3-90",
+    "ko": "세벌식 3-90"
   },
   "keys": {
     "Backquote": [
-      {"character": "*"},
-      {"character": "※"}
+      {"character": "~"},
+      {"character": "`"}
     ],
     "Digit1": [
       {"character": "ㅎ", "type": "composeChar", "subtype": "jong"},
-      {"character": "ㄲ", "type": "composeChar", "subtype": "jong"}
+      {"character": "ㅈ", "type": "composeChar", "subtype": "jong"}
     ],
     "Digit2": [
       {"character": "ㅆ", "type": "composeChar", "subtype": "jong"},
-      {"character": "ㄺ", "type": "composeChar", "subtype": "jong"}
+      {"character": "@"}
     ],
     "Digit3": [
       {"character": "ㅂ", "type": "composeChar", "subtype": "jong"},
-      {"character": "ㅈ", "type": "composeChar", "subtype": "jong"}
+      {"character": "#"}
     ],
     "Digit4": [
       {"character": "ㅛ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ㄿ", "type": "composeChar", "subtype": "jong"}
+      {"character": "$"}
     ],
     "Digit5": [
       {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ㄾ", "type": "composeChar", "subtype": "jong"}
+      {"character": "%"}
     ],
     "Digit6": [
       {"character": "ㅑ", "type": "composeChar", "subtype": "jung"},
-      {"character": "="}
+      {"character": "^"}
     ],
     "Digit7": [
       {"character": "ㅖ", "type": "composeChar", "subtype": "jung"},
-      {"character": "“"}
+      {"character": "&"}
     ],
     "Digit8": [
       {"character": "ㅢ", "type": "composeChar", "subtype": "jung"},
-      {"character": "”"}
+      {"character": "*"}
     ],
     "Digit9": [
       {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
-      {"character": "'"}
+      {"character": "("}
     ],
     "Digit0": [
       {"character": "ㅋ", "type": "composeChar", "subtype": "cho"},
-      {"character": "~"}
+      {"character": ")"}
     ],
     "Minus": [
-      {"character": "}"},
-      {"character": ";"}
+      {"character": "-"},
+      {"character": "_"}
     ],
     "Equal": [
-      {"character": ">"},
+      {"character": "="},
       {"character": "+"}
     ],
 
@@ -69,46 +69,46 @@
     ],
     "KeyE": [
       {"character": "ㅕ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ㄵ", "type": "composeChar", "subtype": "jong"}
+      {"character": "ㅋ", "type": "composeChar", "subtype": "jong"}
     ],
     "KeyR": [
       {"character": "ㅐ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ㅀ", "type": "composeChar", "subtype": "jong"}
+      {"character": "ㅒ", "type": "composeChar", "subtype": "jong"}
     ],
     "KeyT": [
       {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ㄽ", "type": "composeChar", "subtype": "jong"}
+      {"character": ";"}
     ],
     "KeyY": [
       {"character": "ㄹ", "type": "composeChar", "subtype": "cho"},
-      {"character": "5"}
+      {"character": "<"}
     ],
     "KeyU": [
       {"character": "ㄷ", "type": "composeChar", "subtype": "cho"},
-      {"character": "6"}
+      {"character": "7"}
     ],
     "KeyI": [
       {"character": "ㅁ", "type": "composeChar", "subtype": "cho"},
-      {"character": "7"}
+      {"character": "8"}
     ],
     "KeyO": [
       {"character": "ㅊ", "type": "composeChar", "subtype": "cho"},
-      {"character": "8"}
+      {"character": "9"}
     ],
     "KeyP": [
       {"character": "ㅍ", "type": "composeChar", "subtype": "cho"},
-      {"character": "9"}
+      {"character": ">"}
     ],
     "BracketLeft": [
-      {"character": "("},
-      {"character": "%"}
+      {"character": "["},
+      {"character": "{"}
     ],
     "BracketRight": [
-      {"character": "<"},
-      {"character": "/"}
+      {"character": "]"},
+      {"character": "}"}
     ],
     "Backslash": [
-      {"character": ":"},
+      {"character": "|"},
       {"character": "\\"}
     ],
 
@@ -122,39 +122,39 @@
     ],
     "KeyD": [
       {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ㄼ", "type": "composeChar", "subtype": "jong"}
+      {"character": "ㄺ", "type": "composeChar", "subtype": "jong"}
     ],
     "KeyF": [
       {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ㄻ", "type": "composeChar", "subtype": "jong"}
+      {"character": "ㄲ", "type": "composeChar", "subtype": "jong"}
     ],
     "KeyG": [
       {"character": "ㅡ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ㅒ", "type": "composeChar", "subtype": "jung"}
+      {"character": "/"}
     ],
     "KeyH": [
       {"character": "ㄴ", "type": "composeChar", "subtype": "cho"},
-      {"character": "0"}
+      {"character": "'"}
     ],
     "KeyJ": [
       {"character": "ㅇ", "type": "composeChar", "subtype": "cho"},
-      {"character": "1"}
+      {"character": "4"}
     ],
     "KeyK": [
       {"character": "ㄱ", "type": "composeChar", "subtype": "cho"},
-      {"character": "2"}
+      {"character": "5"}
     ],
     "KeyL": [
       {"character": "ㅈ", "type": "composeChar", "subtype": "cho"},
-      {"character": "3"}
+      {"character": "6"}
     ],
     "Semicolon": [
       {"character": "ㅂ", "type": "composeChar", "subtype": "cho"},
-      {"character": "4"}
+      {"character": ":"}
     ],
     "Quote": [
       {"character": "ㅌ", "type": "composeChar", "subtype": "cho"},
-      {"character": "·"}
+      {"character": "\""}
     ],
 
     "KeyZ": [
@@ -167,33 +167,35 @@
     ],
     "KeyC": [
       {"character": "ㅔ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ㅋ", "type": "composeChar", "subtype": "jong"}
+      {"character": "ㄻ", "type": "composeChar", "subtype": "jong"}
     ],
     "KeyV": [
       {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
-      {"character": "ㄳ", "type": "composeChar", "subtype": "jong"}
+      {"character": "ㅀ", "type": "composeChar", "subtype": "jong"}
     ],
     "KeyB": [
       {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
-      {"character": "?"}
+      {"character": "!"}
     ],
     "KeyN": [
       {"character": "ㅅ", "type": "composeChar", "subtype": "cho"},
-      {"character": "-"}
+      {"character": "0"}
     ],
     "KeyM": [
       {"character": "ㅎ", "type": "composeChar", "subtype": "cho"},
-      {"character": "\""}
+      {"character": "1"}
     ],
     "Comma": [
-      {"character": ","}
+      {"character": ","},
+      {"character": "<"}
     ],
     "Period": [
+      {"character": ">"},
       {"character": "."}
     ],
     "Slash": [
-      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
-      {"character": "!"}
+      {"character": "/"},
+      {"character": "?"}
     ]
   },
   "composingRulePresets": ["modernHangul"],
