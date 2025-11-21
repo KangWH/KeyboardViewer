@@ -653,5 +653,470 @@
   [
     [{"character": "T", "type": "composeChar"}],
     [{"character": "ㅌ", "type": "composeChar", "subtype": "cho"}]
+  ],
+
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "a", "type": "composeChar"},
+      {"character": "e", "type": "composeChar"}
+    ],
+    [{"character": "ㅐ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "a", "type": "composeChar"}
+    ],
+    [{"character": "ㅏ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "e", "type": "composeChar"},
+      {"character": "o", "type": "composeChar"}
+    ],
+    [{"character": "ㅓ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "e", "type": "composeChar"},
+      {"character": "u", "type": "composeChar"}
+    ],
+    [{"character": "ㅡ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "e", "type": "composeChar"}
+    ],
+    [{"character": "ㅔ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "i", "type": "composeChar"}
+    ],
+    [{"character": "ㅣ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "o", "type": "composeChar"},
+      {"character": "e", "type": "composeChar"}
+    ],
+    [{"character": "ㅚ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "o", "type": "composeChar"}
+    ],
+    [{"character": "ㅗ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "u", "type": "composeChar"},
+      {"character": "i", "type": "composeChar"}
+    ],
+    [{"character": "ㅢ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "u", "type": "composeChar"}
+    ],
+    [{"character": "ㅜ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "w", "type": "composeChar"},
+      {"character": "a", "type": "composeChar"},
+      {"character": "e", "type": "composeChar"}
+    ],
+    [{"character": "ㅙ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "w", "type": "composeChar"},
+      {"character": "a", "type": "composeChar"}
+    ],
+    [{"character": "ㅘ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "w", "type": "composeChar"},
+      {"character": "e", "type": "composeChar"}
+    ],
+    [{"character": "ㅞ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "w", "type": "composeChar"},
+      {"character": "o", "type": "composeChar"}
+    ],
+    [{"character": "ㅝ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "w", "type": "composeChar"},
+      {"character": "i", "type": "composeChar"}
+    ],
+    [{"character": "ㅟ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "y", "type": "composeChar"},
+      {"character": "a", "type": "composeChar"},
+      {"character": "e", "type": "composeChar"}
+    ],
+    [{"character": "ㅒ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "y", "type": "composeChar"},
+      {"character": "a", "type": "composeChar"}
+    ],
+    [{"character": "ㅑ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "y", "type": "composeChar"},
+      {"character": "e", "type": "composeChar"},
+      {"character": "o", "type": "composeChar"}
+    ],
+    [{"character": "ㅕ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "y", "type": "composeChar"},
+      {"character": "e", "type": "composeChar"}
+    ],
+    [{"character": "ㅖ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "y", "type": "composeChar"},
+      {"character": "o", "type": "composeChar"}
+    ],
+    [{"character": "ㅛ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "y", "type": "composeChar"},
+      {"character": "u", "type": "composeChar"}
+    ],
+    [{"character": "ㅠ", "type": "composeChar"}]
+  ],
+
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "b", "type": "composeChar"},
+      {"character": "b", "type": "composeChar"}
+    ],
+    [{"character": "ㅃ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "b", "type": "composeChar"},
+      {"character": "s", "type": "composeChar"}
+    ],
+    [{"character": "ㅄ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "b", "type": "composeChar"}
+    ],
+    [{"character": "ㅂ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "c", "type": "composeChar"},
+      {"character": "h", "type": "composeChar"}
+    ],
+    [{"character": "ㅊ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "d", "type": "composeChar"},
+      {"character": "d", "type": "composeChar"}
+    ],
+    [{"character": "ㄸ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "d", "type": "composeChar"}
+    ],
+    [{"character": "ㄷ", "type": "composeChar"}]
+  ],[
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "g", "type": "composeChar"},
+      {"character": "g", "type": "composeChar"}
+    ],
+    [{"character": "ㄲ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "g", "type": "composeChar"},
+      {"character": "s", "type": "composeChar"}
+    ],
+    [{"character": "ㄳ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "g", "type": "composeChar"}
+    ],
+    [{"character": "ㄱ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "h", "type": "composeChar"}
+    ],
+    [{"character": "ㅎ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "j", "type": "composeChar"},
+      {"character": "j", "type": "composeChar"}
+    ],
+    [{"character": "ㅉ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "j", "type": "composeChar"}
+    ],
+    [{"character": "ㅈ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "k", "type": "composeChar"}
+    ],
+    [{"character": "ㅋ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "l", "type": "composeChar"},
+      {"character": "b", "type": "composeChar"}
+    ],
+    [{"character": "ㄼ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "l", "type": "composeChar"},
+      {"character": "g", "type": "composeChar"}
+    ],
+    [{"character": "ㄺ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "l", "type": "composeChar"},
+      {"character": "h", "type": "composeChar"}
+    ],
+    [{"character": "ㅀ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "l", "type": "composeChar"},
+      {"character": "m", "type": "composeChar"}
+    ],
+    [{"character": "ㄻ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "l", "type": "composeChar"},
+      {"character": "p", "type": "composeChar"}
+    ],
+    [{"character": "ㄿ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "l", "type": "composeChar"},
+      {"character": "s", "type": "composeChar"}
+    ],
+    [{"character": "ㄽ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "l", "type": "composeChar"},
+      {"character": "t", "type": "composeChar"}
+    ],
+    [{"character": "ㄾ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "l", "type": "composeChar"}
+    ],
+    [{"character": "ㄹ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "m", "type": "composeChar"}
+    ],
+    [{"character": "ㅁ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "n", "type": "composeChar"},
+      {"character": "g", "type": "composeChar"}
+    ],
+    [{"character": "ㅇ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "n", "type": "composeChar"},
+      {"character": "h", "type": "composeChar"}
+    ],
+    [{"character": "ㄶ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "n", "type": "composeChar"},
+      {"character": "j", "type": "composeChar"}
+    ],
+    [{"character": "ㄵ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "n", "type": "composeChar"}
+    ],
+    [{"character": "ㄴ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "p", "type": "composeChar"}
+    ],
+    [{"character": "ㅍ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "r", "type": "composeChar"},
+      {"character": "b", "type": "composeChar"}
+    ],
+    [{"character": "ㄼ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "r", "type": "composeChar"},
+      {"character": "g", "type": "composeChar"}
+    ],
+    [{"character": "ㄺ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "r", "type": "composeChar"},
+      {"character": "h", "type": "composeChar"}
+    ],
+    [{"character": "ㅀ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "r", "type": "composeChar"},
+      {"character": "m", "type": "composeChar"}
+    ],
+    [{"character": "ㄻ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "r", "type": "composeChar"},
+      {"character": "p", "type": "composeChar"}
+    ],
+    [{"character": "ㄿ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "r", "type": "composeChar"},
+      {"character": "s", "type": "composeChar"}
+    ],
+    [{"character": "ㄽ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "r", "type": "composeChar"},
+      {"character": "t", "type": "composeChar"}
+    ],
+    [{"character": "ㄾ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "r", "type": "composeChar"}
+    ],
+    [{"character": "ㄹ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "s", "type": "composeChar"},
+      {"character": "s", "type": "composeChar"}
+    ],
+    [{"character": "ㅆ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "s", "type": "composeChar"}
+    ],
+    [{"character": "ㅅ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "t", "type": "composeChar"}
+    ],
+    [{"character": "ㅌ", "type": "composeChar"}]
+  ],
+  [
+    [
+      {"character": "x", "type": "composeChar"},
+      {"character": "x", "type": "composeChar"}
+    ],
+    [{"character": "ㅇ", "type": "composeChar"}]
   ]
 ]
