@@ -59,6 +59,10 @@
       {"character": "="},
       {"character": "+"}
     ],
+    "IntlYen": [
+      {"character": "¥"},
+      {"character": "|"}
+    ],
     "Backspace": [
       {
         "type": "delete",
@@ -171,6 +175,10 @@
       {"character": "\n"}
     ],
 
+    "IntlBackslash": [
+      {"character": "§"},
+      {"character": "±"}
+    ],
     "KeyZ": [
       {"character": "z"},
       {"character": "Z"}
@@ -210,6 +218,9 @@
     "Slash": [
       {"character": "/"},
       {"character": "?"}
+    ],
+    "IntlRo": [
+      {"character": "_"}
     ],
     
     "Space": [
