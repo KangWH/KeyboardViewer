@@ -1,0 +1,287 @@
+{
+  "identifier": "azertyFRStd",
+  "langid": "fr",
+  "keys": {
+    "Backquote": [
+      {"character": "@"},
+      {"character": "#"},
+      {"value": 774, "label": "◌̆", "type": "dead"},
+      {"value": 785, "label": "◌̑", "type": "dead"}
+    ],
+    "Digit1": [
+      {"character": "à"},
+      {"character": "1"},
+      {"character": "§"},
+      {"character": "À"}
+    ],
+    "Digit2": [
+      {"character": "é"},
+      {"character": "2"},
+      {"value": 769, "label": "◌́", "type": "dead"},
+      {"character": "É"}
+    ],
+    "Digit3": [
+      {"character": "è"},
+      {"character": "3"},
+      {"value": 768, "label": "◌̀", "type": "dead"},
+      {"character": "È"}
+    ],
+    "Digit4": [
+      {"character": "ê"},
+      {"character": "4"},
+      {"character": "&"},
+      {"character": "Ê"}
+    ],
+    "Digit5": [
+      {"character": "("},
+      {"character": "5"},
+      {"character": "["},
+      {"value": 779, "label": "◌̋", "type": "dead"}
+    ],
+    "Digit6": [
+      {"character": ")"},
+      {"character": "6"},
+      {"character": "]"},
+      {"value": 783, "label": "◌̏", "type": "dead"}
+    ],
+    "Digit7": [
+      {"character": "‘"},
+      {"character": "7"},
+      {"value": 772, "label": "◌̄", "type": "dead"}
+    ],
+    "Digit8": [
+      {"character": "’"},
+      {"character": "8"},
+      {"character": "_"},
+      {"character": "—"}
+    ],
+    "Digit9": [
+      {"character": "«"},
+      {"character": "9"},
+      {"character": "“"},
+      {"character": "‹"}
+    ],
+    "Digit0": [
+      {"character": "»"},
+      {"character": "0"},
+      {"character": "”"},
+      {"character": "›"}
+    ],
+    "Minus": [
+      {"character": "'"},
+      {"character": "\""},
+      {"character": "°"},
+      {"value": 778, "label": "◌̊", "type": "dead"}
+    ],
+    "Equal": [
+      {"value": 770, "label": "◌̂", "type": "dead"},
+      {"value": 776, "label": "◌̈", "type": "dead"},
+      {"value": 780, "label": "◌̌", "type": "dead"}
+    ],
+
+    "KeyQ": [
+      {"character": "a", "label": " "},
+      {"character": "A"},
+      {"character": "æ"},
+      {"character": "Æ"}
+    ],
+    "KeyW": [
+      {"character": "z", "label": " "},
+      {"character": "Z"},
+      {"character": "£"}
+    ],
+    "KeyE": [
+      {"character": "e", "label": " "},
+      {"character": "E"},
+      {"character": "€"}
+    ],
+    "KeyR": [
+      {"character": "r", "label": " "},
+      {"character": "R"},
+      {"character": "®"}
+    ],
+    "KeyT": [
+      {"character": "t", "label": " "},
+      {"character": "T"},
+      {"character": "{"},
+      {"character": "™"}
+    ],
+    "KeyY": [
+      {"character": "y", "label": " "},
+      {"character": "Y"},
+      {"character": "}"}
+    ],
+    "KeyU": [
+      {"character": "u", "label": " "},
+      {"character": "U"},
+      {"character": "ú"},
+      {"character": "Ú"}
+    ],
+    "KeyI": [
+      {"character": "i", "label": " "},
+      {"character": "I"},
+      {"value": 775, "label": "◌̇", "type": "dead"},
+      {"value": 803, "label": "◌̣", "type": "dead"}
+    ],
+    "KeyO": [
+      {"character": "o", "label": " "},
+      {"character": "O"},
+      {"character": "œ"},
+      {"character": "Œ"}
+    ],
+    "KeyP": [
+      {"character": "p", "label": " "},
+      {"character": "P"},
+      {"character": "%"},
+      {"character": "‰"}
+    ],
+    "BracketLeft": [
+      {"character": "-"},
+      {"character": "–"},
+      {"character": "−"},
+      {"value": 8209}
+    ],
+    "BracketRight": [
+      {"character": "+"},
+      {"character": "±"},
+      {"character": "†"},
+      {"character": "‡"}
+    ],
+    "Backslash": [
+      {"character": "*"},
+      {"character": "½"},
+      {"character": "×"},
+      {"character": "¼"}
+    ],
+    
+    "KeyA": [
+      {"character": "q", "label": " "},
+      {"character": "Q"},
+      {"character": "θ"},
+      {"character": "Θ"}
+    ],
+    "KeyS": [
+      {"character": "s", "label": " "},
+      {"character": "S"},
+      {"character": "ß"},
+      {"character": "ẞ"}
+    ],
+    "KeyD": [
+      {"character": "d", "label": " "},
+      {"character": "D"},
+      {"character": "$"}
+    ],
+    "KeyF": [
+      {"character": "f", "label": " "},
+      {"character": "F"},
+      {"character": "¤", "type": "dead"}
+    ],
+    "KeyG": [
+      {"character": "g", "label": " "},
+      {"character": "G"},
+      {"character": "µ", "type": "dead"}
+    ],
+    "KeyH": [
+      {"character": "h", "label": " "},
+      {"character": "H"},
+      {"character": "", "type": "dead"},
+      {"value": 817, "label": "◌̱", "type": "dead"}
+    ],
+    "KeyJ": [
+      {"character": "j", "label": " "},
+      {"character": "J"}
+    ],
+    "KeyK": [
+      {"character": "k", "label": " "},
+      {"character": "K"},
+      {"value": 824, "label": "◌̸", "type": "dead"}
+    ],
+    "KeyL": [
+      {"character": "l", "label": " "},
+      {"character": "L"},
+      {"character": "|"}
+    ],
+    "Semicolon": [
+      {"character": "m", "label": " "},
+      {"character": "M"},
+      {"character": "∞"}
+    ],
+    "Quote": [
+      {"character": "/"},
+      {"character": "\\"},
+      {"character": "÷"},
+      {"character": "√"}
+    ],
+
+    "IntlBackslash": [
+      {"character": "<"},
+      {"character": ">"},
+      {"character": "≤"},
+      {"character": "≥"}
+    ],
+    "KeyZ": [
+      {"character": "w", "label": " "},
+      {"character": "W"},
+      {"character": "ʒ"},
+      {"character": "Ʒ"}
+    ],
+    "KeyX": [
+      {"character": "x", "label": " "},
+      {"character": "X"},
+      {"character": "©"}
+    ],
+    "KeyC": [
+      {"character": "c", "label": " "},
+      {"character": "C"},
+      {"character": "ç"},
+      {"character": "Ç"}
+    ],
+    "KeyV": [
+      {"character": "v", "label": " "},
+      {"character": "V"},
+      {"value": 807, "label": "◌̧", "type": "dead"},
+      {"value": 808, "label": "◌̨", "type": "dead"}
+    ],
+    "KeyB": [
+      {"character": "b", "label": " "},
+      {"character": "B"},
+      {"value": 822, "label": "◌̶", "type": "dead"}
+    ],
+    "KeyN": [
+      {"character": "n", "label": " "},
+      {"character": "N"},
+      {"value": 771, "label": "◌̃", "type": "dead"}
+    ],
+    "KeyM": [
+      {"character": "."},
+      {"character": "?"},
+      {"character": "¿"}
+    ],
+    "Comma": [
+      {"character": ","},
+      {"character": "!"},
+      {"character": "¡"},
+      {"value": 806, "label": "◌̦", "type": "dead"}
+    ],
+    "Period": [
+      {"character": ":"},
+      {"character": "…"},
+      {"character": "·"}
+    ],
+    "Slash": [
+      {"character": ";"},
+      {"character": "="},
+      {"character": "≈"},
+      {"character": "≠"}
+    ],
+
+    "Space": [
+      {"character": " "},
+      {"character": " "},
+      {"character": " "},
+      {"character": " "}
+    ]
+  },
+  "composingRulePresets": ["deadkeyLatin1"],
+  "composingRules": []
+}
