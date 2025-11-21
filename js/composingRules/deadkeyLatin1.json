@@ -1,0 +1,86 @@
+[
+  [
+    [
+      {"character": "`", "type": "dead"},
+      {"character": "A"}
+    ],
+    [{"character": "À"}]
+  ],
+  [
+    [
+      {"character": "´", "type": "dead"},
+      {"character": "A"}
+    ],
+    [{"character": "Á"}]
+  ],
+  [
+    [
+      {"character": "^", "type": "dead"},
+      {"character": "A"}
+    ],
+    [{"character": "Â"}]
+  ],
+  [
+    [
+      {"character": "~", "type": "dead"},
+      {"character": "A"}
+    ],
+    [{"character": "Ã"}]
+  ],
+  [
+    [
+      {"character": "¨", "type": "dead"},
+      {"character": "A"}
+    ],
+    [{"character": "Ä"}]
+  ],
+  [
+    [
+      {"character": "˚", "type": "dead"},
+      {"character": "A"}
+    ],
+    [{"character": "Å"}]
+  ],
+  [
+    [
+      {"character": "¸", "type": "dead"},
+      {"character": "C"}
+    ],
+    [{"character": "Ç"}]
+  ],
+  [
+    [
+      {"character": "`", "type": "dead"},
+      {"character": "E"}
+    ],
+    [{"character": "È"}]
+  ],
+  [
+    [
+      {"character": "´", "type": "dead"},
+      {"character": "E"}
+    ],
+    [{"character": "É"}]
+  ],
+  [
+    [
+      {"character": "^", "type": "dead"},
+      {"character": "E"}
+    ],
+    [{"character": "Ê"}]
+  ],
+  [
+    [
+      {"character": "¨", "type": "dead"},
+      {"character": "E"}
+    ],
+    [{"character": "Ë"}]
+  ],
+  [
+    [
+      {"character": "`", "type": "dead"},
+      {"character": "I"}
+    ],
+    [{"character": "Ì"}]
+  ]
+]
