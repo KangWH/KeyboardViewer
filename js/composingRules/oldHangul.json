@@ -668,6 +668,27 @@
   ],
   [
     [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"}
+    ],
+    {"character": "ㅝ", "type": "composeChar", "subtype": "jung"}
+  ],
+  [
+    [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅔ", "type": "composeChar", "subtype": "jung"}
+    ],
+    {"character": "ㅞ", "type": "composeChar", "subtype": "jung"}
+  ],
+  [
+    [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    {"character": "ㅟ", "type": "composeChar", "subtype": "jung"}
+  ],
+  [
+    [
       {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
       {"character": "ㅕ", "type": "composeChar", "subtype": "jung"}
     ],
