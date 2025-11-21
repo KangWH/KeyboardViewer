@@ -95,5 +95,5 @@
     ]
   },
   "composingRulePresets": ["modernHangul"],
-  "composer": "modernHangulDubeolsik"
+  "composer": "modernHangul"
 }
