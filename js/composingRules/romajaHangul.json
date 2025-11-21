@@ -332,5 +332,72 @@
       {"character": "ㅇ", "type": "composeChar", "subtype": "cho"},
       {"character": "ㅠ", "type": "composeChar", "subtype": "jung"}
     ]
+  ],
+
+  [
+    [{"character": "b", "type": "composeChar"}],
+    [{"character": "ㅂ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [
+      {"character": "c", "type": "composeChar"},
+      {"character": "h", "type": "composeChar"}
+    ],
+    [{"character": "ㅊ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [{"character": "d", "type": "composeChar"}],
+    [{"character": "ㄷ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [{"character": "g", "type": "composeChar"}],
+    [{"character": "ㄱ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [{"character": "h", "type": "composeChar"}],
+    [{"character": "ㅎ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [{"character": "j", "type": "composeChar"}],
+    [{"character": "ㅈ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [{"character": "k", "type": "composeChar"}],
+    [{"character": "ㅋ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [{"character": "l", "type": "composeChar"}],
+    [{"character": "ㄹ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [{"character": "m", "type": "composeChar"}],
+    [{"character": "ㅁ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [
+      {"character": "n", "type": "composeChar"},
+      {"character": "g", "type": "composeChar"}
+    ],
+    [{"character": "ㅇ", "type": "composeChar", "subtype": "jong"}]
+  ],
+  [
+    [{"character": "n", "type": "composeChar"}],
+    [{"character": "ㄴ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [{"character": "p", "type": "composeChar"}],
+    [{"character": "ㅍ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [{"character": "r", "type": "composeChar"}],
+    [{"character": "ㄹ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [{"character": "s", "type": "composeChar"}],
+    [{"character": "ㅅ", "type": "composeChar", "subtype": "ja"}]
+  ],
+  [
+    [{"character": "t", "type": "composeChar"}],
+    [{"character": "ㅌ", "type": "composeChar", "subtype": "ja"}]
   ]
 ]
