@@ -183,8 +183,8 @@
       {"character": "<"}
     ],
     "Period": [
-      {"character": ">"},
-      {"character": "."}
+      {"character": "."},
+      {"character": ">"}
     ],
     "Slash": [
       {"character": "ㄷ", "type": "composeChar", "subtype": "jong"},

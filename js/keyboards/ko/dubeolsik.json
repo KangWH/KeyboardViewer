@@ -6,6 +6,59 @@
     "ko": "두벌식"
   },
   "keys": {
+    "Backquote": [
+      {"character": "`"},
+      {"character": "~"}
+    ],
+    "Digit1": [
+      {"character": "1"},
+      {"character": "!"}
+    ],
+    "Digit2": [
+      {"character": "2"},
+      {"character": "@"}
+    ],
+    "Digit3": [
+      {"character": "3"},
+      {"character": "#"}
+    ],
+    "Digit4": [
+      {"character": "4"},
+      {"character": "$"}
+    ],
+    "Digit5": [
+      {"character": "5"},
+      {"character": "%"}
+    ],
+    "Digit6": [
+      {"character": "6"},
+      {"character": "^"}
+    ],
+    "Digit7": [
+      {"character": "7"},
+      {"character": "&"}
+    ],
+    "Digit8": [
+      {"character": "8"},
+      {"character": "*"}
+    ],
+    "Digit9": [
+      {"character": "9"},
+      {"character": "("}
+    ],
+    "Digit0": [
+      {"character": "0"},
+      {"character": ")"}
+    ],
+    "Minus": [
+      {"character": "-"},
+      {"character": "_"}
+    ],
+    "Equal": [
+      {"character": "="},
+      {"character": "+"}
+    ],
+
     "KeyQ": [
       {"character": "ㅂ", "type": "composeChar", "subtype": "ja"},
       {"character": "ㅃ", "type": "composeChar", "subtype": "ja"}
@@ -43,6 +96,18 @@
       {"character": "ㅔ", "type": "composeChar", "subtype": "jung"},
       {"character": "ㅖ", "type": "composeChar", "subtype": "jung"}
     ],
+    "BracketLeft": [
+      {"character": "["},
+      {"character": "{"}
+    ],
+    "BracketRight": [
+      {"character": "]"},
+      {"character": "}"}
+    ],
+    "Backslash": [
+      {"character": "\\"},
+      {"character": "|"}
+    ],
 
     "KeyA": [
       {"character": "ㅁ", "type": "composeChar", "subtype": "ja"}
@@ -71,6 +136,14 @@
     "KeyL": [
       {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
     ],
+    "Semicolon": [
+      {"character": ";"},
+      {"character": ":"}
+    ],
+    "Quote": [
+      {"character": "'"},
+      {"character": "\""}
+    ],
 
     "KeyZ": [
       {"character": "ㅋ", "type": "composeChar", "subtype": "ja"}
@@ -92,6 +165,18 @@
     ],
     "KeyM": [
       {"character": "ㅡ", "type": "composeChar", "subtype": "jung"}
+    ],
+    "Comma": [
+      {"character": ","},
+      {"character": "<"}
+    ],
+    "Period": [
+      {"character": "."},
+      {"character": ">"}
+    ],
+    "Slash": [
+      {"character": "/"},
+      {"character": "?"}
     ]
   },
   "composingRulePresets": ["modernHangul"],

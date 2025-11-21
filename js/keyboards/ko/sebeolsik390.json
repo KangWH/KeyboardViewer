@@ -190,8 +190,8 @@
       {"character": "<"}
     ],
     "Period": [
-      {"character": ">"},
-      {"character": "."}
+      {"character": "."},
+      {"character": ">"}
     ],
     "Slash": [
       {"character": "/"},
