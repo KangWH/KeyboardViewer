@@ -2,8 +2,8 @@
   "identifier": "romaja",
   "langid": "ko",
   "names": {
-    "default": "Latin character",
-    "ko": "로마자 입력"
+    "default": "Latin Hangul Input",
+    "ko": "로마자 한글 입력기"
   },
   "keys": {
     "Backquote": [
