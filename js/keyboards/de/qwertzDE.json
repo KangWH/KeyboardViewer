@@ -10,7 +10,7 @@
 
   "keys": {
     "Backquote": [
-      {"value": 785, "label": "◌̑", "type": "dead"},
+      {"value": 770, "label": "◌̂", "type": "dead"},
       {"character": "˚"}
     ],
     "Digit1": [

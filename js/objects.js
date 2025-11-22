@@ -477,6 +477,7 @@ const getComposingRulePreset = async (identifier) => {
 const inputSources = {
   qwertzDE: {
     names: {
+      de: 'QWERTZ (Deutschland)',
       en: 'QWERTZ (German)',
       ja: 'QWERTZ（ドイツ）',
       ko: 'QWERTZ (독일)',
