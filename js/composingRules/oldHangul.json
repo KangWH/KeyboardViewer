@@ -1574,6 +1574,57 @@
     ],
     [{"character": "ㆅ", "type": "composeChar", "subtype": "cho"}]
   ],
+
+  [
+    [
+      [
+        {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+        {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+        {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+        {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+      ],
+      [{"character": "ᆢ", "type": "composeChar", "subtype": "jung"}]
+    ],
+    [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟅ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟆ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆟ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅔ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟆ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆠ", "type": "composeChar", "subtype": "jung"}]
+  ],
   [
     [
       {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
@@ -1585,9 +1636,137 @@
   [
     [
       {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㆍ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆢ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
       {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
     ],
     [{"character": "ㆍ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᅶ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᅷ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆣ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ㅐ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᅸ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅛ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᅹ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆤ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ㅒ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᅺ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᅻ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᅼ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ㅔ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆥ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᅽ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᅾ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ㅖ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ㅙ", "type": "composeChar", "subtype": "jung"}]
   ],
   [
     [
@@ -1606,9 +1785,127 @@
   [
     [
       {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆧ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆦ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅒ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆧ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆀ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᅿ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅔ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆀ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆁ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힰ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅖ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆁ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힱ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆂ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆃ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
       {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
     ],
     [{"character": "ㅚ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅛ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힳ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅛ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힲ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅛ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅐ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힳ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅛ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ㆈ", "type": "composeChar", "subtype": "jung"}]
   ],
   [
     [
@@ -1627,9 +1924,68 @@
   [
     [
       {"character": "ㅛ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힴ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅛ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆆ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅛ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆇ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅛ", "type": "composeChar", "subtype": "jung"},
       {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
     ],
     [{"character": "ㆉ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆊ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆉ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅐ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆊ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆋ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ㅞ", "type": "composeChar", "subtype": "jung"}]
   ],
   [
     [
@@ -1648,9 +2004,91 @@
   [
     [
       {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆌ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힵ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆍ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힶ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"},
       {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
     ],
     [{"character": "ㅟ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힷ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆎ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅐ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힷ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆐ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆏ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅔ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆐ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ㆋ", "type": "composeChar", "subtype": "jung"}]
   ],
   [
     [
@@ -1669,9 +2107,81 @@
   [
     [
       {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힸ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆓ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"},
       {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
     ],
     [{"character": "ㆌ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힹ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힻ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힺ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅔ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힻ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힼ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆕ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆖ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆗ", "type": "composeChar", "subtype": "jung"}]
   ],
   [
     [
@@ -1682,11 +2192,201 @@
   ],
   [
     [
+      {"character": "ㅢ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆗ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆝ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆘ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힽ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힾ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅑ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆙ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅒ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힾ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟀ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅕ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ힿ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅒ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟀ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟁ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅗ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆚ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅛ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟂ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆛ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅠ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟃ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅡ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆜ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟄ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㆍ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆝ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆘ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㆍ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆢ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㆍ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟅ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㆍ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟆ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㆍ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅓ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆟ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㆍ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅔ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ퟆ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
+      {"character": "ㆍ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅜ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆠ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
+    [
       {"character": "ㆍ", "type": "composeChar", "subtype": "jung"},
       {"character": "ㅣ", "type": "composeChar", "subtype": "jung"}
     ],
     [{"character": "ㆎ", "type": "composeChar", "subtype": "jung"}]
   ],
+  [
+    [
+      {"character": "ㆍ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㆍ", "type": "composeChar", "subtype": "jung"}
+    ],
+    [{"character": "ᆢ", "type": "composeChar", "subtype": "jung"}]
+  ],
+
   [
     [
       {"character": "ㄱ", "type": "composeChar", "subtype": "jong"},
