@@ -29,7 +29,7 @@ class InputSource {
         }
       }
       if (o.composingRules)
-        this.composingRules.addRule(o.composingRules);
+        this.composingRules.addRules(o.composingRules);
 
       this.composer = o.composer ? Composers[o.composer] : undefined;
     } catch (err) {

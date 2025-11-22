@@ -146,7 +146,7 @@ const Composers = {
           (lastSubtype !== HangulKeySubtype.jung && compSubtype === HangulKeySubtype.jong) // 초성이 와야 하는 자리
           || (lastSubtype === HangulKeySubtype.jung && composition[0][0].subtype === HangulKeySubtype.ja && compSubtype === HangulKeySubtype.cho) // 종성이 와야 하는 자리 (두벌식)
         ) {
-          const shorterComposition = checkComposingRule(activeInputSource.data.composingRules, step0.slice(i, i + composition[0].length - 1));
+          const shorterComposition = activeInputSource.data.composingRules.getRule(step0.slice(i, i + composition[0].length - 1));
           if (shorterComposition) {
             const compSubtype = shorterComposition[1].subtype;
             if (
