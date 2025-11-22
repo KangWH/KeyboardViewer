@@ -309,6 +309,14 @@ const getComposingRulePreset = async (identifier) => {
   }
 }
 const inputSources = {
+  qwertyUK: {
+    names: {
+      en: 'QWERTY (UK)',
+      ja: 'QWERTY（イギリス）',
+      ko: 'QWERTY (영국)',
+    },
+    directory: 'en'
+  },
   qwertyUS: {
     names: {
       en: 'QWERTY (US)',
