@@ -44,6 +44,9 @@ button {
   -webkit-user-select: none;
   user-select: none;
 }
+input {
+  font: inherit;
+}
 select {
   font: inherit;
 }
@@ -62,17 +65,59 @@ aside {
   
   word-break: break-word;
   white-space-collapse: break-spaces;
+
+  user-select: none;
+
+  transition: background-color .2s;
+
+  &:focus {
+    outline: none;
+    background-color: #DDD;
+  }
 }
 .caret {
   margin-inline: -1px;
 
   background-color: rgba(0, 0, 255, 0.2);
-  border-left: 1px solid blue;
-  border-right: 1px solid blue;
+  border: 0px solid blue;
+  border-inline-start-width: 1px;
+  border-inline-end-width: 1px;
+}
+#processedText:focus .caret {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    border-color: blue;
+  }
+  20% {
+    border-color: blue;
+  }
+  50% {
+    border-color: transparent;
+  }
+  70% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: blue;
+  }
+}
+.caret.toRight {
+  border-inline-start-width: 0px;
+}
+.caret.toLeft {
+  border-inline-end-width: 0px;
 }
 .composing {
-  border-bottom: 1px solid blue;
+  border-block-end: 1px solid blue;
 }
+#keyField {
+  font-family: monospace;
+  font-weight: 300;
+  font-size: .8em;
+}
+
 main {
   display: flex;
   flex-flow: column nowrap;
@@ -210,6 +255,7 @@ main {
   flex: 8em 1 0;
 }
 .key {
+  position: relative;
   margin: 2px;
   width: calc(100% - 4px);
   height: calc(100% - 4px);
@@ -249,6 +295,25 @@ main {
 
   & span {
     font-size: 1.25em;
+
+    &.layerTwo {
+      position: absolute;
+      right: .25em;
+      bottom: .25em;
+      
+      font-weight: 300;
+      font-size: 1em;
+      opacity: .75;
+    }
+    &.layerThree {
+      position: absolute;
+      top: .25em;
+      right: .25em;
+      
+      font-weight: 300;
+      font-size: 1em;
+      opacity: .75;
+    }
   }
 }
 .key.longReturn {
@@ -428,6 +493,13 @@ dialog {
   border-radius: 1em;
 
   user-select: none;
+  -webkit-user-select: none;
+}
+dialog.large {
+  max-width: 1440px;
+  width: calc(100% - 6rem);
+  max-height: 900px;
+  height: calc(100% - 6rem);
 }
 .dialog-header {
   padding: 2em 2em 1em;
@@ -448,11 +520,32 @@ dialog {
 
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .dialog-footer-controls {
   display: flex;
   flex-flow: row nowrap;
   gap: .5em;
   align-items: stretch;
+}
+
+.selectable-list {
+  margin: 0;
+  padding: 0;
+
+  overflow-y: auto;
+
+  list-style-type: none;
+
+  & > li {
+    padding: .5rem;
+
+    display: block;
+
+    border-radius: .5rem;
+
+    &.active {
+      background-color: #00000020;
+    }
+  }
 }

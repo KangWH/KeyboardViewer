@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-
 <html lang="ko">
   <head>
     <title>키보드 배열 테스트</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <noscript>
+      <p>You need to enable JavaScript to use this page.</p>
+      <p>이 페이지를 사용하려면 JavaScript를 허용해야 합니다.</p>
+    </noscript>
     <header>
       <h1><span style="font-weight: 300;">Keyboard</span><span style="font-weight: 500;">Viewer</span></h1>
       <div role="toolbar">
         <button style="display: none;">Copy Text</button>
-        <button aria-controls="inputSourceSelector-dialog">Input Source</button>
+        <button id="inputSourceSelector-button" aria-controls="inputSourceSelector-dialog">Input Source</button>
+        <button style="display: none;" id="hotkeys-button" aria-controls="hotkeys-dialog">Hotkeys</button>
       </div>
     </header>
     <aside>
       <div id="wordBuffer">&nbsp;</div>
-      <div id="processedText" tabindex="0">&nbsp;</div>
-      <div id="keyField" style="display: none;">&nbsp;</div>
-      <p style="text-align: center; font-weight: 200;">NOTE: This page is currently not fully implemented and experimental.</p>
+      <div id="processedText" tabindex="0" autofocus>&nbsp;</div>
+      <div id="keyField">&nbsp;</div>
+      <p style="text-align: center; font-weight: 200;">NOTE: This page is currently not fully implemented and is experimental.</p>
     </aside>
     <main>
       <div role="tablist">
@@ -791,41 +796,76 @@
         </div>
       </div>
     </main>
-    <dialog id="inputSourceSelector-dialog" style="min-width: 24em;">
+
+    <dialog id="inputSourceSelector-dialog">
       <div class="dialog-header">
-        <div class="dialog-header-title">Change Input Source</div>
+        <div class="dialog-header-title">Input Sources</div>
       </div>
       <form class="dialog-body" id="inputSourceSelector-form">
-        <div style="display: flex; flex-flow: row nowrap; gap: 1em;">
-          <div style="flex-basis: 5em; flex-grow: 1; display: flex; flex-flow: column nowrap; align-items: stretch; gap: .5em;">
-            <label>Script</label>
-            <select name="script"></select>
-          </div>
-          <div style="flex-basis: 5em; flex-grow: 1; display: flex; flex-flow: column nowrap; align-items: stretch; gap: .5em;">
-            <label>Language</label>
-            <select name="language"></select>
-          </div>
-          <div style="flex-basis: 5em; flex-grow: 1; display: flex; flex-flow: column nowrap; align-items: stretch; gap: .5em;">
-            <label>Input Source</label>
-            <select name="name"></select>
-          </div>
-        </div>
+        <div style="margin-bottom: 1em;">Currently activated input sources:</div>
+        <ul id="inputSourceSelector-container" class="selectable-list" tabindex="0"></ul>
       </form>
       <div class="dialog-footer">
         <div class="dialog-footer-controls">
-          <button type="button" name="cancel" form="inputSourceSelector-form">Cancel</button>
-          <button type="submit" form="inputSourceSelector-form">OK</button>
+          <button type="button" name="add" form="inputSourceSelector-form">+</button>
+          <button type="button" name="delete" form="inputSourceSelector-form">&minus;</button>
+        </div>
+        <div class="dialog-footer-controls">
+          <button type="submit" name="select" form="inputSourceSelector-form" autofocus>Select</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="addInputSource-dialog" class="large">
+      <div class="dialog-header">
+        <div class="dialog-header-title">Add Input Source</div>
+      </div>
+      <form class="dialog-body" id="addInputSource-form">
+        <input type="search" name="search" placeholder="Search" style="width: 100%;" />
+        <div style="margin-top: 1em; display: flex; flex-flow: row nowrap; align-items: stretch;">
+          <ul id="addInputSource-languageContainer" class="selectable-list"></ul>
+          <hr style="height: unset; margin: 0 .5em;" />
+          <ul id="addInputSource-sourceContainer" class="selectable-list" style="flex-grow: 1;"></ul>
+        </div>
+      </form>
+      <div class="dialog-footer">
+        <div></div>
+        <div class="dialog-footer-controls">
+          <button type="button" name="cancel" form="addInputSource-form">Cancel</button>
+          <button type="submit" name="ok" form="addInputSource-form">OK</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="hotkeys-dialog">
+      <div class="dialog-header">
+        <div class="dialog-header-title">Hotkeys</div>
+      </div>
+      <form class="dialog-body" id="hotkeys-form">
+        <dl style="margin: 0; padding: 0; display: grid; grid-template-columns: 2em auto;">
+          <dt><kbd>cmd</kbd><kbd>A</kbd></dt>
+          <dd>Select All</dd>
+          <dt><kbd>cmd</kbd><kbd>C</kbd></dt>
+          <dd>Copy Selection/All (if no text block selected)</dd>
+          <dt><kbd>cmd</kbd><kbd>X</kbd></dt>
+          <dd>Cut Selection</dd>
+          <dt><kbd>shift</kbd><kbd>cmd</kbd><kbd>s</kbd></dt>
+          <dd>Select input source</dd>
+        </dl>
+      </form>
+      <div class="dialog-footer">
+        <div class="dialog-footer-controls">
+          <button type="button" name="close" form="hotkeys-form">Close</button>
         </div>
       </div>
     </dialog>
     <script src="js/tabEvent.js"></script>
-    <script src="js/keyboard.js"></script>
-    <script src="js/hangulKeyboard.js"></script>
-    <script src="js/keyboardData.js"></script>
-    <script src="js/keyboards/hangul-korean-dubeolsik.js"></script>
-    <script src="js/keyboards/hangul-korean-sebeolsik391.js"></script>
-    <script src="js/keyboards/hangul-korean-dubeolsikYetgul.js"></script>
-    <script src="js/keyboards/hangul-korean-dubeolsikNorth.js"></script>
-    <script src="js/eventHandler.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/objects.js"></script>
+    <script src="js/keyboardEvent.js"></script>
+    <script src="js/mouseEvent.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/inputSourceDialog.js"></script>
+    <script src="js/hotkeyDialog.js"></script>
   </body>
 </html>
