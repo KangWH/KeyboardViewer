@@ -23,7 +23,9 @@ class InputSource {
             promise.then(() => {
               preset = ComposingRulePresets[presetName];
               this.composingRules.addRules(preset);
-            })
+            }).catch((err) => {
+              console.error(err);
+            });
           } else
             this.composingRules.addRules(preset);
         }
@@ -104,7 +106,7 @@ class KeyValue {
     this.value = o.value === undefined ? o.character === undefined ? undefined : o.character.codePointAt(0) : o.value;
 
     if (this.character === undefined && [KeyType.char, KeyType.dead, KeyType.composeChar].includes(this.type))
-      throw new Error('Character value for current key is not given.');
+      throw new Error('Character value for current key is not given: ' + JSON.stringify(o));
   }
 }
 

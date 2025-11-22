@@ -1577,14 +1577,14 @@
 
   [
     [
-      [
-        {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
-        {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
-        {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
-        {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
-      ],
-      [{"character": "ᆢ", "type": "composeChar", "subtype": "jung"}]
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
+      {"character": "ㅏ", "type": "composeChar", "subtype": "jung"}
     ],
+    [{"character": "ᆢ", "type": "composeChar", "subtype": "jung"}]
+  ],
+  [
     [
       {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
       {"character": "ㅏ", "type": "composeChar", "subtype": "jung"},
