@@ -29,17 +29,26 @@ document.addEventListener('mousedown', (e) => {
     offset = caretPosition.startOffset;
   }
 
+  const processedTextElement = document.getElementById('processedText');
+
+  let chars = 0;
+  let index = textNode.parentNode === processedTextElement.firstChild ? 0 : textBuffer.beginCaretPosition;
+  for (; index < textBuffer.text.length; index++) {
+    chars += textBuffer.text[index].length;
+    if (chars > offset)
+      break;
+  }
+  index -= (textNode.parentNode === processedTextElement.firstChild ? 0 : textBuffer.beginCaretPosition);
+
   if (textNode.nodeType === Node.TEXT_NODE) {
     dragging = true;
-    const processedTextElement = document.getElementById('processedText');
-    console.log(processedTextElement.contains(textNode), textNode);
     if (processedTextElement.contains(textNode)) {
       if (textNode.parentNode === processedTextElement.childNodes[1])
-        offset += Math.min(textBuffer.beginCaretPosition, textBuffer.endCaretPosition);
+        index += Math.min(textBuffer.beginCaretPosition, textBuffer.endCaretPosition);
       if (textNode.parentNode === processedTextElement.childNodes[2])
-        offset += Math.max(textBuffer.beginCaretPosition, textBuffer.endCaretPosition);
-      textBuffer.beginCaretPosition = offset;
-      textBuffer.endCaretPosition = offset;
+        index += Math.max(textBuffer.beginCaretPosition, textBuffer.endCaretPosition);
+      textBuffer.beginCaretPosition = index;
+      textBuffer.endCaretPosition = index;
       textBuffer.renderText();
     }
   }
@@ -66,14 +75,24 @@ document.addEventListener('mousemove', (e) => {
     offset = caretPosition.startOffset;
   }
 
+  const processedTextElement = document.getElementById('processedText');
+
+  let chars = 0;
+  let index = textNode.parentNode === processedTextElement.firstChild ? 0 : textBuffer.beginCaretPosition;
+  for (; index < textBuffer.text.length; index++) {
+    chars += textBuffer.text[index].length;
+    if (chars > offset)
+      break;
+  }
+  index -= (textNode.parentNode === processedTextElement.firstChild ? 0 : textBuffer.beginCaretPosition);
+
   if (textNode.nodeType === Node.TEXT_NODE) {
-    const processedTextElement = document.getElementById('processedText');
     if (processedTextElement.contains(textNode)) {
       if (textNode.parentNode === processedTextElement.childNodes[1])
-        offset += Math.min(textBuffer.beginCaretPosition, textBuffer.endCaretPosition);
+        index += Math.min(textBuffer.beginCaretPosition, textBuffer.endCaretPosition);
       if (textNode.parentNode === processedTextElement.childNodes[2])
-        offset += Math.max(textBuffer.beginCaretPosition, textBuffer.endCaretPosition);
-      textBuffer.endCaretPosition = offset;
+        index += Math.max(textBuffer.beginCaretPosition, textBuffer.endCaretPosition);
+      textBuffer.endCaretPosition = index;
       textBuffer.renderText();
     }
   }
