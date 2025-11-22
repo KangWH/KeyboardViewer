@@ -475,6 +475,14 @@ const getComposingRulePreset = async (identifier) => {
   }
 }
 const inputSources = {
+  qwertzDE: {
+    names: {
+      en: 'QWERTZ (German)',
+      ja: 'QWERTZ（ドイツ）',
+      ko: 'QWERTZ (독일)',
+    },
+    directory: 'de'
+  },
   qwertyUK: {
     names: {
       en: 'QWERTY (UK)',
@@ -543,14 +551,14 @@ const inputSources = {
     },
     directory: 'ja'
   },
-  romaji: {
-    names: {
-      en: 'Romaji',
-      ja: 'ローマ字',
-      ko: '로마지'
-    },
-    directory: 'ja'
-  },
+  // romaji: {
+  //   names: {
+  //     en: 'Romaji',
+  //     ja: 'ローマ字',
+  //     ko: '로마지'
+  //   },
+  //   directory: 'ja'
+  // },
   dubeolsik: {
     names: {
       en: 'Dubeolsik',
