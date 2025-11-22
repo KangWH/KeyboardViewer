@@ -1,0 +1,369 @@
+{
+  "identifier": "kana",
+  "langid": "ja",
+  "keys": {
+    "Backquote": [
+      {"label": "全角/\n半角", "type": "composeMod", "subtype": "zenhan"}
+    ],
+    "Digit1": [
+      {"character": "ぬ", "type": "composeChar"}
+    ],
+    "Digit2": [
+      {"character": "ふ", "type": "composeChar"}
+    ],
+    "Digit3": [
+      {"character": "あ", "type": "composeChar"},
+      {"character": "ぁ", "type": "composeChar"}
+    ],
+    "Digit4": [
+      {"character": "う", "type": "composeChar"},
+      {"character": "ぅ", "type": "composeChar"}
+    ],
+    "Digit5": [
+      {"character": "え", "type": "composeChar"},
+      {"character": "ぇ", "type": "composeChar"}
+    ],
+    "Digit6": [
+      {"character": "お", "type": "composeChar"},
+      {"character": "ぉ", "type": "composeChar"}
+    ],
+    "Digit7": [
+      {"character": "や", "type": "composeChar"},
+      {"character": "ゃ", "type": "composeChar"}
+    ],
+    "Digit8": [
+      {"character": "ゆ", "type": "composeChar"},
+      {"character": "ゅ", "type": "composeChar"}
+    ],
+    "Digit9": [
+      {"character": "よ", "type": "composeChar"},
+      {"character": "ょ", "type": "composeChar"}
+    ],
+    "Digit0": [
+      {"character": "わ", "type": "composeChar"},
+      {"character": "を", "type": "composeChar"}
+    ],
+    "Minus": [
+      {"character": "ほ", "type": "composeChar"}
+    ],
+    "Equal": [
+      {"character": "へ", "type": "composeChar"}
+    ],
+    "IntlYen": [
+      {"character": "ー", "type": "composeChar"}
+    ],
+
+    "KeyQ": [
+      {"character": "た", "type": "composeChar"}
+    ],
+    "KeyW": [
+      {"character": "て", "type": "composeChar"}
+    ],
+    "KeyE": [
+      {"character": "い", "type": "composeChar"},
+      {"character": "ぃ", "type": "composeChar"}
+    ],
+    "KeyR": [
+      {"character": "す", "type": "composeChar"}
+    ],
+    "KeyT": [
+      {"character": "か", "type": "composeChar"}
+    ],
+    "KeyY": [
+      {"character": "ん", "type": "composeChar"}
+    ],
+    "KeyU": [
+      {"character": "な", "type": "composeChar"}
+    ],
+    "KeyI": [
+      {"character": "に", "type": "composeChar"}
+    ],
+    "KeyO": [
+      {"character": "ら", "type": "composeChar"}
+    ],
+    "KeyP": [
+      {"character": "せ", "type": "composeChar"}
+    ],
+    "BracketLeft": [
+      {"character": "゛", "type": "composeChar"}
+    ],
+    "BracketRight": [
+      {"character": "゜", "type": "composeChar"},
+      {"character": "「", "type": "composeChar"}
+    ],
+    "Backslash": [
+      {"character": "む", "type": "composeChar"},
+      {"character": "」", "type": "composeChar"}
+    ],
+    
+    "KeyA": [
+      {"character": "ち", "type": "composeChar"}
+    ],
+    "KeyS": [
+      {"character": "と", "type": "composeChar"}
+    ],
+    "KeyD": [
+      {"character": "し", "type": "composeChar"}
+    ],
+    "KeyF": [
+      {"character": "は", "type": "composeChar"}
+    ],
+    "KeyG": [
+      {"character": "き", "type": "composeChar"}
+    ],
+    "KeyH": [
+      {"character": "く", "type": "composeChar"}
+    ],
+    "KeyJ": [
+      {"character": "ま", "type": "composeChar"}
+    ],
+    "KeyK": [
+      {"character": "の", "type": "composeChar"}
+    ],
+    "KeyL": [
+      {"character": "り", "type": "composeChar"}
+    ],
+    "Semicolon": [
+      {"character": "れ", "type": "composeChar"}
+    ],
+    "Quote": [
+      {"character": "け", "type": "composeChar"}
+    ],
+    "Enter": [
+      {"type": "composeMod", "subtype": "select"}
+    ],
+
+    "KeyZ": [
+      {"character": "つ", "type": "composeChar"},
+      {"character": "っ", "type": "composeChar"}
+    ],
+    "KeyX": [
+      {"character": "さ", "type": "composeChar"}
+    ],
+    "KeyC": [
+      {"character": "そ", "type": "composeChar"}
+    ],
+    "KeyV": [
+      {"character": "ひ", "type": "composeChar"}
+    ],
+    "KeyB": [
+      {"character": "こ", "type": "composeChar"}
+    ],
+    "KeyN": [
+      {"character": "み", "type": "composeChar"}
+    ],
+    "KeyM": [
+      {"character": "も", "type": "composeChar"}
+    ],
+    "Comma": [
+      {"character": "ね", "type": "composeChar"},
+      {"character": "、", "type": "composeChar"}
+    ],
+    "Period": [
+      {"character": "る", "type": "composeChar"},
+      {"character": "。", "type": "composeChar"}
+    ],
+    "Slash": [
+      {"character": "め", "type": "composeChar"},
+      {"character": "・", "type": "composeChar"}
+    ],
+    "IntlRo": [
+      {"character": "ろ", "type": "composeChar"}
+    ],
+    
+    "Space": [
+      {"type": "composeMod", "subtype": "navigate"}
+    ],
+
+    "ArrowUp": [
+      {"type": "composeMod", "subtype": "navigate"}
+    ],
+    "ArrowLeft": [
+      {"type": "composeMod", "subtype": "move"}
+    ],
+    "ArrowRight": [
+      {"type": "composeMod", "subtype": "move"}
+    ],
+    "ArrowDown": [
+      {"type": "composeMod", "subtype": "navigate"}
+    ]
+  },
+  "composingRules": [
+    [
+      [
+        {"character": "か", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "が", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "き", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ぎ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "く", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ぐ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "け", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "げ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "こ", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ご", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "さ", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ざ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "し", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "じ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "す", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ず", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "せ", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ぜ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "そ", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ぞ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "た", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "だ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "ち", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ぢ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "つ", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "づ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "て", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "で", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "と", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ど", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "は", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ば", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "は", "type": "composeChar"},
+        {"character": "゜", "type": "composeChar"}
+      ],
+      [{"character": "ぱ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "ひ", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "び", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "ひ", "type": "composeChar"},
+        {"character": "゜", "type": "composeChar"}
+      ],
+      [{"character": "ぴ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "ふ", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ぶ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "ふ", "type": "composeChar"},
+        {"character": "゜", "type": "composeChar"}
+      ],
+      [{"character": "ぷ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "へ", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "べ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "へ", "type": "composeChar"},
+        {"character": "゜", "type": "composeChar"}
+      ],
+      [{"character": "ぺ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "ほ", "type": "composeChar"},
+        {"character": "゛", "type": "composeChar"}
+      ],
+      [{"character": "ぼ", "type": "composeChar"}]
+    ],
+    [
+      [
+        {"character": "ほ", "type": "composeChar"},
+        {"character": "゜", "type": "composeChar"}
+      ],
+      [{"character": "ぽ", "type": "composeChar"}]
+    ]
+  ],
+  "composer": "kana"
+}
