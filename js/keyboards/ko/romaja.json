@@ -1,10 +1,12 @@
 {
   "identifier": "romaja",
-  "langid": "ko",
-  "names": {
-    "default": "Latin Hangul Input",
-    "ko": "로마자 한글 입력기"
-  },
+  
+  "lang": "ko",
+  "script": "Hang",
+  "country": "KR",
+  
+  "altGr": false,
+
   "keys": {
     "Backquote": [
       {"character": "`"},

@@ -1,6 +1,13 @@
 {
   "identifier": "qwertyUSInternational",
-  "langid": "en",
+  
+  "lang": "en",
+  "script": "Latn",
+  "country": "US",
+  
+  "altGr": true,
+  "sourceOS": "Windows",
+
   "keys": {
     "Backquote": [
       {"value": 768, "label": "◌̀", "type": "dead"},
@@ -73,19 +80,19 @@
     "KeyQ": [
       {"character": "q", "label": " "},
       {"character": "Q"},
-      {"character": "ä"},
+      {"character": "ä", "label": " "},
       {"character": "Ä"}
     ],
     "KeyW": [
       {"character": "w", "label": " "},
       {"character": "W"},
-      {"character": "å"},
+      {"character": "å", "label": " "},
       {"character": "Å"}
     ],
     "KeyE": [
       {"character": "e", "label": " "},
       {"character": "E"},
-      {"character": "é"},
+      {"character": "é", "label": " "},
       {"character": "É"}
     ],
     "KeyR": [
@@ -96,37 +103,37 @@
     "KeyT": [
       {"character": "t", "label": " "},
       {"character": "T"},
-      {"character": "þ"},
+      {"character": "þ", "label": " "},
       {"character": "Þ"}
     ],
     "KeyY": [
       {"character": "y", "label": " "},
       {"character": "Y"},
-      {"character": "ü"},
+      {"character": "ü", "label": " "},
       {"character": "Ü"}
     ],
     "KeyU": [
       {"character": "u", "label": " "},
       {"character": "U"},
-      {"character": "ú"},
+      {"character": "ú", "label": " "},
       {"character": "Ú"}
     ],
     "KeyI": [
       {"character": "i", "label": " "},
       {"character": "I"},
-      {"character": "í"},
+      {"character": "í", "label": " "},
       {"character": "Í"}
     ],
     "KeyO": [
       {"character": "o", "label": " "},
       {"character": "O"},
-      {"character": "ó"},
+      {"character": "ó", "label": " "},
       {"character": "Ó"}
     ],
     "KeyP": [
       {"character": "p", "label": " "},
       {"character": "P"},
-      {"character": "ö"},
+      {"character": "ö", "label": " "},
       {"character": "Ö"}
     ],
     "BracketLeft": [
@@ -149,19 +156,19 @@
     "KeyA": [
       {"character": "a", "label": " "},
       {"character": "A"},
-      {"character": "á"},
+      {"character": "á", "label": " "},
       {"character": "Á"}
     ],
     "KeyS": [
       {"character": "s", "label": " "},
       {"character": "S"},
-      {"character": "ß"},
+      {"character": "ß", "label": " "},
       {"character": "§"}
     ],
     "KeyD": [
       {"character": "d", "label": " "},
       {"character": "D"},
-      {"character": "ð"},
+      {"character": "ð", "label": " "},
       {"character": "Ð"}
     ],
     "KeyF": [
@@ -187,7 +194,7 @@
     "KeyL": [
       {"character": "l", "label": " "},
       {"character": "L"},
-      {"character": "ø"},
+      {"character": "ø", "label": " "},
       {"character": "Ø"}
     ],
     "Semicolon": [
@@ -197,16 +204,16 @@
       {"character": "°"}
     ],
     "Quote": [
-      {"character": "'"},
-      {"character": "\""},
-      {"value": 769, "label": "◌́", "type": "dead"},
-      {"value": 776, "label": "◌̈", "type": "dead"}
+      {"character": "'", "label": "◌́", "type": "dead"},
+      {"character": "\"", "label": "◌̈", "type": "dead"},
+      {"character": "´"},
+      {"character": "¨"}
     ],
     
     "KeyZ": [
       {"character": "z", "label": " "},
       {"character": "Z"},
-      {"character": "æ"},
+      {"character": "æ", "label": " "},
       {"character": "Æ"}
     ],
     "KeyX": [
@@ -230,7 +237,7 @@
     "KeyN": [
       {"character": "n", "label": " "},
       {"character": "N"},
-      {"character": "ñ"},
+      {"character": "ñ", "label": " "},
       {"character": "Ñ"}
     ],
     "KeyM": [
@@ -241,7 +248,7 @@
     "Comma": [
       {"character": ","},
       {"character": "<"},
-      {"character": "ç"},
+      {"character": "ç", "label": " "},
       {"character": "Ç"}
     ],
     "Period": [
@@ -253,6 +260,5 @@
       {"character": "?"},
       {"character": "¿"}
     ]
-  },
-  "altGr": true
+  }
 }

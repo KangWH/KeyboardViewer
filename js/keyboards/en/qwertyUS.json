@@ -1,11 +1,13 @@
 {
   "identifier": "qwertyUS",
-  "langid": "en",
-  "names": {
-    "default": "QWERTY (US)",
-    "en": "QWERTY (US)",
-    "ko": "QWERTY (미국)"
-  },
+  
+  "lang": "en",
+  "script": "Latn",
+  "country": "US",
+  
+  "altGr": false,
+  "sourceOS": "Windows",
+
   "keys": {
     "Backquote": [
       {"character": "`"},
@@ -58,10 +60,6 @@
     "Equal": [
       {"character": "="},
       {"character": "+"}
-    ],
-    "IntlYen": [
-      {"character": "¥"},
-      {"character": "|"}
     ],
 
     "KeyQ": [
@@ -163,8 +161,8 @@
     ],
 
     "IntlBackslash": [
-      {"character": "§"},
-      {"character": "±"}
+      {"character": "\\"},
+      {"character": "|"}
     ],
     "KeyZ": [
       {"character": "z", "label": " "},
@@ -205,9 +203,6 @@
     "Slash": [
       {"character": "/"},
       {"character": "?"}
-    ],
-    "IntlRo": [
-      {"character": "_"}
     ]
   }
 }

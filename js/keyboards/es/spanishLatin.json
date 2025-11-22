@@ -1,13 +1,13 @@
 {
   "identifier": "spanishLatin",
-  "langid": "es",
-  "names": {
-    "default": "Spanish (Latin America)",
-    "es": "Español (América Latina)",
-    "en": "Spanish (Latin America)",
-    "ja": "スペイン語（ラテンアメリカ）",
-    "ko": "스페인어 (라틴 아메리카)"
-  },
+
+  "lang": "es",
+  "script": "Latn",
+  "region": "419",
+  
+  "altGr": true,
+  "sourceOS": "Windows",
+
   "keys": {
     "Backquote": [
       {"character": "|"},
@@ -60,8 +60,8 @@
       {"character": "\\"}
     ],
     "Equal": [
-      {"character": "¡"},
-      {"character": "¿"}
+      {"character": "¿"},
+      {"character": "¡"}
     ],
 
     "KeyQ": [
@@ -106,8 +106,8 @@
       {"character": "P"}
     ],
     "BracketLeft": [
-      {"character": "´", "type": "dead"},
-      {"character": "¨", "type": "dead"}
+      {"value": 769, "label": "◌́", "type": "dead"},
+      {"value": 776, "label": "◌̈", "type": "dead"}
     ],
     "BracketRight": [
       {"character": "+"},
@@ -117,7 +117,7 @@
     "Backslash": [
       {"character": "}"},
       {"character": "]"},
-      {"character": "`"}
+      {"value": 768, "label": "◌̀", "type": "dead"}
     ],
     
     "KeyA": [
@@ -163,7 +163,7 @@
     "Quote": [
       {"character": "{"},
       {"character": "["},
-      {"character": "^"}
+      {"value": 770, "label": "◌̂", "type": "dead"}
     ],
 
     "IntlBackslash": [

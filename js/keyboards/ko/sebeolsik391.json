@@ -1,10 +1,13 @@
 {
   "identifier": "sebeolsik391",
-  "langid": "ko",
-  "names": {
-    "default": "Sebeolsik 3-91",
-    "ko": "세벌식 3-91"
-  },
+  
+  "lang": "ko",
+  "script": "Hang",
+  "country": "KR",
+  
+  "altGr": false,
+  "sourceOS": "Windows",
+
   "keys": {
     "Backquote": [
       {"character": "*"},
@@ -51,7 +54,7 @@
       {"character": "~"}
     ],
     "Minus": [
-      {"character": "}"},
+      {"character": ")"},
       {"character": ";"}
     ],
     "Equal": [

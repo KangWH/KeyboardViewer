@@ -1,14 +1,17 @@
 {
   "identifier": "sebeolsik390",
-  "langid": "ko",
-  "names": {
-    "default": "Sebeolsik 3-90",
-    "ko": "세벌식 3-90"
-  },
+  
+  "lang": "ko",
+  "script": "Hang",
+  "country": "KR",
+  
+  "altGr": false,
+  "sourceOS": "Windows",
+
   "keys": {
     "Backquote": [
-      {"character": "~"},
-      {"character": "`"}
+      {"character": "`"},
+      {"character": "~"}
     ],
     "Digit1": [
       {"character": "ㅎ", "type": "composeChar", "subtype": "jong"},
@@ -108,8 +111,8 @@
       {"character": "}"}
     ],
     "Backslash": [
-      {"character": "|"},
-      {"character": "\\"}
+      {"character": "\\"},
+      {"character": "|"}
     ],
 
     "KeyA": [
@@ -187,11 +190,11 @@
     ],
     "Comma": [
       {"character": ","},
-      {"character": "<"}
+      {"character": "2"}
     ],
     "Period": [
       {"character": "."},
-      {"character": ">"}
+      {"character": "3"}
     ],
     "Slash": [
       {"character": "ㅗ", "type": "composeChar", "subtype": "jung"},

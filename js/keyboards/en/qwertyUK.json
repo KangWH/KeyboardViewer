@@ -1,6 +1,13 @@
 {
   "identifier": "qwertyUK",
-  "langid": "en",
+  
+  "lang": "en",
+  "script": "Latn",
+  "country": "UK",
+  
+  "altGr": true,
+  "sourceOS": "Windows",
+
   "keys": {
     "Backquote": [
       {"character": "`"},
@@ -115,7 +122,9 @@
     ],
     "Backslash": [
       {"character": "#"},
-      {"character": "~"}
+      {"character": "~"},
+      {"character": "\\"},
+      {"character": "|"}
     ],
     
     "KeyA": [

@@ -1,10 +1,13 @@
 {
   "identifier": "dubeolsikYethangul",
-  "langid": "ko",
-  "names": {
-    "default": "Dubeolsik Yethangul",
-    "ko": "두벌식 옛한글"
-  },
+  
+  "lang": "ko",
+  "script": "Hang",
+  "country": "KR",
+  
+  "altGr": false,
+  "sourceOS": "Windows",
+
   "keys": {
     "Backquote": [
       {"character": "`"},

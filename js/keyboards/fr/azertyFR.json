@@ -1,6 +1,13 @@
 {
   "identifier": "azertyFR",
-  "langid": "fr",
+  
+  "lang": "fr",
+  "script": "Latn",
+  "country": "FR",
+  
+  "altGr": true,
+  "sourceOS": "Windows",
+
   "keys": {
     "Backquote": [
       {"character": "²"},
@@ -13,7 +20,7 @@
     "Digit2": [
       {"character": "é"},
       {"character": "2"},
-      {"character": "~", "type": "dead"}
+      {"value": 771, "label": "◌̃", "type": "dead"}
     ],
     "Digit3": [
       {"character": "\""},
@@ -38,7 +45,7 @@
     "Digit7": [
       {"character": "è"},
       {"character": "7"},
-      {"character": "`", "type": "dead"}
+      {"value": 768, "label": "◌̀", "type": "dead"}
     ],
     "Digit8": [
       {"character": "_"},
@@ -108,8 +115,8 @@
       {"character": "P"}
     ],
     "BracketLeft": [
-      {"character": "^", "type": "dead"},
-      {"character": "¨", "type": "dead"}
+      {"value": 770, "label": "◌̂", "type": "dead"},
+      {"value": 776, "label": "◌̈", "type": "dead"}
     ],
     "BracketRight": [
       {"character": "$"},

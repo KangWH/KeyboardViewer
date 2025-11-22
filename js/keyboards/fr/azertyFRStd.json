@@ -1,6 +1,13 @@
 {
   "identifier": "azertyFRStd",
-  "langid": "fr",
+
+  "lang": "fr",
+  "script": "Latn",
+  "country": "FR",
+  
+  "altGr": true,
+  "sourceOS": "Windows",
+
   "keys": {
     "Backquote": [
       {"character": "@"},
@@ -82,7 +89,7 @@
     "KeyQ": [
       {"character": "a", "label": " "},
       {"character": "A"},
-      {"character": "æ"},
+      {"character": "æ", "label": " "},
       {"character": "Æ"}
     ],
     "KeyW": [
@@ -114,7 +121,7 @@
     "KeyU": [
       {"character": "u", "label": " "},
       {"character": "U"},
-      {"character": "ú"},
+      {"character": "ú", "label": " "},
       {"character": "Ú"}
     ],
     "KeyI": [
@@ -126,7 +133,7 @@
     "KeyO": [
       {"character": "o", "label": " "},
       {"character": "O"},
-      {"character": "œ"},
+      {"character": "œ", "label": " "},
       {"character": "Œ"}
     ],
     "KeyP": [
@@ -157,13 +164,13 @@
     "KeyA": [
       {"character": "q", "label": " "},
       {"character": "Q"},
-      {"character": "θ"},
+      {"character": "θ", "label": " "},
       {"character": "Θ"}
     ],
     "KeyS": [
       {"character": "s", "label": " "},
       {"character": "S"},
-      {"character": "ß"},
+      {"character": "ß", "label": " "},
       {"character": "ẞ"}
     ],
     "KeyD": [
@@ -184,7 +191,7 @@
     "KeyH": [
       {"character": "h", "label": " "},
       {"character": "H"},
-      {"character": "", "type": "dead"},
+      {"character": "ſ", "type": "dead"},
       {"value": 817, "label": "◌̱", "type": "dead"}
     ],
     "KeyJ": [
@@ -222,7 +229,7 @@
     "KeyZ": [
       {"character": "w", "label": " "},
       {"character": "W"},
-      {"character": "ʒ"},
+      {"character": "ʒ", "label": " "},
       {"character": "Ʒ"}
     ],
     "KeyX": [
@@ -233,7 +240,7 @@
     "KeyC": [
       {"character": "c", "label": " "},
       {"character": "C"},
-      {"character": "ç"},
+      {"character": "ç", "label": " "},
       {"character": "Ç"}
     ],
     "KeyV": [

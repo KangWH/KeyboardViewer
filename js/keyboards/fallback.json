@@ -1,11 +1,11 @@
 {
   "identifier": "fallback",
-  "langid": "en",
-  "names": {
-    "default": "Fallback layout",
-    "en": "Fallback layout",
-    "ko": "대체 레이아웃"
-  },
+  
+  "lang": "en",
+  "script": "Latn",
+
+  "altGr": false,
+
   "keys": {
     "Backquote": [
       {"character": "`"},

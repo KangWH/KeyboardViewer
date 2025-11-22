@@ -2,7 +2,14 @@ class InputSource {
   constructor (o) {
     try {
       this.identifier = o.identifier;
-      this.langid = o.langid;
+
+      this.lang = o.lang;
+      this.script = o.script;
+      this.country = o.country;
+      this.region = o.region;
+
+      this.altGr = o.altGr === undefined ? false : o.altGr;
+      this.sourceOS = o.sourceOS || 'general';
 
       this.keys = {};
       for (let code in o.keys) {

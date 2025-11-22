@@ -1,6 +1,13 @@
 {
   "identifier": "kana",
-  "langid": "ja",
+
+  "lang": "ja",
+  "script": "Jpan",
+  "country": "JP",
+  
+  "altGr": false,
+  "sourceOS": "Windows",
+
   "keys": {
     "Backquote": [
       {"label": "全角/\n半角", "type": "composeMod", "subtype": "zenhan"}
