@@ -1,5 +1,5 @@
 {
-  "identifier": "kana",
+  "identifier": "kanaNonJIS",
 
   "lang": "ja",
   "script": "Jpan",
@@ -10,8 +10,7 @@
 
   "keys": {
     "Backquote": [
-      {"label": "半角", "type": "composeMod", "subtype": "zenhan"},
-      {"label": "全角/", "type": "composeMod", "subtype": "zenhan"}
+      {"character": "ろ", "type": "composeChar"}
     ],
     "Digit1": [
       {"character": "ぬ", "type": "composeChar"}
@@ -52,13 +51,11 @@
       {"character": "を", "type": "composeChar"}
     ],
     "Minus": [
+      {"character": "ー", "type": "composeChar"},
       {"character": "ほ", "type": "composeChar"}
     ],
     "Equal": [
       {"character": "へ", "type": "composeChar"}
-    ],
-    "IntlYen": [
-      {"character": "ー", "type": "composeChar"}
     ],
 
     "KeyQ": [
@@ -93,17 +90,20 @@
       {"character": "せ", "type": "composeChar"}
     ],
     "BracketLeft": [
-      {"character": "゛", "type": "composeChar"}
+      {"character": "゛", "type": "composeChar"},
+      {"character": "「", "type": "composeChar"}
     ],
     "BracketRight": [
       {"character": "゜", "type": "composeChar"},
-      {"character": "「", "type": "composeChar"}
-    ],
-    "Backslash": [
-      {"character": "む", "type": "composeChar"},
       {"character": "」", "type": "composeChar"}
     ],
+    "Backslash": [
+      {"character": "む", "type": "composeChar"}
+    ],
     
+    "IntlBackslash": [
+      {"character": "む", "type": "composeChar"}
+    ],
     "KeyA": [
       {"character": "ち", "type": "composeChar"}
     ],
@@ -174,9 +174,6 @@
     "Slash": [
       {"character": "め", "type": "composeChar"},
       {"character": "・", "type": "composeChar"}
-    ],
-    "IntlRo": [
-      {"character": "ろ", "type": "composeChar"}
     ],
     
     "Space": [

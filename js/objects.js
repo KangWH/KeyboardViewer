@@ -552,6 +552,14 @@ const inputSources = {
     },
     directory: 'ja'
   },
+  kanaNonJIS: {
+    names: {
+      en: 'Kana (Non-JIS keyboard)',
+      ja: 'かな（非JISキーボード）',
+      ko: '가나 (비 JIS 키보드)'
+    },
+    directory: 'ja'
+  },
   // romaji: {
   //   names: {
   //     en: 'Romaji',
