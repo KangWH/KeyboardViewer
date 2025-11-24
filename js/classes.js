@@ -48,59 +48,76 @@ class InputSource {
   }
 
   showLayout () {
-    const oss = ['mac', 'win'];
-    const layouts = {mac: ['ansi', 'iso', 'jis'], win: ['ansi', 'iso', 'abnt', 'ks', 'jis']};
+    for (let keyCell of document.querySelectorAll('.keyCell')) {
+      keyCell.innerHTML = '';
 
-    for (let os of oss) {
-      for (let layout of layouts[os]) {
-        for (let code in this.keys) {
-          if (
-            !code.includes('Key') && !code.includes('Digit')
-            && !code.includes('Intl') && !code.includes('Bracket')
-            && !['Backquote', 'Backslash', 'Comma', 'Period', 'Slash', 'Equal', 'Minus', 'Semicolon', 'Quote'].includes(code)
-          )
-            continue;
+      const keyCode = keyCell.id;
+      const keyElement = document.createElement('div');
+      keyElement.classList.add('key');
+      keyCell.append(keyElement);
+      
+      const keyValues = this.keys[keyCode];
+      if (keyValues === undefined)
+        continue;
 
-          const keyValues = this.keys[code];
-          const keyNode = document.getElementById(`${os}-${layout}-${code}`);
-          if (keyNode) {
-            keyNode.innerHTML = '';
-            if (keyValues.length < 2 || !keyValues[1].label) {
-              const span = document.createElement('span');
-              span.classList.add('layersZeroOne');
-              span.textContent = keyValues[0].label;
-              keyNode.append(span);
-            } else if (!keyValues[0].label) {
-              const span = document.createElement('span');
-              span.classList.add('layersZeroOne');
-              span.textContent = keyValues[1].label;
-              keyNode.append(span);
-            } else {
-              const span1 = document.createElement('span');
-              span1.classList.add('layerOne');
-              span1.textContent = keyValues[1].label;
-              keyNode.append(span1);
-              const span0 = document.createElement('span');
-              span0.classList.add('layerZero');
-              span0.textContent = keyValues[0].label;
-              keyNode.append(span0);
-            }
-            if (keyValues.length > 2) {
-              const span = document.createElement('span');
-              span.classList.add('layerTwo');
-              span.textContent = keyValues[2].label;
-              keyNode.append(span);
-            }
-            if (keyValues.length > 3) {
-              const span = document.createElement('span');
-              span.classList.add('layerThree');
-              span.textContent = keyValues[3].label;
-              keyNode.append(span);
-            }
+      for (let i = 0; i < keyValues.length; i++) {
+        const keyLabelElement = document.createElement('span');
+        keyLabelElement.classList.add('keyLabel');
+        keyLabelElement.classList.add(`layer${i}`);
+        keyLabelElement.textContent = keyValues[i].label;
+        keyElement.append(keyLabelElement);
+
+        if (keyValues[i].type === 'dead')
+          keyLabelElement.classList.add('dead');
+        else if (this.lang === 'ko' && keyValues[i].type === 'composeChar')
+          keyLabelElement.classList.add(keyValues[i].subtype);
+      }
+
+      if (
+        keyValues.length > 1
+        && keyValues[0].type === keyValues[1].type
+        && keyValues[0].subtype === keyValues[1].subtype
+      ) {
+        const char0 = keyValues[0].character;
+        const char1 = keyValues[1].character;
+        if (char0 === char1) {
+          keyElement.querySelector('.layer0').remove();
+          keyElement.querySelector('.layer1').classList.add('layer0');
+        } else if (char0.toLowerCase() === char1.toLowerCase()) {
+          if (char0.toLowerCase() === char0) {
+            keyElement.querySelector('.layer0').classList.add('lowercase');
+            keyElement.querySelector('.layer1').classList.add('uppercase');
+          } else {
+            keyElement.querySelector('.layer0').classList.add('uppercase');
+            keyElement.querySelector('.layer1').classList.add('lowercase');
+          }
+        }
+      }
+      if (
+        keyValues.length > 3
+        && keyValues[2].type === keyValues[3].type
+        && keyValues[2].subtype === keyValues[3].subtype
+      ) {
+        const char0 = keyValues[2].character;
+        const char1 = keyValues[3].character;
+        if (char0 === char1) {
+          keyElement.querySelector('.layer2').remove();
+          keyElement.querySelector('.layer3').classList.add('layer0');
+        } else if (char0.toLowerCase() === char1.toLowerCase()) {
+          console.log(char0, char1);
+          if (char0.toLowerCase() === char0) {
+            keyElement.querySelector('.layer2').classList.add('lowercase');
+            keyElement.querySelector('.layer3').classList.add('uppercase');
+          } else {
+            keyElement.querySelector('.layer2').classList.add('uppercase');
+            keyElement.querySelector('.layer3').classList.add('lowercase');
           }
         }
       }
     }
+
+    document.getElementById('keyboard').classList.toggle('altGr', this.altGr);
+    document.getElementById('keyboard').classList.toggle('japanese', ['kana', 'romaji'].includes(this.identifier));
   }
 }
 

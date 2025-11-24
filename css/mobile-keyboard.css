@@ -1,0 +1,139 @@
+@media (max-width: 840px) {
+  :root {
+    --key-width: calc(100% / 12);
+    --key-height: 3em;
+    --row1-left-margin: 0;
+    --row2-left-margin: 0;
+    --row3-left-margin: 0;
+    --row4-left-margin: 1.5;
+  }
+
+  #Backslash {
+    left: calc(11 * var(--key-width)) !important;
+    bottom: calc(2 * var(--key-height)) !important;
+    width: var(--key-width) !important;
+  }
+  #ShiftLeft {width: calc(var(--row4-left-margin) * var(--key-width)) !important;}
+  #ShiftLeft::after {
+    content: "\21e7" !important;
+    inset: 0 !important;
+  }
+  #Backspace {
+    top: calc(3 * var(--key-height));
+    left: calc(10.5 * var(--key-width)) !important;
+    right: 0;
+  }
+  #Backspace::after {
+    content: "\232b" !important;
+    inset: 0 !important;
+  }
+
+  #Fn {opacity: 1 !important; transform: none !important;}
+  #AltRight {
+    left: var(--key-width);
+    bottom: 0;
+    width: calc(1.5 * var(--key-width)) !important;
+    opacity: 0; transform: scale(0); transform-origin: left;
+  }
+  #AltRight:before {display: none;}
+  #AltRight::after {content: "#+=" !important; inset: 0 !important;}
+  #Space {
+    left: calc(3 * var(--key-width)) !important;
+    right: calc(3 * var(--key-width)) !important;
+  }
+  #Backquote, #IntlYen {top: calc(4 * var(--key-height));}
+  #IntlBackslash, #Slash {bottom: 0 !important; width: var(--key-width);}
+  #IntlRo {left: calc(9 * var(--key-width)); bottom: 0;}
+  #Enter, #Ent {left: calc(10 * var(--key-width)) !important; bottom: 0 !important; height: var(--key-height) !important;}
+  #Enter::after {content: "\23ce" !important; inset: 0 !important;}
+
+  .altGr #AltRight {opacity: 1; transform: none;}
+
+  .ansi, .ks {
+    #Backquote {left: var(--key-width);}
+    #Slash {left: calc(9 * var(--key-width));}
+    #Space {
+      left: calc(2 * var(--key-width)) !important;
+      right: calc(3 * var(--key-width)) !important;
+    }
+  }
+  .ansi.altGr, .ks.altGr {
+    #Backquote {left: calc(2.5 * var(--key-width));}
+    #Space {
+      left: calc(3.5 * var(--key-width)) !important;
+      right: calc(3 * var(--key-width)) !important;
+    }
+    #Slash {left: calc(9 * var(--key-width));}
+    #Enter, #Ent {left: calc(10.5 * var(--key-width));}
+  }
+  .iso:not(.altGr), .abnt:not(.altGr) {
+    #IntlBackslash, #IntlRo {scale: 0; transform: scale(0);}
+    #Backquote {left: var(--key-width);}
+    #Space {
+      left: calc(3.5 * var(--key-width)) !important;
+      right: calc(3 * var(--key-width)) !important;
+    }
+    #Slash {left: calc(9 * var(--key-width));}
+  }
+  .iso.altGr, .abnt.altGr {
+    #AltRight {width: var(--key-width) !important;}
+    #Backquote {left: calc(2 * var(--key-width));}
+    #IntlBackslash {left: calc(3 * var(--key-width));}
+    #Space {
+      left: calc(4 * var(--key-width)) !important;
+      right: calc(4 * var(--key-width)) !important;
+    }
+    #Slash {left: calc(9 * var(--key-width));}
+  }
+  #keyboard.abnt.altGr {
+    #Slash {left: calc(8 * var(--key-width));}
+  }
+  .mac.jis {
+    #Digit1 {width: var(--key-width);}
+  }
+  .jis.windows {
+    #Backquote {left: calc(1 * var(--key-width)) !important;}
+    #IntlYen {left: calc(2 * var(--key-width)) !important;}
+    #Space {
+      left: calc(3 * var(--key-width)) !important;
+      right: calc(4 * var(--key-width)) !important;
+    }
+    #Slash {left: calc(8 * var(--key-width)) !important;}
+  }
+  #keyboard.jis.japanese,
+  #keyboard.mac.jis {
+    #Backquote {opacity: 0; transform: scale(0);}
+    #IntlYen {left: var(--key-width) !important;}
+    #Space {
+      left: calc(2 * var(--key-width)) !important;
+      right: calc(4 * var(--key-width)) !important;
+    }
+    #Slash {left: calc(8 * var(--key-width)) !important;}
+    #IntlRo {left: calc(9 * var(--key-width)) !important;}
+  }
+  #keyboard.windows.jis.altGr {
+    #AltRight {width: var(--key-width) !important;}
+    #Backquote {left: calc(2 * var(--key-width)) !important;}
+    #IntlYen {left: calc(3 * var(--key-width)) !important;}
+    #Space {
+      left: calc(4 * var(--key-width)) !important;
+      right: calc(4 * var(--key-width)) !important;
+    }
+    #Slash {left: calc(8 * var(--key-width)) !important;}
+    #IntlRo {left: calc(9 * var(--key-width)) !important;}
+  }
+  #keyboard.mac.jis.altGr {
+    #IntlYen {left: calc(2.5 * var(--key-width)) !important;}
+    #Space {
+      left: calc(3.5 * var(--key-width)) !important;
+      right: calc(3.5 * var(--key-width)) !important;
+    }
+    #Slash {left: calc(8.5 * var(--key-width)) !important;}
+    #IntlRo {left: calc(9.5 * var(--key-width)) !important;}
+    #Enter, #Ent {left: calc(10.5 * var(--key-width)) !important;}
+  }
+
+  #Tab, #CapsLock, #ShiftRight, #ControlLeft, #MetaLeft, #AltLeft, #NonConvert, #Lang2, #Lang1, #Convert, #KanaMode, #MetaRight, #ContextMenu, #ControlRight, #Fn2 {
+    opacity: 0 !important; transform: scale(0) !important;
+  }
+}

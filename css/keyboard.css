@@ -1,0 +1,449 @@
+:root {
+  --key-width: calc(100% / 15);
+  --key-height: 4em;
+  --row1-left-margin: 1;
+  --row2-left-margin: 1.5;
+  --row3-left-margin: 1.75;
+  --row4-left-margin: 2.25;
+}
+
+#keyboard {
+  position: relative;
+  width: 100%;
+  max-width: 60em;
+  height: calc(5 * var(--key-height));
+
+  transition: width .5s, height .5s;
+  transition-timing-function: linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+}
+/* @media (min-width: 841px) { */
+  #keyboard.mac {
+    --key-width: calc(100% / 14.5);
+    max-width: 58em;
+  }
+/* } */
+
+.keyCell {
+  position: absolute;
+  width: var(--key-width);
+  height: var(--key-height);
+
+  color: black;
+
+  transition: inset .5s, width .5s, height .5s, transform .5s, opacity .5s;
+  transition-timing-function: linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+
+  &:hover .key,
+  &.pressed .key {
+    background-color: #EEE;
+  }
+  &:hover:active .key {
+    background-color: #DDD;
+  }
+}
+.keyCell::before, .keyCell::after {
+  position: absolute;
+  z-index: 1;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+
+  transition: inset .5s;
+}
+
+#Backquote {
+  top: 0; left: 0;
+  transform-origin: left top;
+}
+#Digit1 {top: 0; left: calc(var(--row1-left-margin) * var(--key-width));}
+#Digit2 {top: 0; left: calc((var(--row1-left-margin) + 1) * var(--key-width));}
+#Digit3 {top: 0; left: calc((var(--row1-left-margin) + 2) * var(--key-width));}
+#Digit4 {top: 0; left: calc((var(--row1-left-margin) + 3) * var(--key-width));}
+#Digit5 {top: 0; left: calc((var(--row1-left-margin) + 4) * var(--key-width));}
+#Digit6 {top: 0; left: calc((var(--row1-left-margin) + 5) * var(--key-width));}
+#Digit7 {top: 0; left: calc((var(--row1-left-margin) + 6) * var(--key-width));}
+#Digit8 {top: 0; left: calc((var(--row1-left-margin) + 7) * var(--key-width));}
+#Digit9 {top: 0; left: calc((var(--row1-left-margin) + 8) * var(--key-width));}
+#Digit0 {top: 0; left: calc((var(--row1-left-margin) + 9) * var(--key-width));}
+#Minus {top: 0; left: calc((var(--row1-left-margin) + 10) * var(--key-width));}
+#Equal {top: 0; left: calc((var(--row1-left-margin) + 11) * var(--key-width));}
+#IntlYen {
+  top: 0; left: calc((var(--row1-left-margin) + 12) * var(--key-width));
+  opacity: 0; transform: scale(0); transform-origin: left;
+}
+#Backspace {top: 0; left: calc((var(--row1-left-margin) + 12) * var(--key-width)); right: 0; width: unset;}
+
+#Tab {
+  bottom: calc(3 * var(--key-height));
+  left: 0; width: calc(var(--row2-left-margin) * var(--key-width));
+  transform-origin: left;
+}
+#KeyQ {bottom: calc(3 * var(--key-height)); left: calc(var(--row2-left-margin) * var(--key-width));}
+#KeyW {bottom: calc(3 * var(--key-height)); left: calc((var(--row2-left-margin) + 1) * var(--key-width));}
+#KeyE {bottom: calc(3 * var(--key-height)); left: calc((var(--row2-left-margin) + 2) * var(--key-width));}
+#KeyR {bottom: calc(3 * var(--key-height)); left: calc((var(--row2-left-margin) + 3) * var(--key-width));}
+#KeyT {bottom: calc(3 * var(--key-height)); left: calc((var(--row2-left-margin) + 4) * var(--key-width));}
+#KeyY {bottom: calc(3 * var(--key-height)); left: calc((var(--row2-left-margin) + 5) * var(--key-width));}
+#KeyU {bottom: calc(3 * var(--key-height)); left: calc((var(--row2-left-margin) + 6) * var(--key-width));}
+#KeyI {bottom: calc(3 * var(--key-height)); left: calc((var(--row2-left-margin) + 7) * var(--key-width));}
+#KeyO {bottom: calc(3 * var(--key-height)); left: calc((var(--row2-left-margin) + 8) * var(--key-width));}
+#KeyP {bottom: calc(3 * var(--key-height)); left: calc((var(--row2-left-margin) + 9) * var(--key-width));}
+#BracketLeft {bottom: calc(3 * var(--key-height)); left: calc((var(--row2-left-margin) + 10) * var(--key-width));}
+#BracketRight {bottom: calc(3 * var(--key-height)); left: calc((var(--row2-left-margin) + 11) * var(--key-width));}
+#Backslash {
+  left: calc((var(--row2-left-margin) + 12) * var(--key-width));
+  bottom: calc(3 * var(--key-height));
+  width: calc(1.5 * var(--key-width));
+}
+#Ent {
+  left: calc((var(--row2-left-margin) + 12) * var(--key-width)); right: 0;
+  bottom: calc(2 * var(--key-height));
+  width: unset;
+}
+
+#CapsLock {
+  left: 0; width: calc(var(--row3-left-margin) * var(--key-width));
+  bottom: calc(2 * var(--key-height));
+  transform-origin: left;
+}
+#KeyA {bottom: calc(2 * var(--key-height)); left: calc(var(--row3-left-margin) * var(--key-width));}
+#KeyS {bottom: calc(2 * var(--key-height)); left: calc((var(--row3-left-margin) + 1) * var(--key-width));}
+#KeyD {bottom: calc(2 * var(--key-height)); left: calc((var(--row3-left-margin) + 2) * var(--key-width));}
+#KeyF {bottom: calc(2 * var(--key-height)); left: calc((var(--row3-left-margin) + 3) * var(--key-width));}
+#KeyG {bottom: calc(2 * var(--key-height)); left: calc((var(--row3-left-margin) + 4) * var(--key-width));}
+#KeyH {bottom: calc(2 * var(--key-height)); left: calc((var(--row3-left-margin) + 5) * var(--key-width));}
+#KeyJ {bottom: calc(2 * var(--key-height)); left: calc((var(--row3-left-margin) + 6) * var(--key-width));}
+#KeyK {bottom: calc(2 * var(--key-height)); left: calc((var(--row3-left-margin) + 7) * var(--key-width));}
+#KeyL {bottom: calc(2 * var(--key-height)); left: calc((var(--row3-left-margin) + 8) * var(--key-width));}
+#Semicolon {bottom: calc(2 * var(--key-height)); left: calc((var(--row3-left-margin) + 9) * var(--key-width));}
+#Quote {bottom: calc(2 * var(--key-height)); left: calc((var(--row3-left-margin) + 10) * var(--key-width));}
+#Enter {
+  left: calc((var(--row3-left-margin) + 11) * var(--key-width));
+  right: 0;
+  bottom: calc(2 * var(--key-height));
+  width: unset;
+}
+
+#ShiftLeft {bottom: var(--key-height); left: 0; width: calc(var(--row4-left-margin) * var(--key-width));}
+#ShiftLeft:after {left: .4rem;}
+#IntlBackslash {
+  left: calc((var(--row4-left-margin) - 1) * var(--key-width));
+  bottom: var(--key-height);
+  opacity: 0; transform: scale(0); transform-origin: right;
+}
+#KeyZ {bottom: var(--key-height); left: calc(var(--row4-left-margin) * var(--key-width));}
+#KeyX {bottom: var(--key-height); left: calc((var(--row4-left-margin) + 1) * var(--key-width));}
+#KeyC {bottom: var(--key-height); left: calc((var(--row4-left-margin) + 2) * var(--key-width));}
+#KeyV {bottom: var(--key-height); left: calc((var(--row4-left-margin) + 3) * var(--key-width));}
+#KeyB {bottom: var(--key-height); left: calc((var(--row4-left-margin) + 4) * var(--key-width));}
+#KeyN {bottom: var(--key-height); left: calc((var(--row4-left-margin) + 5) * var(--key-width));}
+#KeyM {bottom: var(--key-height); left: calc((var(--row4-left-margin) + 6) * var(--key-width));}
+#Comma {bottom: var(--key-height); left: calc((var(--row4-left-margin) + 7) * var(--key-width));}
+#Period {bottom: var(--key-height); left: calc((var(--row4-left-margin) + 8) * var(--key-width));}
+#Slash {bottom: var(--key-height); left: calc((var(--row4-left-margin) + 9) * var(--key-width));}
+#IntlRo {
+  left: calc((var(--row4-left-margin) + 10) * var(--key-width));
+  bottom: var(--key-height);
+  opacity: 0; transform: scale(0); transform-origin: left;
+}
+#ShiftRight {
+  left: calc((var(--row4-left-margin) + 10) * var(--key-width));
+  right: 0;
+  bottom: var(--key-height);
+  width: unset;
+  transform-origin: bottom right;
+}
+#ShiftRight:after {right: .4rem;}
+
+#Fn {
+  bottom: 0; left: 0;
+  opacity: 0; transform: scale(0); transform-origin: left bottom;
+  &::after {content: "fn"; left: .4rem; bottom: .4rem; font-size: .9em;}
+}
+#ControlLeft {bottom: 0; left: 0; width: calc(1.5 * var(--key-width));}
+#ControlLeft:before {top: .4rem; left: .4rem;}
+#ControlLeft:after {left: .4rem;}
+#MetaLeft {bottom: 0; left: calc(1.5 * var(--key-width));}
+#MetaLeft:before, #MetaRight:before {top: .4rem;}
+#AltLeft {bottom: 0; left: calc(2.5 * var(--key-width)); width: calc(1.5 * var(--key-width));}
+#AltLeft:before, #AltRight:before {top: .4rem;}
+#Lang2, #NonConvert {
+  bottom: 0; left: calc(4 * var(--key-width));
+  opacity: 0; transform: scale(0); transform-origin: left;
+}
+#Lang2::after {content: "한자";}
+#NonConvert::after {content: "無変換"; inset: 0;}
+#Space {bottom: 0; left: calc(4 * var(--key-width)); right: calc(5 * var(--key-width)); width: unset;}
+#Convert {
+  bottom: 0; right: calc(5 * var(--key-width));
+  opacity: 0; transform: scale(0); transform-origin: right;
+  &::after {content: "変換"; inset: 0;}
+}
+#Lang1, #KanaMode {
+  bottom: 0; right: calc(5 * var(--key-width));
+  opacity: 0; transform: scale(0); transform-origin: right;
+}
+#Lang1::after {content: "한/영";}
+#AltRight {bottom: 0; right: calc(3.5 * var(--key-width)); width: calc(1.5 * var(--key-width));}
+#MetaRight {bottom: 0; right: calc(2.5 * var(--key-width));}
+#ContextMenu {
+  bottom: 0; right: calc(1.5 * var(--key-width));
+  transform-origin: right;
+  &::after {content: "Menu"; inset: 0;}
+}
+#ControlRight {bottom: 0; right: 0; width: calc(1.5 * var(--key-width));}
+#ControlRight:before {top: .4em; right: .4em;}
+#ControlRight:after {right: .4em;}
+#Fn2 {
+  bottom: 0; right: 0;
+  opacity: 0; transform: scale(0); transform-origin: right bottom;
+  &::after {content: "fn"; right: .4rem; bottom: .4rem; font-size: .9em;}
+}
+
+#keyboard:has(#Enter:hover) {
+  #Ent .key {background-color: #EEE;}
+}
+#keyboard:has(#Enter:hover:active) {
+  #Ent .key {background-color: #DDD;}
+}
+#keyboard:has(#Ent:hover) {
+  #Enter .key {background-color: #EEE;}
+}
+#keyboard:has(#Ent:hover:active) {
+  #Enter .key {background-color: #DDD;}
+}
+
+/* @media (min-width: 841px) { */
+  .windows {
+    & #Backspace::after {content: "Backspace"; top: 0; right: .4rem; bottom: 0;}
+    & #Tab::after {content: "Tab"; top: 0; left: .4rem; bottom: 0;}
+    & #CapsLock::after {content: "Caps"; top: 0; left: .4rem; bottom: 0;}
+    & #Enter::after {content: "Enter"; top: 0; right: .4rem; bottom: 0;}
+    & #ShiftLeft::after, & #ShiftRight::after {content: "Shift"; top: 0; bottom: 0;}
+    & #ControlLeft::after, & #ControlRight::after {content: "Ctrl"; top: 0; bottom: 0;}
+    & #ControlLeft::after {left: .4rem;}
+    & #ControlRight::after {right: .4rem;}
+    & #MetaLeft::after, & #MetaRight::after {content: "Win"; inset: 0;}
+    & #AltLeft::after, & #AltRight::after {content: "Alt"; inset: 0;}
+    & #Lang2::after, #Lang1::after {inset: 0;}
+    & #KanaMode::before {
+      content: "カタカナ\Aひらがな";
+      
+      top: .4rem;
+      left: 0;
+      right: 0;
+      padding-bottom: .5em;
+
+      border-bottom: 1px solid black;
+      
+      white-space: pre-wrap;
+
+      font-size: .8rem;
+    }
+    & #KanaMode::after {content: "ローマ字"; left: 0; right: 0; bottom: .4rem; font-size: .8rem;}
+  }
+  .windows.altGr #AltRight::after {content: "Alt Gr";}
+
+  .windows.alt:is(.ansi, .ks) {
+    & #Backslash {
+      left: calc((var(--row1-left-margin) + 12) * var(--key-width));
+      bottom: calc(4 * var(--key-height));
+      width: var(--key-width);
+    }
+    & #Backspace {left: calc((var(--row1-left-margin) + 13) * var(--key-width));}
+    & #Backspace::after {content: "\232b";}
+    & #Ent {height: calc(2 * var(--key-height));}
+  }
+
+  .windows.ks {
+    & #NonConvert {transform: none;}
+    & #Lang2, & #Lang1 {opacity: 1; transform: none;}
+    & #Space {left: calc(5 * var(--key-width)); right: calc(6 * var(--key-width));}
+    & #Convert {right: calc(6 * var(--key-width));}
+    & #KanaMode {transform: none;}
+  }
+
+  :is(.iso, .abnt, .jis) #Ent {left: calc((var(--row2-left-margin) + 12) * var(--key-width)); bottom: calc(3 * var(--key-height));}
+  :is(.iso, .abnt, .jis) #Enter {left: calc((var(--row3-left-margin) + 12) * var(--key-width)); height: calc(2 * var(--key-height));}
+  :is(.iso, .abnt, .jis) #Backslash {
+    left: calc((var(--row3-left-margin) + 11) * var(--key-width));
+    bottom: calc(2 * var(--key-height));
+    width: var(--key-width);
+  }
+  :is(.iso, .abnt) #IntlBackslash {opacity: 1; transform: none;}
+  :is(.iso, .abnt) #ShiftLeft {width: calc((var(--row4-left-margin) - 1) * var(--key-width));}
+
+  :is(.abnt, .jis) #IntlRo {opacity: 1; transform: none;}
+  :is(.abnt, .jis) #ShiftRight {left: calc((var(--row4-left-margin) + 11) * var(--key-width));}
+
+  .jis #IntlYen {opacity: 1; transform: none;}
+  .windows.jis {
+    & #Backspace {left: calc((var(--row1-left-margin) + 13) * var(--key-width));}
+    & #Backspace::after {content: "\232b";}
+    & #NonConvert, #KanaMode {opacity: 1; transform: none;}
+    & #Lang2, & #Lang1 {transform: none;}
+    & #Lang2 {left: calc(4 * var(--key-width));}
+    & #Lang2::after {content: "英数";}
+    & #Space {left: calc(5 * var(--key-width)); right: calc(7 * var(--key-width));}
+    & #Convert {right: calc(6 * var(--key-width)); opacity: 1; transform: none;}
+  }
+
+  .japanese #Backquote {
+    &::before {
+      content: "全角\A半角";
+      top: .4rem;
+      left: .4rem;
+      padding-bottom: .5em;
+      white-space: pre-wrap;
+      border-bottom: 1px solid black;
+      font-size: .8rem;
+    }
+    &::after {
+      content: "漢字";
+      left: .4rem;
+      bottom: .4rem;
+      font-size: .8rem;
+    }
+
+    & .keyLabel {display: none;}
+  }
+
+  .mac {
+    & #Backspace::after {content: "\232b"; top: 2.7rem; right: .4em; bottom: .4em;}
+    & #Tab::after {content: "\21e5"; top: 2.7rem; left: .4em; bottom: .4em;}
+    & #Backslash {width: var(--key-width);}
+    & #CapsLock::after {content: "\21ea"; top: 2.7rem; left: .4em; bottom: .4em;}
+    & #Enter::after {content: "\23ce"; top: 2.7rem; right: .4em; bottom: .4em;}
+    &:not(.alt) #Fn {opacity: 1; transform: unset;}
+    &:not(.alt) #ControlLeft {left: var(--key-width); width: var(--key-width);}
+    & #ShiftLeft::after, & #ShiftRight::after {content: "\21e7"; top: 2.7rem; bottom: .4rem;}
+    & #ControlLeft::before, & #ControlRight::before {content: "\2303";}
+    & #ControlLeft::after, & #ControlRight::after {content: "control"; top: 2.7rem; bottom: .4rem; font-size: .9em;}
+    & #AltLeft {left: calc(2 * var(--key-width)); width: var(--key-width);}
+    & #AltLeft::before, & #AltRight::before {content: "\2325";}
+    & #AltLeft::after, & #AltRight::after {content: "option"; top: 2.7rem; bottom: .4rem; font-size: .9em;}
+    & #AltLeft:before, & #AltLeft:after, & #MetaLeft:before, & #MetaLeft:after {left: .4rem;}
+    & #AltRight:before, & #AltRight:after, & #MetaRight:before, & #MetaRight:after {right: .4rem;}
+    & #MetaLeft {left: calc(3 * var(--key-width)); width: calc(1.25 * var(--key-width));}
+    & #MetaLeft::before, & #MetaRight::before {content: "\2318";}
+    & #MetaLeft::after, & #MetaRight::after {content: "command"; top: 2.7rem; bottom: .4rem; font-size: .9em;}
+    & #Lang2 {left: calc(4.25 * var(--key-width));}
+    & #Lang2:after {top: 2.7rem; left: .4rem; bottom: .4rem;}
+    & #Space {left: calc(4.25 * var(--key-width)); right: calc(4.25 * var(--key-width));}
+    & #Lang1, & #KanaMode {right: calc(4.25 * var(--key-width));}
+    & #Lang1:after {top: 2.7rem; right: .4rem; bottom: .4rem;}
+    & #KanaMode::after {content: "かな"; top: 2.7rem; right: .4rem; bottom: .4rem;}
+    & #MetaRight {right: calc(2.75 * var(--key-width)); width: calc(1.5 * var(--key-width));}
+    & #AltRight {right: calc(1.5 * var(--key-width)); width: calc(1.25 * var(--key-width));}
+    & #ContextMenu {opacity: 0; transform: scale(0);}
+    @media (max-width: 1024px) {
+      & #MetaLeft::after, & #MetaRight::after {content: "cmd";}
+    }
+  }
+  .mac.alt {
+    & #AltLeft {left: calc(1.5 * var(--key-width)); width: calc(1.25 * var(--key-width));}
+    & #MetaLeft {left: calc(2.75 * var(--key-width)); width: calc(1.5 * var(--key-width));}
+  }
+
+  .mac.ks {
+    & #Lang2 {left: calc(4.25 * var(--key-width)); opacity: 1; transform: none;}
+    & #Space {left: calc(5.25 * var(--key-width)); right: calc(5.25 * var(--key-width));}
+    & #Lang1 {opacity: 1; transform: none;}
+    & #KanaMode {transform: none;}
+  }
+
+  .mac.jis {
+    --row1-left-margin: .25;
+    --row2-left-margin: 1;
+    --row3-left-margin: 1.25;
+    --row4-left-margin: 1.75;
+
+    & #Backquote {opacity: 0; transform: scale(0);}
+    & #Digit1 {left: 0; width: calc(1.25 * var(--key-width));}
+    & #Backspace {left: calc((var(--row1-left-margin) + 13) * var(--key-width));}
+
+    & #ControlLeft {bottom: calc(2 * var(--key-height)); left: 0; width: calc(var(--row3-left-margin) * var(--key-width));}
+
+    & #Fn {opacity: 0; transform: scale(0);}
+    & #CapsLock {bottom: 0; width: var(--key-width);}
+    & #AltLeft {left: var(--key-width); width: var(--key-width);}
+    & #MetaLeft {left: calc(2 * var(--key-width)); width: calc(1.25 * var(--key-width));}
+    & #NonConvert {left: calc(3.25 * var(--key-width)); width: calc(1.25 * var(--key-width)); transform: none;}
+    & #Lang2 {left: calc(3.25 * var(--key-width)); width: calc(1.25 * var(--key-width)); opacity: 1; transform: none;}
+    & #Lang2::after {content: "英数";}
+    & #Space {left: calc(4.5 * var(--key-width)); right: calc(6.5 * var(--key-width));}
+    & #Lang1 {right: calc(5.25 * var(--key-width)); width: calc(1.25 * var(--key-width)); transform: none;}
+    & #KanaMode {right: calc(5.25 * var(--key-width)); width: calc(1.25 * var(--key-width)); opacity: 1; transform: none;}
+    & #MetaRight {right: calc(4 * var(--key-width)); width: calc(1.25 * var(--key-width));}
+    & #AltRight {right: calc(2.5 * var(--key-width)); width: calc(1.5 * var(--key-width));}
+    & #ControlRight {right: var(--key-width); width: calc(1.5 * var(--key-width));}
+    &:not(.alt) #Fn2 {opacity: 1; transform: none;}
+  }
+  .mac.alt.jis {
+    & #AltRight {right: calc(2 * var(--key-width)); width: calc(2 * var(--key-width));}
+    & #ControlRight {right: 0; width: calc(2 * var(--key-width));}
+  }
+/* } */
+
+.key {
+  position: relative;
+  margin: .15em;
+  width: calc(100% - .3em);
+  height: calc(100% - .3em);
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: .25em;
+
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+
+  background-color: var(--key-background-color);
+  border-radius: .45em;
+
+  text-align: center;
+  line-height: 1;
+  color: var(--key-color);
+
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+
+  transition: background-color .2s, border-color .2s, color .2s;
+
+  &:hover,
+  &.pressed {
+    background-color: color-mix(in srgb, var(--key-background-color), transparent 20%);
+
+    &:active {
+      background-color: color-mix(in srgb, var(--key-background-color), transparent 40%);
+    }
+  }
+}
+
+.keyLabel {
+  position: absolute;
+  margin: auto;
+  width: fit-content;
+  min-width: 1em;
+  height: fit-content;
+  padding: .1em;
+
+  /* background-color: #22222220; */
+
+  border-radius: .25em;
+}
+.layer0, .layer1 {left: 0; right: 0; font-size: 1.15rem;}
+.layer2, .layer3 {right: .25rem; font-weight: 300;}
+.layer0, .layer2 {top: 2rem; bottom: .3rem;}
+.layer1, .layer3 {top: .3rem; bottom: 2rem;}
+.layer0.layer1 {top: 0; bottom: 0;}
+.lowercase {display: none;}
+:is(.layer0, .layer1).uppercase {top: 0; bottom: 0;}
+/* .keyLabel.dead {background-color: #FF000020;}
+.keyLabel.ja {background-color: #E0800020;}
+.keyLabel.cho {background-color: #0000FF20;}
+.keyLabel.jung {background-color: #00FF8020;}
+.keyLabel.jong {background-color: #ff00A020;} */

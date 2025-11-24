@@ -702,7 +702,7 @@ const activeInputSource = {
     return this.data.keys[code];
   },
   getKeyValue: function (code, layer) {
-    const keyValues = this.getKeyValue(code);
+    const keyValues = this.getKeyValues(code);
     if (keyValues)
       return keyValues[layer];
     return undefined;

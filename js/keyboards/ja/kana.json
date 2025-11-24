@@ -10,8 +10,8 @@
 
   "keys": {
     "Backquote": [
-      {"label": "半角", "type": "composeMod", "subtype": "zenhan"},
-      {"label": "全角/", "type": "composeMod", "subtype": "zenhan"}
+      {"type": "composeMod", "subtype": "zenhan"},
+      {"type": "composeMod", "subtype": "zenhan"}
     ],
     "Digit1": [
       {"character": "ぬ", "type": "composeChar"}

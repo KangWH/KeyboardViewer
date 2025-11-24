@@ -6,12 +6,11 @@ const keyDownEvent = (e) => {
   document.getElementById('keyField').textContent = `↓ ${e.code}`;
 
   /* 화면 키보드 그림에 누른 키 표시 */
-  const keyboardTypes = ['mac-ansi', 'mac-iso', 'mac-jis', 'win-ansi', 'win-iso', 'win-abnt', 'win-ks', 'win-jis'];
-  for (let item of keyboardTypes) {
-    const targetKey = document.getElementById(`${item}-${e.code}`);
-    if (targetKey)
-      targetKey.classList.add('pressed');
-  }
+  try {
+  document.getElementById(e.code).classList.add('pressed');
+  if (e.code === 'Enter')
+    document.getElementById('Ent').classList.add('pressed');
+  } catch (err) {}
 
   /* 단축키 처리 */
   let isHotkeyUsed = false;
@@ -121,11 +120,17 @@ const keyDownEvent = (e) => {
   if (e.code.substring(0, 6) === 'Numpad' && e.code !== 'NumpadEnter')
     textBuffer.addCharacter(e.key);
   else if (activeInputSource.getKeyValues(e.code)) {
-    const keyValues = activeInputSource.getKeyValues(e.code);
+    // const keyValues = activeInputSource.getKeyValues(e.code);
     // 레이어 선택하는 코드는 activeInputSource 안으로 옮기기
-    const keyValue = e.shiftKey && e.altKey ? keyValues[keyValues.length - 1]
-      : !e.shiftKey && e.altKey ? keyValues[2] || keyValues[0]
-      : e.shiftKey && !e.altKey ? keyValues[1] || keyValues[0] : keyValues[0];
+    // const keyValue = e.shiftKey && e.altKey ? keyValues[keyValues.length - 1]
+    //   : !e.shiftKey && e.altKey ? keyValues[2] || keyValues[0]
+    //   : e.shiftKey && !e.altKey ? keyValues[1] || keyValues[0] : keyValues[0];
+    const layer = e.shiftKey && e.altKey ? 3
+      : !e.shiftKey && e.altKey ? 2
+      : e.shiftKey && !e.altKey ? 1 : 0;
+    const keyValue = activeInputSource.getKeyValue(e.code, layer);
+    if (keyValue === undefined)
+      return;
     
     switch (keyValue.type) {
     case KeyType.move:
@@ -247,21 +252,20 @@ const keyUpEvent = (e) => {
   document.getElementById('keyField').textContent = `↑ ${e.code}`;
 
   /* 화면 키보드 그림에 뗀 키 표시 */
-  const keyboardTypes = ['mac-ansi', 'mac-iso', 'mac-jis', 'win-ansi', 'win-iso', 'win-abnt', 'win-ks', 'win-jis'];
-  for (let item of keyboardTypes) {
-    const targetKey = document.getElementById(`${item}-${e.code}`);
-    if (targetKey)
-      targetKey.classList.remove('pressed');
-  }
-  // command 키를 뗄 때 눌렀던 모든 키(조합 키 제외)를 떼도록 처리
-  if (e.code.substring(0, 4) === 'Meta' && os === 'macOS') {
-    for (let keyElement of document.querySelectorAll('.key.pressed')) {
-      const code = keyElement.id.split('-')[2];
-      if (!code.includes('Meta') && (code.includes('Left') || code.includes('Right')))
-        continue;
-      keyElement.classList.remove('pressed');
+  try {
+    document.getElementById(e.code).classList.remove('pressed');
+    if (e.code === 'Enter')
+      document.getElementById('Ent').classList.remove('pressed');
+    // command 키를 뗄 때 눌렀던 모든 키(조합 키 제외)를 떼도록 처리
+    if (e.code.substring(0, 4) === 'Meta' && os === 'macOS') {
+      for (let keyCellElement of document.querySelectorAll('.keyCell.pressed')) {
+        const cellCode = keyCellElement.id;
+        if (['ControlLeft', 'ControlRight', 'AltLeft', 'AltRight', 'ShiftLeft', 'ShiftRight'].includes(cellCode))
+          continue;
+        keyCellElement.classList.remove('pressed');
+      }
     }
-  }
+  } catch (err) {}
 }
 document.getElementById('processedText').addEventListener('keydown', keyDownEvent);
 document.getElementById('processedText').addEventListener('keyup', keyUpEvent);

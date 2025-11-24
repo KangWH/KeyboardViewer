@@ -7,6 +7,7 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/keyboard.css" />
   </head>
   <body>
     <noscript>
@@ -28,771 +29,95 @@
       <p style="text-align: center; font-weight: 200;">NOTE: This page is currently not fully implemented and is experimental.</p>
     </aside>
     <main>
-      <div role="tablist">
-        <button role="tab" aria-controls="macANSI">Mac: ANSI</button>
-        <button role="tab" aria-controls="macISO">Mac: ISO</button>
-        <button role="tab" aria-controls="macJIS">Mac: JIS</button>
-        <button role="tab" aria-controls="winANSI">Windows: ANSI</button>
-        <button role="tab" aria-controls="winISO">Windows: ISO</button>
-        <button role="tab" aria-controls="winABNT">Windows: ABNT2</button>
-        <button role="tab" aria-controls="winKS">Windows: KS</button>
-        <button role="tab" aria-controls="winJIS">Windows: JIS</button>
+      <div style="display: flex; flex-flow: row nowrap; justify-content: center; gap: 1em;">
+        <select id="keyboardLayoutVendorType">
+          <option value="windows">Windows</option>
+          <option value="windowsAlt">Windows (Large Enter key)</option>
+          <option value="mac">macOS</option>
+          <option value="macAlt">macOS (No fn key)</option>
+        </select>
+        <select id="keyboardLayoutLanguageType">
+          <option value="ansi">ANSI</option>
+          <option value="ks">KS</option>
+          <option value="iso">ISO</option>
+          <option value="abnt">ABNT</option>
+          <option value="jis">JIS</option>
+        </select>
       </div>
-      <div role="tabpanel" id="macANSI">
-        <div class="keyboard">
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key bottomLeftLabel" id="mac-ansi-Escape"><span>esc</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F1"><span>F1</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F2"><span>F2</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F3"><span>F3</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F4"><span>F4</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F5"><span>F5</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F6"><span>F6</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F7"><span>F7</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F8"><span>F8</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F9"><span>F9</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F10"><span>F10</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F11"><span>F11</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-ansi-F12"><span>F12</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel"><span>&#x23cf;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Backquote"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Digit1"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Digit2"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Digit3"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Digit4"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Digit5"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Digit6"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Digit7"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Digit8"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Digit9"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Digit0"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Minus"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Equal"></div></div>
-            <div class="keycell-6fr"><div class="key bottomRightLabel" id="mac-ansi-Backspace"><span>&#x232b;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key bottomLeftLabel" id="mac-ansi-Tab"><span>&#x21e5;</span></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyQ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyW"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyE"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyR"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyT"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyY"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyU"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyI"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyO"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyP"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-BracketLeft"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-BracketRight"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Backslash"></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-7fr"><div class="key bottomLeftLabel" id="mac-ansi-CapsLock"><span>&#x21ea;</span></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyA"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyS"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyD"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyF"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyG"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyH"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyJ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyK"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyL"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Semicolon"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Quote"></div></div>
-            <div class="keycell-7fr"><div class="key bottomRightLabel" id="mac-ansi-Enter"><span>&#x23ce;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-9fr"><div class="key bottomLeftLabel" id="mac-ansi-ShiftLeft"><span>&#x21e7;</span></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyZ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyX"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyC"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyV"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyB"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyN"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-KeyM"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Comma"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Period"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-ansi-Slash"></div></div>
-            <div class="keycell-9fr"><div class="key bottomRightLabel" id="mac-ansi-ShiftRight"><span>&#x21e7;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key bottomLeftLabel"><span>fn</span></div></div>
-            <div class="keycell-4fr"><div class="key macModifierLeft" id="mac-ansi-ControlLeft"><span>&#x2303;</span><span>control</span></div></div>
-            <div class="keycell-4fr"><div class="key macModifierLeft" id="mac-ansi-AltLeft"><span>&#x2325;</span><span>option</span></div></div>
-            <div class="keycell-5fr"><div class="key macModifierLeft" id="mac-ansi-MetaLeft"><span>&#x2318;</span><span>command</span></div></div>
-            <div class="keycell-space"><div class="key" id="mac-ansi-Space">&nbsp;</div></div>
-            <div class="keycell-6fr"><div class="key macModifierRight" id="mac-ansi-MetaRight"><span>&#x2318;</span><span>command</span></div></div>
-            <div class="keycell-5fr"><div class="key macModifierRight" id="mac-ansi-AltRight"><span>&#x2325;</span><span>option</span></div></div>
-            <div class="keycell-6fr"><div class="key macModifierRight" id="mac-ansi-ControlRight"><span>&#x2303;</span><span>control</span></div></div>
-          </div>
-        </div>
-      </div>
-      <div role="tabpanel" id="macISO">
-        <div class="keyboard">
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key bottomLeftLabel" id="mac-iso-Escape"><span>esc</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F1"><span>F1</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F2"><span>F2</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F3"><span>F3</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F4"><span>F4</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F5"><span>F5</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F6"><span>F6</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F7"><span>F7</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F8"><span>F8</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F9"><span>F9</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F10"><span>F10</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F11"><span>F11</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-iso-F12"><span>F12</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel"><span>&#x23cf;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key" id="mac-iso-IntlBackslash"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Digit1"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Digit2"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Digit3"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Digit4"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Digit5"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Digit6"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Digit7"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Digit8"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Digit9"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Digit0"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Minus"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Equal"></div></div>
-            <div class="keycell-6fr"><div class="key bottomRightLabel" id="mac-iso-Backspace"><span>&#x232b;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key bottomLeftLabel" id="mac-iso-Tab"><span>&#x21e5;</span></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyQ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyW"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyE"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyR"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyT"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyY"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyU"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyI"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyO"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyP"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-BracketLeft"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-BracketRight"></div></div>
-            <div class="keycell-4fr"><div class="key longReturn bottomRightLabel" id="mac-iso-Enter"><span>&#x23ce;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-7fr"><div class="key bottomLeftLabel" id="mac-iso-CapsLock"><span>&#x21ea;</span></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyA"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyS"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyD"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyF"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyG"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyH"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyJ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyK"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyL"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Semicolon"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Quote"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Backslash"></div></div>
-            <div class="keycell-3fr"></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-5fr"><div class="key bottomLeftLabel" id="mac-iso-ShiftLeft"><span>&#x21e7;</span></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Backquote"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyZ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyX"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyC"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyV"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyB"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyN"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-KeyM"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Comma"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Period"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-iso-Slash"></div></div>
-            <div class="keycell-9fr"><div class="key bottomRightLabel" id="mac-iso-ShiftRight"><span>&#x21e7;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key bottomLeftLabel"><span>fn</span></div></div>
-            <div class="keycell-4fr"><div class="key macModifierLeft" id="mac-iso-ControlLeft"><span>&#x2303;</span><span>control</span></div></div>
-            <div class="keycell-4fr"><div class="key macModifierLeft" id="mac-iso-AltLeft"><span>&#x2325;</span><span>option</span></div></div>
-            <div class="keycell-5fr"><div class="key macModifierLeft" id="mac-iso-MetaLeft"><span>&#x2318;</span><span>command</span></div></div>
-            <div class="keycell-space"><div class="key" id="mac-iso-Space">&nbsp;</div></div>
-            <div class="keycell-6fr"><div class="key macModifierRight" id="mac-iso-MetaRight"><span>&#x2318;</span><span>command</span></div></div>
-            <div class="keycell-5fr"><div class="key macModifierRight" id="mac-iso-AltRight"><span>&#x2325;</span><span>option</span></div></div>
-            <div class="keycell-6fr"><div class="key macModifierRight" id="mac-iso-ControlRight"><span>&#x2303;</span><span>control</span></div></div>
-          </div>
-        </div>
-      </div>
-      <div role="tabpanel" id="macJIS">
-        <div class="keyboard">
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key bottomLeftLabel" id="mac-jis-Escape"><span>esc</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F1"><span>F1</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F2"><span>F2</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F3"><span>F3</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F4"><span>F4</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F5"><span>F5</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F6"><span>F6</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F7"><span>F7</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F8"><span>F8</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F9"><span>F9</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F10"><span>F10</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F11"><span>F11</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="mac-jis-F12"><span>F12</span></div></div>
-            <div class="keycell-4fr"><div class="key singleLabel"><span>&#x23cf;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-5fr"><div class="key" id="mac-jis-Digit1"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Digit2"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Digit3"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Digit4"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Digit5"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Digit6"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Digit7"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Digit8"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Digit9"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Digit0"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Minus"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Equal"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-IntlYen"></div></div>
-            <div class="keycell-5fr"><div class="key bottomRightLabel" id="mac-jis-Backspace"><span>&#x232b;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key bottomLeftLabel" id="mac-jis-Tab"><span>&#x21e5;</span></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyQ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyW"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyE"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyR"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyT"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyY"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyU"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyI"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyO"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyP"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-BracketLeft"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-BracketRight"></div></div>
-            <div class="keycell-6fr"><div class="key longReturn bottomRightLabel" id="mac-jis-Enter"><span>&#x23ce;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-5fr"><div class="key macModifierLeft" id="mac-jis-ControlLeft"><span>&#x2303;</span><span>control</span></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyA"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyS"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyD"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyF"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyG"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyH"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyJ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyK"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyL"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Semicolon"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Quote"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Backslash"></div></div>
-            <div class="keycell-5fr"></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-7fr"><div class="key bottomLeftLabel" id="mac-jis-ShiftLeft"><span>&#x21e7;</span></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyZ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyX"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyC"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyV"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyB"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyN"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-KeyM"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Comma"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Period"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-Slash"></div></div>
-            <div class="keycell-4fr"><div class="key" id="mac-jis-IntlRo"></div></div>
-            <div class="keycell-7fr"><div class="key bottomRightLabel" id="mac-jis-ShiftRight"><span>&#x21e7;</span></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key bottomLeftLabel" id="mac-jis-CapsLock"><span>&#x21ea;</span></div></div>
-            <div class="keycell-4fr"><div class="key macModifierLeft" id="mac-jis-AltLeft"><span>&#x2325;</span><span>option</span></div></div>
-            <div class="keycell-5fr"><div class="key macModifierLeft" id="mac-jis-MetaLeft"><span>&#x2318;</span><span>command</span></div></div>
-            <div class="keycell-5fr"><div class="key bottomLeftLabel" id="Lang2">英数</div></div>
-            <div class="keycell-space"><div class="key" id="mac-jis-Space">&nbsp;</div></div>
-            <div class="keycell-5fr"><div class="key bottomRightLabel" id="KanaMode">かな</div></div>
-            <div class="keycell-5fr"><div class="key macModifierRight" id="mac-jis-MetaRight"><span>&#x2318;</span><span>command</span></div></div>
-            <div class="keycell-6fr"><div class="key macModifierRight" id="mac-jis-AltRight"><span>&#x2325;</span><span>option</span></div></div>
-            <div class="keycell-6fr"><div class="key macModifierRight" id="mac-jis-ControlRight"><span>&#x2303;</span><span>control</span></div></div>
-            <div class="keycell-4fr"><div class="key bottomRightLabel">fn</div></div>
-          </div>
-        </div>
-      </div>
-      <div role="tabpanel" id="winANSI">
-        <div class="keyboard">
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key centerLeftLabel" id="win-ansi-Escape">Esc</div></div>
-            <div class="keycell-4fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F1">F1</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F2">F2</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F3">F3</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F4">F4</div></div>
-            <div class="keycell-2fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F5">F5</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F6">F6</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F7">F7</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F8">F8</div></div>
-            <div class="keycell-2fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F9">F9</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F10">F10</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F11">F11</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-F12">F12</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Backquote"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Digit1"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Digit2"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Digit3"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Digit4"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Digit5"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Digit6"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Digit7"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Digit8"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Digit9"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Digit0"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Minus"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Equal"></div></div>
-            <div class="keycell-8fr"><div class="key centerRightLabel" id="win-ansi-Backspace">Backspace</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key centerLeftLabel" id="win-ansi-Tab">Tab</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyQ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyW"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyE"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyR"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyT"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyY"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyU"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyI"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyO"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyP"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-BracketLeft"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-BracketRight"></div></div>
-            <div class="keycell-6fr"><div class="key" id="win-ansi-Backslash"></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-7fr"><div class="key centerLeftLabel" id="win-ansi-CapsLock">Caps</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyA"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyS"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyD"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyF"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyG"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyH"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyJ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyK"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyL"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Semicolon"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Quote"></div></div>
-            <div class="keycell-9fr"><div class="key centerRightLabel" id="win-ansi-Enter">Enter</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-9fr"><div class="key centerLeftLabel" id="win-ansi-ShiftLeft">Shift</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyZ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyX"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyC"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyV"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyB"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyN"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-KeyM"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Comma"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Period"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ansi-Slash"></div></div>
-            <div class="keycell-11fr"><div class="key centerRightLabel" id="win-ansi-ShiftRight">Shift</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key centerLeftLabel" id="win-ansi-ControlLeft">Ctrl</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-MetaLeft">&#x2756;</div></div>
-            <div class="keycell-6fr"><div class="key singleLabel" id="win-ansi-AltLeft">Alt</div></div>
-            <div class="keycell-space"><div class="key" id="win-ansi-Space">&nbsp;</div></div>
-            <div class="keycell-6fr"><div class="key singleLabel" id="win-ansi-AltRight">Alt</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-MetaRight">&#x2756;</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ansi-ContextMenu">&#x2b12;</div></div>
-            <div class="keycell-6fr"><div class="key centerRightLabel" id="win-ansi-ControlRight">Ctrl</div></div>
-          </div>
-        </div>
-      </div>
-      <div role="tabpanel" id="winISO">
-        <div class="keyboard">
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key centerLeftLabel" id="win-iso-Escape">Esc</div></div>
-            <div class="keycell-4fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F1">F1</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F2">F2</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F3">F3</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F4">F4</div></div>
-            <div class="keycell-2fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F5">F5</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F6">F6</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F7">F7</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F8">F8</div></div>
-            <div class="keycell-2fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F9">F9</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F10">F10</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F11">F11</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-F12">F12</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key" id="win-iso-Backquote"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Digit1"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Digit2"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Digit3"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Digit4"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Digit5"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Digit6"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Digit7"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Digit8"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Digit9"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Digit0"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Minus"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Equal"></div></div>
-            <div class="keycell-8fr"><div class="key centerRightLabel" id="win-iso-Backspace">Backspace</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key centerLeftLabel" id="win-iso-Tab">Tab</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyQ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyW"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyE"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyR"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyT"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyY"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyU"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyI"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyO"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyP"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-BracketLeft"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-BracketRight"></div></div>
-            <div class="keycell-6fr"><div class="key longReturn bottomRightLabel" id="win-iso-Enter">Enter</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-7fr"><div class="key centerLeftLabel" id="win-iso-CapsLock">Caps</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyA"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyS"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyD"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyF"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyG"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyH"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyJ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyK"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyL"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Semicolon"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Quote"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Backslash"></div></div>
-            <div class="keycell-5fr"></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-5fr"><div class="key centerLeftLabel" id="win-iso-ShiftLeft">Shift</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-IntlBackslash"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyZ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyX"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyC"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyV"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyB"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyN"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-KeyM"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Comma"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Period"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-iso-Slash"></div></div>
-            <div class="keycell-11fr"><div class="key centerRightLabel" id="win-iso-ShiftRight">Shift</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key centerLeftLabel" id="win-iso-ControlLeft">Ctrl</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-MetaLeft">&#x2756;</div></div>
-            <div class="keycell-6fr"><div class="key singleLabel" id="win-iso-AltLeft">Alt</div></div>
-            <div class="keycell-space"><div class="key" id="win-iso-Space">&nbsp;</div></div>
-            <div class="keycell-6fr"><div class="key singleLabel" id="win-iso-AltRight">Alt Gr</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-MetaRight">&#x2756;</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-iso-ContextMenu">&#x2b12;</div></div>
-            <div class="keycell-6fr"><div class="key centerRightLabel" id="win-iso-ControlRight">Ctrl</div></div>
-          </div>
-        </div>
-      </div>
-      <div role="tabpanel" id="winABNT">
-        <div class="keyboard">
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key centerLeftLabel" id="win-abnt-Escape">Esc</div></div>
-            <div class="keycell-4fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F1">F1</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F2">F2</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F3">F3</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F4">F4</div></div>
-            <div class="keycell-2fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F5">F5</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F6">F6</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F7">F7</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F8">F8</div></div>
-            <div class="keycell-2fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F9">F9</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F10">F10</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F11">F11</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-F12">F12</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Backquote"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Digit1"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Digit2"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Digit3"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Digit4"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Digit5"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Digit6"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Digit7"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Digit8"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Digit9"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Digit0"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Minus"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Equal"></div></div>
-            <div class="keycell-8fr"><div class="key centerRightLabel" id="win-abnt-Backspace">Backspace</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key centerLeftLabel" id="win-abnt-Tab">Tab</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyQ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyW"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyE"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyR"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyT"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyY"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyU"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyI"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyO"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyP"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-BracketLeft"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-BracketRight"></div></div>
-            <div class="keycell-6fr"><div class="key longReturn bottomRightLabel" id="win-abnt-Enter">Enter</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-7fr"><div class="key centerLeftLabel" id="win-abnt-CapsLock">Caps</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyA"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyS"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyD"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyF"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyG"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyH"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyJ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyK"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyL"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Semicolon"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Quote"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Backslash"></div></div>
-            <div class="keycell-5fr"></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-5fr"><div class="key centerLeftLabel" id="win-abnt-ShiftLeft">Shift</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-IntlBackslash"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyZ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyX"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyC"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyV"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyB"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyN"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-KeyM"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Comma"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Period"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-Slash"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-abnt-IntlRo"></div></div>
-            <div class="keycell-7fr"><div class="key centerRightLabel" id="win-abnt-ShiftRight">Shift</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key centerLeftLabel" id="win-abnt-ControlLeft">Ctrl</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-MetaLeft">&#x2756;</div></div>
-            <div class="keycell-6fr"><div class="key singleLabel" id="win-abnt-AltLeft">Alt</div></div>
-            <div class="keycell-space"><div class="key" id="win-abnt-Space">&nbsp;</div></div>
-            <div class="keycell-6fr"><div class="key singleLabel" id="win-abnt-AltRight">Alt</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-MetaRight">&#x2756;</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-abnt-ContextMenu">&#x2b12;</div></div>
-            <div class="keycell-6fr"><div class="key centerRightLabel" id="win-abnt-ControlRight">Ctrl</div></div>
-          </div>
-        </div>
-      </div>
-      <div role="tabpanel" id="winKS">
-        <div class="keyboard">
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key centerLeftLabel" id="win-ks-Escape">Esc</div></div>
-            <div class="keycell-4fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F1">F1</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F2">F2</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F3">F3</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F4">F4</div></div>
-            <div class="keycell-2fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F5">F5</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F6">F6</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F7">F7</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F8">F8</div></div>
-            <div class="keycell-2fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F9">F9</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F10">F10</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F11">F11</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-F12">F12</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key" id="win-ks-Backquote"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Digit1"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Digit2"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Digit3"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Digit4"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Digit5"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Digit6"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Digit7"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Digit8"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Digit9"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Digit0"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Minus"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Equal"></div></div>
-            <div class="keycell-8fr"><div class="key centerRightLabel" id="win-ks-Backspace">Backspace</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key centerLeftLabel" id="win-ks-Tab">Tab</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyQ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyW"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyE"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyR"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyT"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyY"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyU"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyI"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyO"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyP"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-BracketLeft"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-BracketRight"></div></div>
-            <div class="keycell-6fr"><div class="key" id="win-ks-Backslash"></div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-7fr"><div class="key centerLeftLabel" id="win-ks-CapsLock">Caps</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyA"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyS"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyD"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyF"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyG"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyH"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyJ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyK"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyL"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Semicolon"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Quote"></div></div>
-            <div class="keycell-9fr"><div class="key centerRightLabel" id="win-ks-Enter">Enter</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-9fr"><div class="key centerLeftLabel" id="win-ks-ShiftLeft">Shift</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyZ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyX"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyC"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyV"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyB"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyN"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-KeyM"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Comma"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Period"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-ks-Slash"></div></div>
-            <div class="keycell-11fr"><div class="key centerRightLabel" id="win-ks-ShiftRight">Shift</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key centerLeftLabel" id="win-ks-ControlLeft">Ctrl</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-MetaLeft">&#x2756;</div></div>
-            <div class="keycell-6fr"><div class="key singleLabel" id="win-ks-AltLeft">Alt</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-Lang2">한자</div></div>
-            <div class="keycell-space"><div class="key" id="win-ks-Space">&nbsp;</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-Lang1">한/영</div></div>
-            <div class="keycell-6fr"><div class="key singleLabel" id="win-ks-AltRight">Alt</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-MetaRight">&#x2756;</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-ks-ContextMenu">&#x2b12;</div></div>
-            <div class="keycell-6fr"><div class="key centerRightLabel" id="win-ks-ControlRight">Ctrl</div></div>
-          </div>
-        </div>
-      </div>
-      <div role="tabpanel" id="winJIS">
-        <div class="keyboard">
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key centerLeftLabel" id="win-jis-Escape">Esc</div></div>
-            <div class="keycell-4fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F1">F1</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F2">F2</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F3">F3</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F4">F4</div></div>
-            <div class="keycell-2fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F5">F5</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F6">F6</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F7">F7</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F8">F8</div></div>
-            <div class="keycell-2fr"></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F9">F9</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F10">F10</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F11">F11</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-F12">F12</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-Backquote">全角/<br />半角</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Digit1"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Digit2"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Digit3"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Digit4"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Digit5"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Digit6"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Digit7"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Digit8"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Digit9"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Digit0"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Minus"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Equal"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-IntlYen"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Backspace">Backspace</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key centerLeftLabel" id="win-jis-Tab">Tab</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyQ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyW"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyE"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyR"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyT"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyY"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyU"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyI"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyO"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyP"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-BracketLeft"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-BracketRight"></div></div>
-            <div class="keycell-6fr"><div class="key longReturn bottomRightLabel" id="win-jis-Enter">Enter</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-7fr"><div class="key centerLeftLabel" id="win-jis-CapsLock">Caps</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyA"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyS"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyD"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyF"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyG"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyH"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyJ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyK"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyL"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Semicolon"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Quote"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Backslash"></div></div>
-            <div class="keycell-5fr"></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-9fr"><div class="key centerLeftLabel" id="win-jis-ShiftLeft">Shift</div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyZ"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyX"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyC"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyV"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyB"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyN"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-KeyM"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Comma"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Period"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-Slash"></div></div>
-            <div class="keycell-4fr"><div class="key" id="win-jis-IntlRo"></div></div>
-            <div class="keycell-7fr"><div class="key centerRightLabel" id="win-jis-ShiftRight">Shift</div></div>
-          </div>
-          <div class="keyrow">
-            <div class="keycell-6fr"><div class="key centerLeftLabel" id="win-jis-ControlLeft">Ctrl</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-MetaLeft">&#x2756;</div></div>
-            <div class="keycell-6fr"><div class="key singleLabel" id="win-jis-AltLeft">Alt</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-NonConvert">無変換</div></div>
-            <div class="keycell-space"><div class="key" id="win-jis-Space">&nbsp;</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-Convert">変換</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-KanaMode"><span style="font-size: .9em;">カタカナ<br />ひらがな<br />ローマ字</span></div></div>
-            <div class="keycell-6fr"><div class="key singleLabel" id="win-jis-AltRight">Alt</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-MetaRight">&#x2756;</div></div>
-            <div class="keycell-4fr"><div class="key singleLabel" id="win-jis-ContextMenu">&#x2b12;</div></div>
-            <div class="keycell-6fr"><div class="key centerRightLabel" id="win-jis-ControlRight">Ctrl</div></div>
-          </div>
+      <div style="display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;">
+        <div id="keyboard" class="ansi windows">
+          <div class="keyCell" id="Backquote"></div>
+          <div class="keyCell" id="Digit1"></div>
+          <div class="keyCell" id="Digit2"></div>
+          <div class="keyCell" id="Digit3"></div>
+          <div class="keyCell" id="Digit4"></div>
+          <div class="keyCell" id="Digit5"></div>
+          <div class="keyCell" id="Digit6"></div>
+          <div class="keyCell" id="Digit7"></div>
+          <div class="keyCell" id="Digit8"></div>
+          <div class="keyCell" id="Digit9"></div>
+          <div class="keyCell" id="Digit0"></div>
+          <div class="keyCell" id="Minus"></div>
+          <div class="keyCell" id="Equal"></div>
+          <div class="keyCell" id="IntlYen"></div>
+          <div class="keyCell modifier" id="Backspace"></div>
+          <div class="keyCell modifier" id="Tab"></div>
+          <div class="keyCell" id="KeyQ"></div>
+          <div class="keyCell" id="KeyW"></div>
+          <div class="keyCell" id="KeyE"></div>
+          <div class="keyCell" id="KeyR"></div>
+          <div class="keyCell" id="KeyT"></div>
+          <div class="keyCell" id="KeyY"></div>
+          <div class="keyCell" id="KeyU"></div>
+          <div class="keyCell" id="KeyI"></div>
+          <div class="keyCell" id="KeyO"></div>
+          <div class="keyCell" id="KeyP"></div>
+          <div class="keyCell" id="BracketLeft"></div>
+          <div class="keyCell" id="BracketRight"></div>
+          <div class="keyCell" id="Backslash"></div>
+          <div class="keyCell modifier" id="Ent"></div>
+          <div class="keyCell modifier" id="CapsLock"></div>
+          <div class="keyCell" id="KeyA"></div>
+          <div class="keyCell" id="KeyS"></div>
+          <div class="keyCell" id="KeyD"></div>
+          <div class="keyCell" id="KeyF"></div>
+          <div class="keyCell" id="KeyG"></div>
+          <div class="keyCell" id="KeyH"></div>
+          <div class="keyCell" id="KeyJ"></div>
+          <div class="keyCell" id="KeyK"></div>
+          <div class="keyCell" id="KeyL"></div>
+          <div class="keyCell" id="Semicolon"></div>
+          <div class="keyCell" id="Quote"></div>
+          <div class="keyCell modifier" id="Enter"></div>
+          <div class="keyCell modifier" id="ShiftLeft"></div>
+          <div class="keyCell" id="IntlBackslash"></div>
+          <div class="keyCell" id="KeyZ"></div>
+          <div class="keyCell" id="KeyX"></div>
+          <div class="keyCell" id="KeyC"></div>
+          <div class="keyCell" id="KeyV"></div>
+          <div class="keyCell" id="KeyB"></div>
+          <div class="keyCell" id="KeyN"></div>
+          <div class="keyCell" id="KeyM"></div>
+          <div class="keyCell" id="Comma"></div>
+          <div class="keyCell" id="Period"></div>
+          <div class="keyCell" id="Slash"></div>
+          <div class="keyCell" id="IntlRo"></div>
+          <div class="keyCell modifier" id="ShiftRight"></div>
+          <div class="keyCell modifier" id="Fn"></div>
+          <div class="keyCell modifier" id="ControlLeft"></div>
+          <div class="keyCell modifier" id="MetaLeft"></div>
+          <div class="keyCell modifier" id="AltLeft"></div>
+          <div class="keyCell modifier" id="NonConvert"></div>
+          <div class="keyCell modifier" id="Lang2"></div>
+          <div class="keyCell" id="Space"></div>
+          <div class="keyCell modifier" id="Convert"></div>
+          <div class="keyCell modifier" id="KanaMode"></div>
+          <div class="keyCell modifier" id="Lang1"></div>
+          <div class="keyCell modifier" id="AltRight"></div>
+          <div class="keyCell modifier" id="MetaRight"></div>
+          <div class="keyCell modifier" id="ContextMenu"></div>
+          <div class="keyCell modifier" id="ControlRight"></div>
+          <div class="keyCell modifier" id="Fn2"></div>
         </div>
       </div>
     </main>
@@ -859,7 +184,6 @@
         </div>
       </div>
     </dialog>
-    <script src="js/tabEvent.js"></script>
     <script src="js/classes.js"></script>
     <script src="js/objects.js"></script>
     <script src="js/keyboardEvent.js"></script>
