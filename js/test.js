@@ -1,7 +1,7 @@
 (async () => {
-  await activeInputSources.addSource('qwertyUS');
-  await activeInputSources.addSource('dubeolsikYethangul');
   await activeInputSources.addSource('sebeolsik391');
+  await activeInputSources.addSource('dubeolsikYethangul');
+  await activeInputSources.addSource('qwertyUS');
   activeInputSources.useSource(0);
 })();
 

@@ -265,6 +265,7 @@
 
   :is(.iso, .abnt, .jis) #Ent {left: calc((var(--row2-left-margin) + 12) * var(--key-width)); bottom: calc(3 * var(--key-height));}
   :is(.iso, .abnt, .jis) #Enter {left: calc((var(--row3-left-margin) + 12) * var(--key-width)); height: calc(2 * var(--key-height));}
+  :is(.iso, .abnt, .jis) #Enter:after {bottom: calc(var(--key-height) + .4rem);}
   :is(.iso, .abnt, .jis) #Backslash {
     left: calc((var(--row3-left-margin) + 11) * var(--key-width));
     bottom: calc(2 * var(--key-height));
@@ -413,15 +414,15 @@
 
   transition: background-color .2s, border-color .2s, color .2s;
 
-  &:hover,
-  &.pressed {
+  &:hover {
     background-color: color-mix(in srgb, var(--key-background-color), transparent 20%);
-
-    &:active {
-      background-color: color-mix(in srgb, var(--key-background-color), transparent 40%);
-    }
+  }
+  &.pressed,
+  &:active {
+    background-color: color-mix(in srgb, var(--key-background-color), transparent 40%);
   }
 }
+/* .modifier .key {background-color: #DDD;} */
 
 .keyLabel {
   position: absolute;
@@ -442,8 +443,8 @@
 .layer0.layer1 {top: 0; bottom: 0;}
 .lowercase {display: none;}
 :is(.layer0, .layer1).uppercase {top: 0; bottom: 0;}
-/* .keyLabel.dead {background-color: #FF000020;}
+.keyLabel.dead {background-color: #FF000020;}
 .keyLabel.ja {background-color: #E0800020;}
 .keyLabel.cho {background-color: #0000FF20;}
 .keyLabel.jung {background-color: #00FF8020;}
-.keyLabel.jong {background-color: #ff00A020;} */
+.keyLabel.jong {background-color: #ff00A020;}
