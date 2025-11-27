@@ -265,7 +265,7 @@
 
   :is(.iso, .abnt, .jis) #Ent {left: calc((var(--row2-left-margin) + 12) * var(--key-width)); bottom: calc(3 * var(--key-height));}
   :is(.iso, .abnt, .jis) #Enter {left: calc((var(--row3-left-margin) + 12) * var(--key-width)); height: calc(2 * var(--key-height));}
-  :is(.iso, .abnt, .jis) #Enter:after {bottom: calc(var(--key-height) + .4rem);}
+  :is(.iso, .abnt, .jis) #Enter:after {bottom: calc(var(--key-height) + .4rem) !important;}
   :is(.iso, .abnt, .jis) #Backslash {
     left: calc((var(--row3-left-margin) + 11) * var(--key-width));
     bottom: calc(2 * var(--key-height));
