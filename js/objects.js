@@ -632,6 +632,14 @@ const inputSources = {
     },
     directory: 'ko'
   },
+  turkishF: {
+    names: {
+      en: 'Turkish F',
+      ja: 'トルコＦキーボード',
+      ko: '튀르키예 F',
+    },
+    directory: 'tr'
+  },
 };
 const activeInputSources = {
   sources: [],
