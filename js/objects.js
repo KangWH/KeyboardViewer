@@ -484,6 +484,22 @@ const inputSources = {
     },
     directory: 'de'
   },
+  colemak: {
+    names: {
+      en: 'Colemak',
+      ja: 'コールマック',
+      ko: '콜맥',
+    },
+    directory: 'en'
+  },
+  dvorak: {
+    names: {
+      en: 'Dvorak',
+      ja: 'ドヴォラック',
+      ko: '드보락',
+    },
+    directory: 'en'
+  },
   qwertyUK: {
     names: {
       en: 'QWERTY (UK)',

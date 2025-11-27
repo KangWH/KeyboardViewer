@@ -1,0 +1,208 @@
+{
+  "identifier": "dvorak",
+  
+  "lang": "en",
+  "script": "Latn",
+  "country": "US",
+  
+  "altGr": false,
+  "sourceOS": "Windows",
+
+  "keys": {
+    "Backquote": [
+      {"character": "`"},
+      {"character": "~"}
+    ],
+    "Digit1": [
+      {"character": "1"},
+      {"character": "!"}
+    ],
+    "Digit2": [
+      {"character": "2"},
+      {"character": "@"}
+    ],
+    "Digit3": [
+      {"character": "3"},
+      {"character": "#"}
+    ],
+    "Digit4": [
+      {"character": "4"},
+      {"character": "$"}
+    ],
+    "Digit5": [
+      {"character": "5"},
+      {"character": "%"}
+    ],
+    "Digit6": [
+      {"character": "6"},
+      {"character": "^"}
+    ],
+    "Digit7": [
+      {"character": "7"},
+      {"character": "&"}
+    ],
+    "Digit8": [
+      {"character": "8"},
+      {"character": "*"}
+    ],
+    "Digit9": [
+      {"character": "9"},
+      {"character": "("}
+    ],
+    "Digit0": [
+      {"character": "0"},
+      {"character": ")"}
+    ],
+    "Minus": [
+      {"character": "["},
+      {"character": "{"}
+    ],
+    "Equal": [
+      {"character": "]"},
+      {"character": "}"}
+    ],
+
+    "KeyQ": [
+      {"character": "'"},
+      {"character": "\""}
+    ],
+    "KeyW": [
+      {"character": ","},
+      {"character": "<"}
+    ],
+    "KeyE": [
+      {"character": "."},
+      {"character": ">"}
+    ],
+    "KeyR": [
+      {"character": "p"},
+      {"character": "P"}
+    ],
+    "KeyT": [
+      {"character": "y"},
+      {"character": "Y"}
+    ],
+    "KeyY": [
+      {"character": "f"},
+      {"character": "F"}
+    ],
+    "KeyU": [
+      {"character": "g"},
+      {"character": "G"}
+    ],
+    "KeyI": [
+      {"character": "c"},
+      {"character": "C"}
+    ],
+    "KeyO": [
+      {"character": "r"},
+      {"character": "R"}
+    ],
+    "KeyP": [
+      {"character": "l"},
+      {"character": "L"}
+    ],
+    "BracketLeft": [
+      {"character": "/"},
+      {"character": "?"}
+    ],
+    "BracketRight": [
+      {"character": "="},
+      {"character": "+"}
+    ],
+    "Backslash": [
+      {"character": "\\"},
+      {"character": "|"}
+    ],
+    
+    "KeyA": [
+      {"character": "a"},
+      {"character": "A"}
+    ],
+    "KeyS": [
+      {"character": "o"},
+      {"character": "O"}
+    ],
+    "KeyD": [
+      {"character": "e"},
+      {"character": "E"}
+    ],
+    "KeyF": [
+      {"character": "u"},
+      {"character": "U"}
+    ],
+    "KeyG": [
+      {"character": "i"},
+      {"character": "I"}
+    ],
+    "KeyH": [
+      {"character": "d"},
+      {"character": "D"}
+    ],
+    "KeyJ": [
+      {"character": "h"},
+      {"character": "H"}
+    ],
+    "KeyK": [
+      {"character": "t"},
+      {"character": "T"}
+    ],
+    "KeyL": [
+      {"character": "n"},
+      {"character": "N"}
+    ],
+    "Semicolon": [
+      {"character": "s"},
+      {"character": "S"}
+    ],
+    "Quote": [
+      {"character": "-"},
+      {"character": "_"}
+    ],
+
+    "IntlBackslash": [
+      {"character": "\\"},
+      {"character": "|"}
+    ],
+    "KeyZ": [
+      {"character": ";"},
+      {"character": ":"}
+    ],
+    "KeyX": [
+      {"character": "q"},
+      {"character": "Q"}
+    ],
+    "KeyC": [
+      {"character": "j"},
+      {"character": "J"}
+    ],
+    "KeyV": [
+      {"character": "k"},
+      {"character": "K"}
+    ],
+    "KeyB": [
+      {"character": "x"},
+      {"character": "X"}
+    ],
+    "KeyN": [
+      {"character": "b"},
+      {"character": "B"}
+    ],
+    "KeyM": [
+      {"character": "m"},
+      {"character": "M"}
+    ],
+    "Comma": [
+      {"character": "w"},
+      {"character": "W"}
+    ],
+    "Period": [
+      {"character": "v"},
+      {"character": "V"}
+    ],
+    "Slash": [
+      {"character": "z"},
+      {"character": "Z"}
+    ]
+  }
+}
