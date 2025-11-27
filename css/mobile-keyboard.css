@@ -1,14 +1,14 @@
 @media (max-width: 840px) {
   :root {
-    --key-width: calc(100% / 12);
+    /* --key-width: calc(100% / 12); */
     --key-height: 3em;
-    --row1-left-margin: 0;
+    /* --row1-left-margin: 0;
     --row2-left-margin: 0;
     --row3-left-margin: 0;
-    --row4-left-margin: 1.5;
+    --row4-left-margin: 1.5; */
   }
 
-  #Backslash {
+  /* #Backslash {
     left: calc(11 * var(--key-width)) !important;
     bottom: calc(2 * var(--key-height)) !important;
     width: var(--key-width) !important;
@@ -135,5 +135,11 @@
 
   #Tab, #CapsLock, #ShiftRight, #ControlLeft, #MetaLeft, #AltLeft, #NonConvert, #Lang2, #Lang1, #Convert, #KanaMode, #MetaRight, #ContextMenu, #ControlRight, #Fn2 {
     opacity: 0 !important; transform: scale(0) !important;
-  }
+  } */
+
+  .keyLabel {display: none !important; inset: 0 !important; font-size: 1.15rem; font-weight: unset !important;}
+  #keyboard:not(.shiftDown):is(:not(.altGr), :not(.altGrDown)) .layer0 {display: inline !important;}
+  #keyboard.shiftDown:is(:not(.altGr), :not(.altGrDown)) .layer1 {display: inline !important;}
+  #keyboard.altGr:not(.shiftDown).altGrDown .layer2 {display: inline !important;}
+  #keyboard.altGr.shiftDown.altGrDown .layer3 {display: inline !important;}
 }
