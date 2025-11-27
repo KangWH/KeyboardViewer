@@ -7,10 +7,14 @@ const keyDownEvent = (e) => {
 
   /* 화면 키보드 그림에 누른 키 표시 */
   try {
-  document.getElementById(e.code).classList.add('pressed');
-  if (e.code === 'Enter')
-    document.getElementById('Ent').classList.add('pressed');
+    document.getElementById(e.code).classList.add('pressed');
+    if (e.code === 'Enter')
+      document.getElementById('Ent').classList.add('pressed');
   } catch (err) {}
+  if (e.code.includes('Shift'))
+    document.getElementById('keyboard').classList.add('shiftDown')
+  else if ((os === 'macOS' && e.code.includes('Alt')) || (os !== 'macOS' && e.code === 'AltRight'))
+    document.getElementById('keyboard').classList.add('altGrDown')
 
   /* 단축키 처리 */
   let isHotkeyUsed = false;
@@ -250,6 +254,10 @@ const keyUpEvent = (e) => {
 
   /* 화면에 현재 뗀 키 표시 */
   document.getElementById('keyField').textContent = `↑ ${e.code}`;
+  if (e.code.includes('Shift'))
+    document.getElementById('keyboard').classList.remove('shiftDown')
+  else if ((os === 'macOS' && e.code.includes('Alt')) || (os !== 'macOS' && e.code === 'AltRight'))
+    document.getElementById('keyboard').classList.remove('altGrDown')
 
   /* 화면 키보드 그림에 뗀 키 표시 */
   try {

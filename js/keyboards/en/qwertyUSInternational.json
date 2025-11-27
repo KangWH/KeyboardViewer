@@ -78,62 +78,62 @@
     ],
 
     "KeyQ": [
-      {"character": "q", "label": " "},
+      {"character": "q"},
       {"character": "Q"},
-      {"character": "ä", "label": " "},
+      {"character": "ä"},
       {"character": "Ä"}
     ],
     "KeyW": [
-      {"character": "w", "label": " "},
+      {"character": "w"},
       {"character": "W"},
-      {"character": "å", "label": " "},
+      {"character": "å"},
       {"character": "Å"}
     ],
     "KeyE": [
-      {"character": "e", "label": " "},
+      {"character": "e"},
       {"character": "E"},
-      {"character": "é", "label": " "},
+      {"character": "é"},
       {"character": "É"}
     ],
     "KeyR": [
-      {"character": "r", "label": " "},
+      {"character": "r"},
       {"character": "R"},
       {"character": "®"}
     ],
     "KeyT": [
-      {"character": "t", "label": " "},
+      {"character": "t"},
       {"character": "T"},
-      {"character": "þ", "label": " "},
+      {"character": "þ"},
       {"character": "Þ"}
     ],
     "KeyY": [
-      {"character": "y", "label": " "},
+      {"character": "y"},
       {"character": "Y"},
-      {"character": "ü", "label": " "},
+      {"character": "ü"},
       {"character": "Ü"}
     ],
     "KeyU": [
-      {"character": "u", "label": " "},
+      {"character": "u"},
       {"character": "U"},
-      {"character": "ú", "label": " "},
+      {"character": "ú"},
       {"character": "Ú"}
     ],
     "KeyI": [
-      {"character": "i", "label": " "},
+      {"character": "i"},
       {"character": "I"},
-      {"character": "í", "label": " "},
+      {"character": "í"},
       {"character": "Í"}
     ],
     "KeyO": [
-      {"character": "o", "label": " "},
+      {"character": "o"},
       {"character": "O"},
-      {"character": "ó", "label": " "},
+      {"character": "ó"},
       {"character": "Ó"}
     ],
     "KeyP": [
-      {"character": "p", "label": " "},
+      {"character": "p"},
       {"character": "P"},
-      {"character": "ö", "label": " "},
+      {"character": "ö"},
       {"character": "Ö"}
     ],
     "BracketLeft": [
@@ -154,47 +154,47 @@
     ],
     
     "KeyA": [
-      {"character": "a", "label": " "},
+      {"character": "a"},
       {"character": "A"},
-      {"character": "á", "label": " "},
+      {"character": "á"},
       {"character": "Á"}
     ],
     "KeyS": [
-      {"character": "s", "label": " "},
+      {"character": "s"},
       {"character": "S"},
-      {"character": "ß", "label": " "},
+      {"character": "ß"},
       {"character": "§"}
     ],
     "KeyD": [
-      {"character": "d", "label": " "},
+      {"character": "d"},
       {"character": "D"},
-      {"character": "ð", "label": " "},
+      {"character": "ð"},
       {"character": "Ð"}
     ],
     "KeyF": [
-      {"character": "f", "label": " "},
+      {"character": "f"},
       {"character": "F"}
     ],
     "KeyG": [
-      {"character": "g", "label": " "},
+      {"character": "g"},
       {"character": "G"}
     ],
     "KeyH": [
-      {"character": "h", "label": " "},
+      {"character": "h"},
       {"character": "H"}
     ],
     "KeyJ": [
-      {"character": "j", "label": " "},
+      {"character": "j"},
       {"character": "J"}
     ],
     "KeyK": [
-      {"character": "k", "label": " "},
+      {"character": "k"},
       {"character": "K"}
     ],
     "KeyL": [
-      {"character": "l", "label": " "},
+      {"character": "l"},
       {"character": "L"},
-      {"character": "ø", "label": " "},
+      {"character": "ø"},
       {"character": "Ø"}
     ],
     "Semicolon": [
@@ -211,44 +211,44 @@
     ],
     
     "KeyZ": [
-      {"character": "z", "label": " "},
+      {"character": "z"},
       {"character": "Z"},
-      {"character": "æ", "label": " "},
+      {"character": "æ"},
       {"character": "Æ"}
     ],
     "KeyX": [
-      {"character": "x", "label": " "},
+      {"character": "x"},
       {"character": "X"}
     ],
     "KeyC": [
-      {"character": "c", "label": " "},
+      {"character": "c"},
       {"character": "C"},
       {"character": "©"},
       {"character": "¢"}
     ],
     "KeyV": [
-      {"character": "v", "label": " "},
+      {"character": "v"},
       {"character": "V"}
     ],
     "KeyB": [
-      {"character": "b", "label": " "},
+      {"character": "b"},
       {"character": "B"}
     ],
     "KeyN": [
-      {"character": "n", "label": " "},
+      {"character": "n"},
       {"character": "N"},
-      {"character": "ñ", "label": " "},
+      {"character": "ñ"},
       {"character": "Ñ"}
     ],
     "KeyM": [
-      {"character": "m", "label": " "},
+      {"character": "m"},
       {"character": "M"},
       {"character": "µ"}
     ],
     "Comma": [
       {"character": ","},
       {"character": "<"},
-      {"character": "ç", "label": " "},
+      {"character": "ç"},
       {"character": "Ç"}
     ],
     "Period": [

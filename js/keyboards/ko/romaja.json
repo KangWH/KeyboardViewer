@@ -66,43 +66,43 @@
     ],
 
     "KeyQ": [
-      {"character": "q", "label": " ", "type": "composeChar"},
+      {"character": "q", "type": "composeChar"},
       {"character": "Q", "type": "composeChar"}
     ],
     "KeyW": [
-      {"character": "w", "label": " ", "type": "composeChar"},
+      {"character": "w", "type": "composeChar"},
       {"character": "W", "type": "composeChar"}
     ],
     "KeyE": [
-      {"character": "e", "label": " ", "type": "composeChar"},
+      {"character": "e", "type": "composeChar"},
       {"character": "E", "type": "composeChar"}
     ],
     "KeyR": [
-      {"character": "r", "label": " ", "type": "composeChar"},
+      {"character": "r", "type": "composeChar"},
       {"character": "R", "type": "composeChar"}
     ],
     "KeyT": [
-      {"character": "t", "label": " ", "type": "composeChar"},
+      {"character": "t", "type": "composeChar"},
       {"character": "T", "type": "composeChar"}
     ],
     "KeyY": [
-      {"character": "y", "label": " ", "type": "composeChar"},
+      {"character": "y", "type": "composeChar"},
       {"character": "Y", "type": "composeChar"}
     ],
     "KeyU": [
-      {"character": "u", "label": " ", "type": "composeChar"},
+      {"character": "u", "type": "composeChar"},
       {"character": "U", "type": "composeChar"}
     ],
     "KeyI": [
-      {"character": "i", "label": " ", "type": "composeChar"},
+      {"character": "i", "type": "composeChar"},
       {"character": "I", "type": "composeChar"}
     ],
     "KeyO": [
-      {"character": "o", "label": " ", "type": "composeChar"},
+      {"character": "o", "type": "composeChar"},
       {"character": "O", "type": "composeChar"}
     ],
     "KeyP": [
-      {"character": "p", "label": " ", "type": "composeChar"},
+      {"character": "p", "type": "composeChar"},
       {"character": "P", "type": "composeChar"}
     ],
     "BracketLeft": [
@@ -119,39 +119,39 @@
     ],
     
     "KeyA": [
-      {"character": "a", "label": " ", "type": "composeChar"},
+      {"character": "a", "type": "composeChar"},
       {"character": "A", "type": "composeChar"}
     ],
     "KeyS": [
-      {"character": "s", "label": " ", "type": "composeChar"},
+      {"character": "s", "type": "composeChar"},
       {"character": "S", "type": "composeChar"}
     ],
     "KeyD": [
-      {"character": "d", "label": " ", "type": "composeChar"},
+      {"character": "d", "type": "composeChar"},
       {"character": "D", "type": "composeChar"}
     ],
     "KeyF": [
-      {"character": "f", "label": " ", "type": "composeChar"},
+      {"character": "f", "type": "composeChar"},
       {"character": "F", "type": "composeChar"}
     ],
     "KeyG": [
-      {"character": "g", "label": " ", "type": "composeChar"},
+      {"character": "g", "type": "composeChar"},
       {"character": "G", "type": "composeChar"}
     ],
     "KeyH": [
-      {"character": "h", "label": " ", "type": "composeChar"},
+      {"character": "h", "type": "composeChar"},
       {"character": "H", "type": "composeChar"}
     ],
     "KeyJ": [
-      {"character": "j", "label": " ", "type": "composeChar"},
+      {"character": "j", "type": "composeChar"},
       {"character": "J", "type": "composeChar"}
     ],
     "KeyK": [
-      {"character": "k", "label": " ", "type": "composeChar"},
+      {"character": "k", "type": "composeChar"},
       {"character": "K", "type": "composeChar"}
     ],
     "KeyL": [
-      {"character": "l", "label": " ", "type": "composeChar"},
+      {"character": "l", "type": "composeChar"},
       {"character": "L", "type": "composeChar"}
     ],
     "Semicolon": [
@@ -164,31 +164,31 @@
     ],
 
     "KeyZ": [
-      {"character": "z", "label": " ", "type": "composeChar"},
+      {"character": "z", "type": "composeChar"},
       {"character": "Z", "type": "composeChar"}
     ],
     "KeyX": [
-      {"character": "x", "label": " ", "type": "composeChar"},
+      {"character": "x", "type": "composeChar"},
       {"character": "X", "type": "composeChar"}
     ],
     "KeyC": [
-      {"character": "c", "label": " ", "type": "composeChar"},
+      {"character": "c", "type": "composeChar"},
       {"character": "C", "type": "composeChar"}
     ],
     "KeyV": [
-      {"character": "v", "label": " ", "type": "composeChar"},
+      {"character": "v", "type": "composeChar"},
       {"character": "V", "type": "composeChar"}
     ],
     "KeyB": [
-      {"character": "b", "label": " ", "type": "composeChar"},
+      {"character": "b", "type": "composeChar"},
       {"character": "B", "type": "composeChar"}
     ],
     "KeyN": [
-      {"character": "n", "label": " ", "type": "composeChar"},
+      {"character": "n", "type": "composeChar"},
       {"character": "N", "type": "composeChar"}
     ],
     "KeyM": [
-      {"character": "m", "label": " ", "type": "composeChar"},
+      {"character": "m", "type": "composeChar"},
       {"character": "M", "type": "composeChar"}
     ],
     "Comma": [

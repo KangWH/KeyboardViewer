@@ -87,57 +87,57 @@
     ],
 
     "KeyQ": [
-      {"character": "a", "label": " "},
+      {"character": "a"},
       {"character": "A"},
-      {"character": "æ", "label": " "},
+      {"character": "æ"},
       {"character": "Æ"}
     ],
     "KeyW": [
-      {"character": "z", "label": " "},
+      {"character": "z"},
       {"character": "Z"},
       {"character": "£"}
     ],
     "KeyE": [
-      {"character": "e", "label": " "},
+      {"character": "e"},
       {"character": "E"},
       {"character": "€"}
     ],
     "KeyR": [
-      {"character": "r", "label": " "},
+      {"character": "r"},
       {"character": "R"},
       {"character": "®"}
     ],
     "KeyT": [
-      {"character": "t", "label": " "},
+      {"character": "t"},
       {"character": "T"},
       {"character": "{"},
       {"character": "™"}
     ],
     "KeyY": [
-      {"character": "y", "label": " "},
+      {"character": "y"},
       {"character": "Y"},
       {"character": "}"}
     ],
     "KeyU": [
-      {"character": "u", "label": " "},
+      {"character": "u"},
       {"character": "U"},
-      {"character": "ú", "label": " "},
+      {"character": "ú"},
       {"character": "Ú"}
     ],
     "KeyI": [
-      {"character": "i", "label": " "},
+      {"character": "i"},
       {"character": "I"},
       {"value": 775, "label": "◌̇", "type": "dead"},
       {"value": 803, "label": "◌̣", "type": "dead"}
     ],
     "KeyO": [
-      {"character": "o", "label": " "},
+      {"character": "o"},
       {"character": "O"},
-      {"character": "œ", "label": " "},
+      {"character": "œ"},
       {"character": "Œ"}
     ],
     "KeyP": [
-      {"character": "p", "label": " "},
+      {"character": "p"},
       {"character": "P"},
       {"character": "%"},
       {"character": "‰"}
@@ -162,54 +162,54 @@
     ],
     
     "KeyA": [
-      {"character": "q", "label": " "},
+      {"character": "q"},
       {"character": "Q"},
-      {"character": "θ", "label": " "},
+      {"character": "θ"},
       {"character": "Θ"}
     ],
     "KeyS": [
-      {"character": "s", "label": " "},
+      {"character": "s"},
       {"character": "S"},
-      {"character": "ß", "label": " "},
+      {"character": "ß"},
       {"character": "ẞ"}
     ],
     "KeyD": [
-      {"character": "d", "label": " "},
+      {"character": "d"},
       {"character": "D"},
       {"character": "$"}
     ],
     "KeyF": [
-      {"character": "f", "label": " "},
+      {"character": "f"},
       {"character": "F"},
       {"character": "¤", "type": "dead"}
     ],
     "KeyG": [
-      {"character": "g", "label": " "},
+      {"character": "g"},
       {"character": "G"},
       {"character": "µ", "type": "dead"}
     ],
     "KeyH": [
-      {"character": "h", "label": " "},
+      {"character": "h"},
       {"character": "H"},
       {"character": "ſ", "type": "dead"},
       {"value": 817, "label": "◌̱", "type": "dead"}
     ],
     "KeyJ": [
-      {"character": "j", "label": " "},
+      {"character": "j"},
       {"character": "J"}
     ],
     "KeyK": [
-      {"character": "k", "label": " "},
+      {"character": "k"},
       {"character": "K"},
       {"value": 824, "label": "◌̸", "type": "dead"}
     ],
     "KeyL": [
-      {"character": "l", "label": " "},
+      {"character": "l"},
       {"character": "L"},
       {"character": "|"}
     ],
     "Semicolon": [
-      {"character": "m", "label": " "},
+      {"character": "m"},
       {"character": "M"},
       {"character": "∞"}
     ],
@@ -227,35 +227,35 @@
       {"character": "≥"}
     ],
     "KeyZ": [
-      {"character": "w", "label": " "},
+      {"character": "w"},
       {"character": "W"},
-      {"character": "ʒ", "label": " "},
+      {"character": "ʒ"},
       {"character": "Ʒ"}
     ],
     "KeyX": [
-      {"character": "x", "label": " "},
+      {"character": "x"},
       {"character": "X"},
       {"character": "©"}
     ],
     "KeyC": [
-      {"character": "c", "label": " "},
+      {"character": "c"},
       {"character": "C"},
-      {"character": "ç", "label": " "},
+      {"character": "ç"},
       {"character": "Ç"}
     ],
     "KeyV": [
-      {"character": "v", "label": " "},
+      {"character": "v"},
       {"character": "V"},
       {"value": 807, "label": "◌̧", "type": "dead"},
       {"value": 808, "label": "◌̨", "type": "dead"}
     ],
     "KeyB": [
-      {"character": "b", "label": " "},
+      {"character": "b"},
       {"character": "B"},
       {"value": 822, "label": "◌̶", "type": "dead"}
     ],
     "KeyN": [
-      {"character": "n", "label": " "},
+      {"character": "n"},
       {"character": "N"},
       {"value": 771, "label": "◌̃", "type": "dead"}
     ],
@@ -290,5 +290,34 @@
     ]
   },
   "composingRulePresets": ["deadkeyLatin1"],
-  "composingRules": []
+  "composingRules": [
+    [
+      [
+        {"character": "ſ", "type": "dead"},
+        {"character": "a"}
+      ],
+      [{"character": "ª"}]
+    ],
+    [
+      [
+        {"character": "ſ", "type": "dead"},
+        {"character": "D"}
+      ],
+      [{"character": "Ð"}]
+    ],
+    [
+      [
+        {"character": "ſ", "type": "dead"},
+        {"character": "d"}
+      ],
+      [{"character": "ð"}]
+    ],
+    [
+      [
+        {"character": "ſ", "type": "dead"},
+        {"character": "o"}
+      ],
+      [{"character": "º"}]
+    ]
+  ]
 }
