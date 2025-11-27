@@ -640,6 +640,14 @@ const inputSources = {
     },
     directory: 'tr'
   },
+  turkishQ: {
+    names: {
+      en: 'Turkish Q',
+      ja: 'トルコＱキーボード',
+      ko: '튀르키예 Q',
+    },
+    directory: 'tr'
+  },
 };
 const activeInputSources = {
   sources: [],
