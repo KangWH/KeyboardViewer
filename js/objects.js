@@ -475,6 +475,14 @@ const getComposingRulePreset = async (identifier) => {
   }
 }
 const inputSources = {
+  danish: {
+    names: {
+      da: 'Danske',
+      en: 'Danish',
+      ja: 'デンマーク語',
+      ko: '덴마크어'
+    }
+  },
   qwertzDE: {
     names: {
       de: 'QWERTZ (Deutschland)',
@@ -651,16 +659,16 @@ const inputSources = {
   turkishF: {
     names: {
       en: 'Turkish F',
-      ja: 'トルコＦキーボード',
-      ko: '튀르키예 F',
+      ja: 'トルコ語Ｆキーボード',
+      ko: '튀르키예어 F',
     },
     directory: 'tr'
   },
   turkishQ: {
     names: {
       en: 'Turkish Q',
-      ja: 'トルコＱキーボード',
-      ko: '튀르키예 Q',
+      ja: 'トルコ語Ｑキーボード',
+      ko: '튀르키예어 Q',
     },
     directory: 'tr'
   },
