@@ -481,7 +481,8 @@ const inputSources = {
       en: 'Danish',
       ja: 'デンマーク語',
       ko: '덴마크어'
-    }
+    },
+    directory: 'da'
   },
   qwertzDE: {
     names: {

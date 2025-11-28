@@ -113,6 +113,8 @@ input[type="checkbox"][role="switch"] {
   border-radius: .5em;
   appearance: none;
 
+  transition: background-color .2s;
+
   &:checked {background-color: #007FFF;}
 
   &::before {

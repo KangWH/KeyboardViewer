@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/keyboard.css" />
     <link rel="stylesheet" href="css/mobile-keyboard.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
   </head>
   <body>
     <noscript>
@@ -20,6 +21,7 @@
       <div role="toolbar">
         <button style="display: none;">Copy Text</button>
         <button id="inputSourceSelector-button" aria-controls="inputSourceSelector-dialog">Input Source</button>
+        <button id="preferences-button" aria-controls="preferences-dialog">Preferences</button>
         <button style="display: none;" id="hotkeys-button" aria-controls="hotkeys-dialog">Hotkeys</button>
       </div>
     </header>
@@ -47,62 +49,62 @@
       </div>
       <div style="display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;">
         <div id="keyboard" class="ansi windows">
-          <div class="keyCell" id="Backquote"></div>
-          <div class="keyCell" id="Digit1"></div>
-          <div class="keyCell" id="Digit2"></div>
-          <div class="keyCell" id="Digit3"></div>
-          <div class="keyCell" id="Digit4"></div>
-          <div class="keyCell" id="Digit5"></div>
-          <div class="keyCell" id="Digit6"></div>
-          <div class="keyCell" id="Digit7"></div>
-          <div class="keyCell" id="Digit8"></div>
-          <div class="keyCell" id="Digit9"></div>
-          <div class="keyCell" id="Digit0"></div>
-          <div class="keyCell" id="Minus"></div>
-          <div class="keyCell" id="Equal"></div>
-          <div class="keyCell" id="IntlYen"></div>
+          <div class="keyCell finger5 left" id="Backquote"></div>
+          <div class="keyCell finger5 left" id="Digit1"></div>
+          <div class="keyCell finger5 left" id="Digit2"></div>
+          <div class="keyCell finger4 left" id="Digit3"></div>
+          <div class="keyCell finger3 left" id="Digit4"></div>
+          <div class="keyCell finger2 left" id="Digit5"></div>
+          <div class="keyCell finger2 left" id="Digit6"></div>
+          <div class="keyCell finger2 right" id="Digit7"></div>
+          <div class="keyCell finger3 right" id="Digit8"></div>
+          <div class="keyCell finger4 right" id="Digit9"></div>
+          <div class="keyCell finger5 right" id="Digit0"></div>
+          <div class="keyCell finger5 right" id="Minus"></div>
+          <div class="keyCell finger5 right" id="Equal"></div>
+          <div class="keyCell finger5 right" id="IntlYen"></div>
           <div class="keyCell modifier" id="Backspace"></div>
           <div class="keyCell modifier" id="Tab"></div>
-          <div class="keyCell" id="KeyQ"></div>
-          <div class="keyCell" id="KeyW"></div>
-          <div class="keyCell" id="KeyE"></div>
-          <div class="keyCell" id="KeyR"></div>
-          <div class="keyCell" id="KeyT"></div>
-          <div class="keyCell" id="KeyY"></div>
-          <div class="keyCell" id="KeyU"></div>
-          <div class="keyCell" id="KeyI"></div>
-          <div class="keyCell" id="KeyO"></div>
-          <div class="keyCell" id="KeyP"></div>
-          <div class="keyCell" id="BracketLeft"></div>
-          <div class="keyCell" id="BracketRight"></div>
-          <div class="keyCell" id="Backslash"></div>
+          <div class="keyCell finger5 left" id="KeyQ"></div>
+          <div class="keyCell finger4 left" id="KeyW"></div>
+          <div class="keyCell finger3 left" id="KeyE"></div>
+          <div class="keyCell finger2 left" id="KeyR"></div>
+          <div class="keyCell finger2 left" id="KeyT"></div>
+          <div class="keyCell finger2 right" id="KeyY"></div>
+          <div class="keyCell finger2 right" id="KeyU"></div>
+          <div class="keyCell finger3 right" id="KeyI"></div>
+          <div class="keyCell finger4 right" id="KeyO"></div>
+          <div class="keyCell finger5 right" id="KeyP"></div>
+          <div class="keyCell finger5 right" id="BracketLeft"></div>
+          <div class="keyCell finger5 right" id="BracketRight"></div>
+          <div class="keyCell finger5 right" id="Backslash"></div>
           <div class="keyCell modifier" id="Ent"></div>
           <div class="keyCell modifier" id="CapsLock"></div>
-          <div class="keyCell" id="KeyA"></div>
-          <div class="keyCell" id="KeyS"></div>
-          <div class="keyCell" id="KeyD"></div>
-          <div class="keyCell" id="KeyF"></div>
-          <div class="keyCell" id="KeyG"></div>
-          <div class="keyCell" id="KeyH"></div>
-          <div class="keyCell" id="KeyJ"></div>
-          <div class="keyCell" id="KeyK"></div>
-          <div class="keyCell" id="KeyL"></div>
-          <div class="keyCell" id="Semicolon"></div>
-          <div class="keyCell" id="Quote"></div>
+          <div class="keyCell finger5 left" id="KeyA"></div>
+          <div class="keyCell finger4 left" id="KeyS"></div>
+          <div class="keyCell finger3 left" id="KeyD"></div>
+          <div class="keyCell finger2 left" id="KeyF"></div>
+          <div class="keyCell finger2 left" id="KeyG"></div>
+          <div class="keyCell finger2 right" id="KeyH"></div>
+          <div class="keyCell finger2 right" id="KeyJ"></div>
+          <div class="keyCell finger3 right" id="KeyK"></div>
+          <div class="keyCell finger4 right" id="KeyL"></div>
+          <div class="keyCell finger5 right" id="Semicolon"></div>
+          <div class="keyCell finger5 right" id="Quote"></div>
           <div class="keyCell modifier" id="Enter"></div>
           <div class="keyCell modifier" id="ShiftLeft"></div>
-          <div class="keyCell" id="IntlBackslash"></div>
-          <div class="keyCell" id="KeyZ"></div>
-          <div class="keyCell" id="KeyX"></div>
-          <div class="keyCell" id="KeyC"></div>
-          <div class="keyCell" id="KeyV"></div>
-          <div class="keyCell" id="KeyB"></div>
-          <div class="keyCell" id="KeyN"></div>
-          <div class="keyCell" id="KeyM"></div>
-          <div class="keyCell" id="Comma"></div>
-          <div class="keyCell" id="Period"></div>
-          <div class="keyCell" id="Slash"></div>
-          <div class="keyCell" id="IntlRo"></div>
+          <div class="keyCell finger5 left" id="IntlBackslash"></div>
+          <div class="keyCell finger5 left" id="KeyZ"></div>
+          <div class="keyCell finger4 left" id="KeyX"></div>
+          <div class="keyCell finger3 left" id="KeyC"></div>
+          <div class="keyCell finger2 left" id="KeyV"></div>
+          <div class="keyCell finger2 left" id="KeyB"></div>
+          <div class="keyCell finger2 right" id="KeyN"></div>
+          <div class="keyCell finger2 right" id="KeyM"></div>
+          <div class="keyCell finger3 right" id="Comma"></div>
+          <div class="keyCell finger4 right" id="Period"></div>
+          <div class="keyCell finger5 right" id="Slash"></div>
+          <div class="keyCell finger5 right" id="IntlRo"></div>
           <div class="keyCell modifier" id="ShiftRight"></div>
           <div class="keyCell modifier" id="Fn"></div>
           <div class="keyCell modifier" id="ControlLeft"></div>
@@ -163,6 +165,52 @@
       </div>
     </dialog>
 
+    <dialog id="preferences-dialog" class="large">
+      <div class="dialog-header">
+        <div class="dialog-header-title">Preferences</div>
+      </div>
+      <form class="dialog-body" id="preferences-form">
+        <fieldset>
+          <legend>키</legend>
+          <div class="field-row">
+            <label>손가락 구분</label>
+            <input type="checkbox" role="switch" name="colorFingerPosition">
+          </div>
+          <div class="field-row">
+            <label>조합 키와 편집 키를 다른 색으로 표시</label>
+            <input type="checkbox" role="switch" name="colorModifierKeys" />
+          </div>
+          <div class="field-row">
+            <label>스타일</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>키 라벨</legend>
+          <div class="field-row">
+            <label>데드 키에 배경색 표시</label>
+            <input type="checkbox" role="switch" name="colorDeadKeys" />
+          </div>
+          <div class="field-row">
+            <label>한국어 레이아웃에서 낱자 구분</label>
+            <select name="colorHangulJamos">
+              <option value="none">표시 안 함</option>
+              <option value="leadingOnly">초성만 표시</option>
+              <option value="trailingOnly">종성만 표시</option>
+              <option value="all">모두 표시</option>
+            </select>
+          </div>
+        </fieldset>
+      </form>
+      <div class="dialog-footer">
+        <div class="dialog-footer-controls">
+          <button form="preferences-form" type="reset" name="reset">Reset</button>
+        </div>
+        <div class="dialog-footer-controls">
+          <button form="preferences-form" type="submit" name="close">Close</button>
+        </div>
+      </div>
+    </dialog>
+
     <dialog id="hotkeys-dialog">
       <div class="dialog-header">
         <div class="dialog-header-title">Hotkeys</div>
@@ -191,6 +239,7 @@
     <script src="js/mouseEvent.js"></script>
     <script src="js/test.js"></script>
     <script src="js/inputSourceDialog.js"></script>
+    <script src="js/preferencesDialog.js"></script>
     <script src="js/hotkeyDialog.js"></script>
   </body>
 </html>
