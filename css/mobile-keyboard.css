@@ -1,11 +1,11 @@
 @media (max-width: 840px) {
   :root {
     /* --key-width: calc(100% / 12); */
-    --key-height: 3em;
     /* --row1-left-margin: 0;
     --row2-left-margin: 0;
     --row3-left-margin: 0;
     --row4-left-margin: 1.5; */
+    --key-height: 2.8em;
   }
 
   /* #Backslash {

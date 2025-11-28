@@ -29,8 +29,8 @@
     "Digit3": [
       {"character": "3"},
       {"character": "#"},
-      {"character": "³"},
-      {"character": "ª"}
+      {"character": "ª"},
+      {"character": "³"}
     ],
     "Digit4": [
       {"character": "4"},
