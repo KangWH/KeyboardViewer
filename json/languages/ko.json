@@ -46,6 +46,7 @@
   "addInputSourceTitle": "입력 소스 추가",
   "search": "검색",
   "searchResult": "검색 결과",
+  "noSearchResult": "검색 결과 없음",
 
   "selectButton": "선택",
   "closeButton": "닫기",

@@ -46,6 +46,7 @@
   "addInputSourceTitle": "Add Input Source",
   "search": "search",
   "searchResult": "Search result",
+  "noSearchResult": "No search result",
 
   "selectButton": "Select",
   "closeButton": "Close",
