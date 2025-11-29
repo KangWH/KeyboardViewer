@@ -82,5 +82,40 @@
       {"character": "I"}
     ],
     [{"character": "Ì"}]
+  ],
+  [
+    [
+      {"character": "´", "type": "dead"},
+      {"character": "I"}
+    ],
+    [{"character": "Í"}]
+  ],
+  [
+    [
+      {"character": "`", "type": "dead"},
+      {"character": "I"}
+    ],
+    [{"character": "Î"}]
+  ],
+  [
+    [
+      {"character": "¨", "type": "dead"},
+      {"character": "I"}
+    ],
+    [{"character": "Ï"}]
+  ],
+  [
+    [
+      {"character": "~", "type": "dead"},
+      {"character": "N"}
+    ],
+    [{"character": "Ñ"}]
+  ],
+  [
+    [
+      {"character": "`", "type": "dead"},
+      {"character": "O"}
+    ],
+    [{"character": "Ó"}]
   ]
 ]

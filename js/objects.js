@@ -466,7 +466,7 @@ Object.freeze(Composers);
 const ComposingRulePresets = {};
 const getComposingRulePreset = async (identifier) => {
   try {
-    const response = await fetch(`https://kangwh.github.io/KeyboardViewer/js/composingRules/${identifier}.json`);
+    const response = await fetch(`https://kangwh.github.io/KeyboardViewer/json/composingRules/${identifier}.json`);
     const array = await response.json();
     ComposingRulePresets[identifier] = array;
   } catch (err) {
@@ -695,7 +695,7 @@ const activeInputSources = {
       throw new Error(`Input source ${identifier} does not exist.`);
 
     try {
-      const response = await fetch(`https://kangwh.github.io/KeyboardViewer/js/keyboards/${sourceInfo.directory}/${identifier}.json`);
+      const response = await fetch(`https://kangwh.github.io/KeyboardViewer/json/keyboards/${sourceInfo.directory}/${identifier}.json`);
       const obj = await response.json();
       const source = new InputSource(obj);
       this.sources.unshift(source);

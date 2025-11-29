@@ -84,7 +84,7 @@ const showInputSourceGroups = (searching = false) => {
     li.setAttribute('value', language);
     li.textContent = language;
     li.addEventListener('click', selectListItem);
-    li.addEventListener('click', (e) => {showInputSources(e.currentTarget.getAttribute('value'))});
+    li.addEventListener('click', async (e) => {await showInputSources(e.currentTarget.getAttribute('value'))});
     container.append(li);
   }
 
@@ -92,19 +92,29 @@ const showInputSourceGroups = (searching = false) => {
 
   return groups;
 };
-const showInputSources = (group) => {
+const showInputSources = async (group) => {
   const container = document.getElementById('addInputSource-sourceContainer');
   container.innerHTML = '';
+
+  const activeInputSourceIds = activeInputSources.sources.map((source) => source.id);
 
   for (let id in inputSources) {
     if (inputSources[id].directory !== group)
       continue;
 
+    const response = await fetch(`https://kangwh.github.io/KeyboardViewer/json/keyboards/${group}/${id}.json`);
+    if (!response.ok)
+      continue;
+
     const li = document.createElement('li');
-    li.setAttribute('tabindex', -1);
+    if (activeInputSourceIds.includes(id))
+      li.setAttribute('disabled', '');
+    else {
+      li.setAttribute('tabindex', -1);
+      li.addEventListener('click', selectListItem);
+    }
     li.setAttribute('value', id);
     li.textContent = inputSources[id].names.en;
-    li.addEventListener('click', selectListItem);
     container.append(li);
   }
 
