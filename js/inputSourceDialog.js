@@ -13,6 +13,9 @@ const showActiveInputSources = (focusIndex = 0) => {
     li.setAttribute('identifier', item.identifier);
     li.addEventListener('click', selectListItem);
     li.textContent = inputSources[item.identifier].names.en;
+    const localizedName = inputSources[item.identifier].names[currentLanguage];
+    if (localizedName !== undefined)
+      li.textContent = localizedName;
     container.append(li);
   }
 
@@ -67,7 +70,7 @@ const showInputSourceGroups = (searching = false) => {
   if (searching) {
     const li = document.createElement('li');
     li.setAttribute('tabindex', -1);
-    li.textContent = 'Search result';
+    li.textContent = languageData.searchResult;
     li.addEventListener('click', selectListItem);
     li.addEventListener('click', (e) => {searchInputSources(document.getElementById('addInputSource-form').search.value.trim())});
     container.append(li);
@@ -78,15 +81,19 @@ const showInputSourceGroups = (searching = false) => {
     languages.add(inputSources[id].directory);
 
   const groups = [...languages].sort();
-  for (let language of groups) {
+  const items = [];
+  for (let langCode of groups) {
     const li = document.createElement('li');
     li.setAttribute('tabindex', -1);
-    li.setAttribute('value', language);
-    li.textContent = language;
+    li.setAttribute('value', langCode);
+    li.textContent = languageData.languages[langCode];
     li.addEventListener('click', selectListItem);
     li.addEventListener('click', async (e) => {await showInputSources(e.currentTarget.getAttribute('value'))});
-    container.append(li);
+    items.push(li);
   }
+  items.sort((a, b) => a.textContent.localeCompare(b.textContent));
+  for (let item of items)
+    container.append(item);
 
   container.firstChild.classList.add('active');
 
@@ -115,6 +122,9 @@ const showInputSources = async (group) => {
     }
     li.setAttribute('value', id);
     li.textContent = inputSources[id].names.en;
+    const localizedName = inputSources[id].names[currentLanguage];
+    if (localizedName !== undefined)
+      li.textContent = localizedName;
     container.append(li);
   }
 
@@ -136,6 +146,9 @@ const searchInputSources = (query) => {
     li.setAttribute('tabindex', -1);
     li.setAttribute('value', id);
     li.textContent = inputSources[id].names.en;
+    const localizedName = inputSources[id].names[currentLanguage];
+    if (localizedName !== undefined)
+      li.textContent = localizedName;
     li.addEventListener('click', selectListItem);
     container.append(li);
   }
@@ -143,7 +156,7 @@ const searchInputSources = (query) => {
   if (container.firstChild)
     container.firstChild.classList.add('active');
   else
-    container.textContent = 'No search result';
+    container.textContent = languageData.noSearchResult;
 }
 
 document.getElementById('addInputSource-form').cancel.addEventListener('click', (e) => {

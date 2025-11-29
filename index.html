@@ -20,16 +20,16 @@
       <h1><span style="font-weight: 300;">Keyboard</span><span style="font-weight: 500;">Viewer</span></h1>
       <div role="toolbar">
         <button style="display: none;">Copy Text</button>
-        <button id="inputSourceSelector-button" aria-controls="inputSourceSelector-dialog">Input Source</button>
-        <button id="preferences-button" aria-controls="preferences-dialog">Preferences</button>
-        <button style="display: none;" id="hotkeys-button" aria-controls="hotkeys-dialog">Hotkeys</button>
+        <button id="inputSourceSelector-button" aria-controls="inputSourceSelector-dialog" localizationKey="inputSourceTitle">Input Source</button>
+        <button id="preferences-button" aria-controls="preferences-dialog" localizationKey="preferencesTitle">Preferences</button>
+        <button style="display: none;" id="hotkeys-button" aria-controls="hotkeys-dialog" localizationKey="hotkeysTitle">Hotkeys</button>
       </div>
     </header>
     <aside>
       <div id="wordBuffer">&nbsp;</div>
       <div id="processedText" tabindex="0" autofocus>&nbsp;</div>
       <div id="keyField">&nbsp;</div>
-      <p style="text-align: center; font-weight: 200;">NOTE: This page is currently not fully implemented and is experimental.</p>
+      <p localizationKey="experimentalDisclaimer" style="text-align: center; font-weight: 200;">NOTE: This page is currently not fully implemented and is experimental.</p>
     </aside>
     <main>
       <div style="display: flex; flex-flow: row nowrap; justify-content: center; gap: 1em;">
@@ -127,10 +127,10 @@
 
     <dialog id="inputSourceSelector-dialog">
       <div class="dialog-header">
-        <div class="dialog-header-title">Input Sources</div>
+        <div class="dialog-header-title" localizationKey="inputSourceTitle">Input Sources</div>
       </div>
       <form class="dialog-body" id="inputSourceSelector-form">
-        <div style="margin-bottom: 1em;">Currently activated input sources:</div>
+        <div style="margin-bottom: 1em;" localizationKey="inputSourceDescription">Currently activated input sources:</div>
         <ul id="inputSourceSelector-container" class="selectable-list" tabindex="0"></ul>
       </form>
       <div class="dialog-footer">
@@ -139,14 +139,14 @@
           <button type="button" name="delete" form="inputSourceSelector-form">&minus;</button>
         </div>
         <div class="dialog-footer-controls">
-          <button type="submit" name="select" form="inputSourceSelector-form" autofocus>Select</button>
+          <button type="submit" name="select" form="inputSourceSelector-form" autofocus localizationKey="selectButton">Select</button>
         </div>
       </div>
     </dialog>
 
     <dialog id="addInputSource-dialog" class="large">
       <div class="dialog-header">
-        <div class="dialog-header-title">Add Input Source</div>
+        <div class="dialog-header-title" localizationKey="addInputSourceTitle">Add Input Source</div>
       </div>
       <form class="dialog-body" id="addInputSource-form">
         <input type="search" name="search" placeholder="Search" style="width: 100%;" />
@@ -159,25 +159,35 @@
       <div class="dialog-footer">
         <div></div>
         <div class="dialog-footer-controls">
-          <button type="button" name="cancel" form="addInputSource-form">Cancel</button>
-          <button type="submit" name="ok" form="addInputSource-form">OK</button>
+          <button type="button" name="cancel" form="addInputSource-form" localizationKey="cancelButton">Cancel</button>
+          <button type="submit" name="ok" form="addInputSource-form" localizationKey="okButton">OK</button>
         </div>
       </div>
     </dialog>
 
     <dialog id="preferences-dialog" class="large">
       <div class="dialog-header">
-        <div class="dialog-header-title">Preferences</div>
+        <div class="dialog-header-title" localizationKey="preferencesTitle">Preferences</div>
       </div>
       <form class="dialog-body" id="preferences-form">
         <fieldset>
-          <legend>키</legend>
+          <legend localizationKey="preferencesSystemSection">시스템</legend>
           <div class="field-row">
-            <label>손가락 구분</label>
+            <label localizationKey="preferencesSystemSectionLanguage">언어</label>
+            <select name="language">
+              <option value="en">영어 (English)</option>
+              <option value="ko">한국어</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend localizationKey="preferencesKeySection">Keys</legend>
+          <div class="field-row">
+            <label localizationKey="preferencesKeySectionFingerPosition">손가락 구분</label>
             <input type="checkbox" role="switch" name="colorFingerPosition">
           </div>
           <div class="field-row">
-            <label>조합 키와 편집 키를 다른 색으로 표시</label>
+            <label localizationKey="preferencesKeySectionModifier">조합 키와 편집 키를 다른 색으로 표시</label>
             <input type="checkbox" role="switch" name="colorModifierKeys" />
           </div>
           <div class="field-row">
@@ -185,13 +195,13 @@
           </div>
         </fieldset>
         <fieldset>
-          <legend>키 라벨</legend>
+          <legend localizationKey="preferencesKeyLabelSection">Key labels</legend>
           <div class="field-row">
-            <label>데드 키에 배경색 표시</label>
+            <label localizationKey="preferencesKeyLabelSectionDeadKey">데드 키에 배경색 표시</label>
             <input type="checkbox" role="switch" name="colorDeadKeys" />
           </div>
           <div class="field-row">
-            <label>한국어 레이아웃에서 낱자 구분</label>
+            <label localizationKey="preferencesKeyLabelSectionHangulJamo">한국어 레이아웃에서 낱자 구분</label>
             <select name="colorHangulJamos">
               <option value="none">표시 안 함</option>
               <option value="leadingOnly">초성만 표시</option>
@@ -203,17 +213,17 @@
       </form>
       <div class="dialog-footer">
         <div class="dialog-footer-controls">
-          <button form="preferences-form" type="reset" name="reset">Reset</button>
+          <button form="preferences-form" type="reset" name="reset" localizationKey="resetButton">Reset</button>
         </div>
         <div class="dialog-footer-controls">
-          <button form="preferences-form" type="submit" name="close">Close</button>
+          <button form="preferences-form" type="submit" name="close" localizationKey="closeButton">Close</button>
         </div>
       </div>
     </dialog>
 
     <dialog id="hotkeys-dialog">
       <div class="dialog-header">
-        <div class="dialog-header-title">Hotkeys</div>
+        <div class="dialog-header-title" localizationKey="hotkeysTitle">Hotkeys</div>
       </div>
       <form class="dialog-body" id="hotkeys-form">
         <dl style="margin: 0; padding: 0; display: grid; grid-template-columns: 2em auto;">
@@ -229,7 +239,7 @@
       </form>
       <div class="dialog-footer">
         <div class="dialog-footer-controls">
-          <button type="button" name="close" form="hotkeys-form">Close</button>
+          <button type="button" name="close" form="hotkeys-form" localizationKey="closeButton">Close</button>
         </div>
       </div>
     </dialog>
