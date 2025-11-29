@@ -83,8 +83,8 @@ class InputSource {
         if (char0 === char1) {
           keyElement.querySelector('.layer0').remove();
           keyElement.querySelector('.layer1').classList.add('layer0');
-        } else if (char0.toLowerCase() === char1.toLowerCase()) {
-          if (char0.toLowerCase() === char0) {
+        } else if (char0.toLocaleLowerCase(`${this.lang}-${this.country || this.region}`) === char1.toLocaleLowerCase(`${this.lang}-${this.country || this.region}`)) {
+          if (char0.toLocaleLowerCase(`${this.lang}-${this.country || this.region}`) === char0) {
             keyElement.querySelector('.layer0').classList.add('lowercase');
             keyElement.querySelector('.layer1').classList.add('uppercase');
           } else {

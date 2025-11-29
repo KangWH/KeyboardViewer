@@ -310,30 +310,30 @@
   }
 
   .mac {
-    & #Backspace::after {content: "\232b"; top: calc(var(--key-height) - 1.3rem); right: .4em; bottom: .4em;}
-    & #Tab::after {content: "\21e5"; top: calc(var(--key-height) - 1.3rem); left: .4em; bottom: .4em;}
+    & #Backspace::after {content: "\232b"; top: calc(var(--key-height) - 1rem); right: .4em; bottom: .4em;}
+    & #Tab::after {content: "\21e5"; top: calc(var(--key-height) - 1rem); left: .4em; bottom: .4em;}
     & #Backslash {width: var(--key-width);}
-    & #CapsLock::after {content: "\21ea"; top: calc(var(--key-height) - 1.3rem); left: .4em; bottom: .4em;}
-    & #Enter::after {content: "\23ce"; top: calc(var(--key-height) - 1.3rem); right: .4em; bottom: .4em;}
+    & #CapsLock::after {content: "\21ea"; top: calc(var(--key-height) - 1rem); left: .4em; bottom: .4em;}
+    & #Enter::after {content: "\23ce"; top: calc(var(--key-height) - 1rem); right: .4em; bottom: .4em;}
     &:not(.alt) #Fn {opacity: 1; transform: unset;}
     &:not(.alt) #ControlLeft {left: var(--key-width); width: var(--key-width);}
-    & #ShiftLeft::after, & #ShiftRight::after {content: "\21e7"; top: calc(var(--key-height) - 1.3rem); bottom: .4rem;}
+    & #ShiftLeft::after, & #ShiftRight::after {content: "\21e7"; top: calc(var(--key-height) - 1rem); bottom: .4rem;}
     & #ControlLeft::before, & #ControlRight::before {content: "\2303";}
-    & #ControlLeft::after, & #ControlRight::after {content: "control"; top: calc(var(--key-height) - 1.3rem); bottom: .4rem; font-size: .9em;}
+    & #ControlLeft::after, & #ControlRight::after {content: "control"; top: calc(var(--key-height) - 1rem); bottom: .4rem; font-size: .9em;}
     & #AltLeft {left: calc(2 * var(--key-width)); width: var(--key-width);}
     & #AltLeft::before, & #AltRight::before {content: "\2325";}
-    & #AltLeft::after, & #AltRight::after {content: "option"; top: calc(var(--key-height) - 1.3rem); bottom: .4rem; font-size: .9em;}
+    & #AltLeft::after, & #AltRight::after {content: "option"; top: calc(var(--key-height) - 1rem); bottom: .4rem; font-size: .9em;}
     & #AltLeft:before, & #AltLeft:after, & #MetaLeft:before, & #MetaLeft:after {left: .4rem;}
     & #AltRight:before, & #AltRight:after, & #MetaRight:before, & #MetaRight:after {right: .4rem;}
     & #MetaLeft {left: calc(3 * var(--key-width)); width: calc(1.25 * var(--key-width));}
     & #MetaLeft::before, & #MetaRight::before {content: "\2318";}
-    & #MetaLeft::after, & #MetaRight::after {content: "command"; top: calc(var(--key-height) - 1.3rem); bottom: .4rem; font-size: .9em;}
+    & #MetaLeft::after, & #MetaRight::after {content: "command"; top: calc(var(--key-height) - 1rem); bottom: .4rem; font-size: .9em;}
     & #Lang2 {left: calc(4.25 * var(--key-width));}
-    & #Lang2:after {top: calc(var(--key-height) - 1.3rem); left: .4rem; bottom: .4rem;}
+    & #Lang2:after {top: calc(var(--key-height) - 1rem); left: .4rem; bottom: .4rem;}
     & #Space {left: calc(4.25 * var(--key-width)); right: calc(4.25 * var(--key-width));}
     & #Lang1, & #KanaMode {right: calc(4.25 * var(--key-width));}
-    & #Lang1:after {top: calc(var(--key-height) - 1.3rem); right: .4rem; bottom: .4rem;}
-    & #KanaMode::after {content: "かな"; top: calc(var(--key-height) - 1.3rem); right: .4rem; bottom: .4rem;}
+    & #Lang1:after {top: calc(var(--key-height) - 1rem); right: .4rem; bottom: .4rem;}
+    & #KanaMode::after {content: "かな"; top: calc(var(--key-height) - 1rem); right: .4rem; bottom: .4rem;}
     & #MetaRight {right: calc(2.75 * var(--key-width)); width: calc(1.5 * var(--key-width));}
     & #AltRight {right: calc(1.5 * var(--key-width)); width: calc(1.25 * var(--key-width));}
     & #ContextMenu {opacity: 0; transform: scale(0);}
@@ -478,3 +478,9 @@
   & .keyLabel.jung {background-color: #00FF8020;}
   & .keyLabel.jong {background-color: var(--jongColor);}
 }
+
+/* .keyLabel {display: none !important; inset: 0 !important; font-size: 1.15rem; font-weight: unset !important;}
+#keyboard:not(.shiftDown):is(:not(.altGr), :not(.altGrDown)) .layer0 {display: inline !important;}
+#keyboard.shiftDown:is(:not(.altGr), :not(.altGrDown)) .layer1 {display: inline !important;}
+#keyboard.altGr:not(.shiftDown).altGrDown .layer2 {display: inline !important;}
+#keyboard.altGr.shiftDown.altGrDown .layer3 {display: inline !important;} */

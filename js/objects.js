@@ -493,6 +493,15 @@ const inputSources = {
     },
     directory: 'de'
   },
+  greek: {
+    names: {
+      el: 'Ελληνική',
+      en: 'Greek',
+      ja: 'ギリシャ語',
+      ko: '그리스어',
+    },
+    directory: 'el'
+  },
   colemak: {
     names: {
       en: 'Colemak',
