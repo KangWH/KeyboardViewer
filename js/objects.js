@@ -792,7 +792,7 @@ const activeInputSource = {
   },
 };
 (async () => {
-  const fallbackInputSourceData = await fetch('https://kangwh.github.io/KeyboardViewer/js/keyboards/fallback.json');
+  const fallbackInputSourceData = await fetch('https://kangwh.github.io/KeyboardViewer/json/keyboards/fallback.json');
   const fallbackInputSource = await fallbackInputSourceData.json();
   activeInputSource.fallback = new InputSource(fallbackInputSource);
 })();
