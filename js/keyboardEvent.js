@@ -238,7 +238,8 @@ const keyDownEvent = (e) => {
         } else {
           const deadKeyChar = activeInputSource.deadKey.character;
           activeInputSource.deadKey = null;
-          textBuffer.addCharacter(keyValue.character + deadKeyChar);
+          textBuffer.addCharacter(deadKeyChar);
+          textBuffer.addCharacter(keyValue.character);
         }
         break;
       } else if (activeInputSource.composing)
