@@ -83,11 +83,11 @@
     ],
     "KeyY": [
       {"character": "ㄹ", "type": "composeChar", "subtype": "cho"},
-      {"value": 12335, "label": ":○", "type": "composeChar", "subtype": "bang"}
+      {"value": 12335, "label": ":◌", "type": "composeChar", "subtype": "bang"}
     ],
     "KeyU": [
       {"character": "ㄷ", "type": "composeChar", "subtype": "cho"},
-      {"value": 12334, "label": "·○", "type": "composeChar", "subtype": "bang"}
+      {"value": 12334, "label": "·◌", "type": "composeChar", "subtype": "bang"}
     ],
     "KeyI": [
       {"character": "ㅁ", "type": "composeChar", "subtype": "cho"},
