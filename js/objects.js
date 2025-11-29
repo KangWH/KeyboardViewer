@@ -594,14 +594,14 @@ const inputSources = {
     },
     directory: 'ja'
   },
-  // romaji: {
-  //   names: {
-  //     en: 'Romaji',
-  //     ja: 'ローマ字',
-  //     ko: '로마지'
-  //   },
-  //   directory: 'ja'
-  // },
+  romaji: {
+    names: {
+      en: 'Romaji',
+      ja: 'ローマ字',
+      ko: '로마지'
+    },
+    directory: 'ja'
+  },
   dubeolsik: {
     names: {
       en: 'Dubeolsik',

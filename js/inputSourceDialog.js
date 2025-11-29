@@ -96,7 +96,7 @@ const showInputSources = async (group) => {
   const container = document.getElementById('addInputSource-sourceContainer');
   container.innerHTML = '';
 
-  const activeInputSourceIds = activeInputSources.sources.map((source) => source.id);
+  const activeInputSourceIds = activeInputSources.sources.map((source) => source.identifier);
 
   for (let id in inputSources) {
     if (inputSources[id].directory !== group)

@@ -1,3 +1,36 @@
+let languageData = {};
+let currentLanguage = 'en';
+(async () => {
+  let languageSet = false;
+  const userLanguages = navigator.languages;
+  for (let language of userLanguages) {
+    const langCode = language.split("-")[0];
+    const response = await fetch (`https://kangwh.github.io/KeyboardViewer/json/languages/${langCode}.json`);
+    if (response.ok) {
+      languageSet = true;
+      currentLanguage = langCode;
+      languageData = await response.json()
+      console.log(currentLanguage);
+      return
+    }
+  }
+  if (!languageSet) {
+    // Use english as the fallback language
+    const response = await fetch ('https://kangwh.github.io/KeyboardViewer/json/languages/en.json');
+    const languageData = await response.json();
+  }
+  applyLanguageToUI();
+})();
+
+const applyLanguageToUI = () => {
+  const targets = document.querySelectorAll('[localizationKey]');
+  for (let target in targets) {
+    const key = target.getAttribute('localizationKey');
+    const string = languageData[key];
+    target.textContent = string;
+  }
+};
+
 (async () => {
   await activeInputSources.addSource('sebeolsik391');
   await activeInputSources.addSource('dubeolsikYethangul');
