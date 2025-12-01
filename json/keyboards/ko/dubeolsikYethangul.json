@@ -92,7 +92,7 @@
     ],
     "KeyI": [
       {"character": "ㅑ", "type": "composeChar", "subtype": "jung"},
-      {"character": "", "label": "○", "type": "composeChar", "subtype": "bang"}
+      {"character": "", "label": "◌", "type": "composeChar", "subtype": "bang"}
     ],
     "KeyO": [
       {"character": "ㅐ", "type": "composeChar", "subtype": "jung"},
