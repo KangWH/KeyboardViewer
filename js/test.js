@@ -2,7 +2,6 @@ const fetchLanguageData = async (langCode) => {
   const response = await fetch(dataSourceURL + `/json/languages/${langCode}.json`);
   return response;
 };
-
 const applyLanguageToUI = () => {
   const targets = document.querySelectorAll('[localizationKey]');
   for (let target of targets) {

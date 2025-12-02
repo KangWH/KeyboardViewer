@@ -1,0 +1,461 @@
+{
+  "identifier": "greekPolytonic",
+  
+  "lang": "el",
+  "script": "Grek",
+  "country": "GR",
+  
+  "altGr": true,
+  "sourceOS": "Windows",
+
+  "keys": {
+    "Backquote": [
+      {"character": "~", "label": "◌̃", "type": "dead"},
+      {"character": "`", "label": "◌̀", "type": "dead"},
+      {"character": "῁", "label": "◌̈̑", "type": "dead"}
+    ],
+    "Digit1": [
+      {"character": "1"},
+      {"character": "!"},
+      {"character": "Ϛ"}
+    ],
+    "Digit2": [
+      {"character": "2"},
+      {"character": "@"},
+      {"character": "Ϟ"},
+      {"character": "²"}
+    ],
+    "Digit3": [
+      {"character": "3"},
+      {"character": "#"},
+      {"character": "Ϡ"},
+      {"character": "³"}
+    ],
+    "Digit4": [
+      {"character": "4"},
+      {"character": "$"},
+      {"character": "£"}
+    ],
+    "Digit5": [
+      {"character": "5"},
+      {"character": "%"},
+      {"character": "§"}
+    ],
+    "Digit6": [
+      {"character": "6"},
+      {"character": "^"},
+      {"character": "¶"}
+    ],
+    "Digit7": [
+      {"character": "7"},
+      {"character": "&"}
+    ],
+    "Digit8": [
+      {"character": "8"},
+      {"character": "*"},
+      {"character": "¤"}
+    ],
+    "Digit9": [
+      {"character": "9"},
+      {"character": "("},
+      {"character": "¦"}
+    ],
+    "Digit0": [
+      {"character": "0"},
+      {"character": ")"},
+      {"character": "°"}
+    ],
+    "Minus": [
+      {"character": "-", "label": "◌̶", "type": "dead"},
+      {"character": "_", "label": "◌̱", "type": "dead"},
+      {"character": "±"}
+    ],
+    "Equal": [
+      {"character": "=", "label": "=", "type": "dead"},
+      {"character": "+", "label": "+", "type": "dead"},
+      {"character": "½", "label": "1/2", "type": "dead"},
+      {"character": "῟", "label": "◌̔̃", "type": "dead"}
+    ],
+
+    "KeyQ": [
+      {"character": ";", "type": "dead"},
+      {"character": ":", "type": "dead"},
+      {"character": "´", "label": "◌́", "type": "dead"}
+    ],
+    "KeyW": [
+      {"character": "ς"},
+      {"value": 836, "label": "◌̈́", "type": "dead"}
+    ],
+    "KeyE": [
+      {"character": "ε"},
+      {"character": "Ε"},
+      {"character": "€"}
+    ],
+    "KeyR": [
+      {"character": "ρ"},
+      {"character": "Ρ"},
+      {"character": "®"}
+    ],
+    "KeyT": [
+      {"character": "τ"},
+      {"character": "Τ"}
+    ],
+    "KeyY": [
+      {"character": "υ"},
+      {"character": "Υ"},
+      {"character": "¥"}
+    ],
+    "KeyU": [
+      {"character": "θ"},
+      {"character": "Θ"}
+    ],
+    "KeyI": [
+      {"character": "ι"},
+      {"character": "Ι"}
+    ],
+    "KeyO": [
+      {"character": "ο"},
+      {"character": "Ο"}
+    ],
+    "KeyP": [
+      {"character": "π"},
+      {"character": "Π"}
+    ],
+    "BracketLeft": [
+      {"character": "[", "type": "dead"},
+      {"character": "{", "type": "dead"},
+      {"character": "«", "type": "dead"}
+    ],
+    "BracketRight": [
+      {"character": "]", "type": "dead"},
+      {"character": "}", "type": "dead"},
+      {"character": "»", "type": "dead"},
+      {"character": "·"}
+    ],
+    "Backslash": [
+      {"character": "\\", "type": "dead"},
+      {"character": "|", "type": "dead"},
+      {"character": "¬", "type": "dead"},
+      {"character": "῝", "type": "dead"}
+    ],
+    
+    "KeyA": [
+      {"character": "α"},
+      {"character": "Α"}
+    ],
+    "KeyS": [
+      {"character": "σ"},
+      {"character": "Σ"}
+    ],
+    "KeyD": [
+      {"character": "δ"},
+      {"character": "Δ"}
+    ],
+    "KeyF": [
+      {"character": "φ"},
+      {"character": "Φ"}
+    ],
+    "KeyG": [
+      {"character": "γ"},
+      {"character": "Γ"}
+    ],
+    "KeyH": [
+      {"character": "η"},
+      {"character": "Η"}
+    ],
+    "KeyJ": [
+      {"character": "ξ"},
+      {"character": "Ξ"}
+    ],
+    "KeyK": [
+      {"character": "κ"},
+      {"character": "Κ"}
+    ],
+    "KeyL": [
+      {"character": "λ"},
+      {"character": "Λ"}
+    ],
+    "Semicolon": [
+      {"value": 900, "label": "◌́", "type": "dead"},
+      {"value": 168, "label": "◌̈", "type": "dead"},
+      {"value": 836, "label": "◌̈́", "type": "dead"}
+    ],
+    "Quote": [
+      {"character": "'", "type": "dead"},
+      {"character": "\"", "type": "dead"},
+      {"character": "᾿", "type": "dead"},
+      {"character": "῾", "type": "dead"}
+    ],
+
+    "IntlBackslash": [
+      {"character": "<"},
+      {"character": ">"}
+    ],
+    "KeyZ": [
+      {"character": "ζ"},
+      {"character": "Ζ"}
+    ],
+    "KeyX": [
+      {"character": "χ"},
+      {"character": "Χ"}
+    ],
+    "KeyC": [
+      {"character": "ψ"},
+      {"character": "Ψ"},
+      {"character": "©"}
+    ],
+    "KeyV": [
+      {"character": "ω"},
+      {"character": "Ω"}
+    ],
+    "KeyB": [
+      {"character": "β"},
+      {"character": "Β"}
+    ],
+    "KeyN": [
+      {"character": "ν"},
+      {"character": "Ν"}
+    ],
+    "KeyM": [
+      {"character": "μ"},
+      {"character": "Μ"}
+    ],
+    "Comma": [
+      {"character": ","},
+      {"character": "<"}
+    ],
+    "Period": [
+      {"character": "."},
+      {"character": ">"}
+    ],
+    "Slash": [
+      {"character": "/", "type": "dead"},
+      {"character": "?", "type": "dead"},
+      {"character": "ι", "type": "dead"},
+      {"character": "῞", "type": "dead"}
+    ]
+  },
+  "composingRules": [
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": " "}
+      ],
+      [{"value": 900}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "Α"}
+      ],
+      [{"character": "Ά"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "α"}
+      ],
+      [{"character": "ά"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "Ε"}
+      ],
+      [{"character": "Έ"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "ε"}
+      ],
+      [{"character": "έ"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "Η"}
+      ],
+      [{"character": "Ή"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "η"}
+      ],
+      [{"character": "ή"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "Ι"}
+      ],
+      [{"character": "Ί"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "ι"}
+      ],
+      [{"character": "ί"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "Ο"}
+      ],
+      [{"character": "Ό"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "ο"}
+      ],
+      [{"character": "ό"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "Υ"}
+      ],
+      [{"character": "Ύ"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "υ"}
+      ],
+      [{"character": "ύ"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "Ω"}
+      ],
+      [{"character": "Ώ"}]
+    ],
+    [
+      [
+        {"value": 900, "type": "dead"},
+        {"character": "ω"}
+      ],
+      [{"character": "ώ"}]
+    ],
+
+    [
+      [
+        {"value": 168, "type": "dead"},
+        {"character": " "}
+      ],
+      [{"value": 168}]
+    ],
+    [
+      [
+        {"value": 168, "type": "dead"},
+        {"character": "Ι"}
+      ],
+      [{"character": "Ϊ"}]
+    ],
+    [
+      [
+        {"value": 168, "type": "dead"},
+        {"character": "ι"}
+      ],
+      [{"character": "ϊ"}]
+    ],
+    [
+      [
+        {"value": 168, "type": "dead"},
+        {"character": "Υ"}
+      ],
+      [{"character": "Ϋ"}]
+    ],
+    [
+      [
+        {"value": 168, "type": "dead"},
+        {"character": "υ"}
+      ],
+      [{"character": "ϋ"}]
+    ],
+
+    [
+      [
+        {"value": 836, "type": "dead"},
+        {"character": " "}
+      ],
+      [{"value": 836}]
+    ],
+    [
+      [
+        {"value": 836, "type": "dead"},
+        {"character": "ι"}
+      ],
+      [{"character": "ΐ"}]
+    ],
+    [
+      [
+        {"value": 836, "type": "dead"},
+        {"character": "υ"}
+      ],
+      [{"character": "ΰ"}]
+    ],
+
+    [
+      [
+        {"character": "~", "type": "dead"},
+        {"character": " "}
+      ],
+      [{"character": "~"}]
+    ],
+    [
+      [
+        {"character": "~", "type": "dead"},
+        {"character": "."}
+      ],
+      [{"character": "΅"}]
+    ],
+    [
+      [
+        {"character": "~", "type": "dead"},
+        {"character": "ι"}
+      ],
+      [{"character": "ΐ"}]
+    ],
+    [
+      [
+        {"character": "~", "type": "dead"},
+        {"character": "υ"}
+      ],
+      [{"character": "ΰ"}]
+    ],
+
+    [
+      [
+        {"character": "`", "type": "dead"},
+        {"character": " "}
+      ],
+      [{"character": "`"}]
+    ],
+    [
+      [
+        {"character": "`", "type": "dead"},
+        {"character": "."}
+      ],
+      [{"character": "῭"}]
+    ],
+    [
+      [
+        {"character": "`", "type": "dead"},
+        {"character": "ι"}
+      ],
+      [{"character": "ῒ"}]
+    ],
+    [
+      [
+        {"character": "`", "type": "dead"},
+        {"character": "υ"}
+      ],
+      [{"character": "ῢ"}]
+    ]
+  ]
+}

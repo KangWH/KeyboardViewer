@@ -26,6 +26,15 @@
     },
     "directory": "el"
   },
+  "greekPolytonic": {
+    "names": {
+      "el": "Ελληνικά (Πολυτονικά)",
+      "en": "Greek (Polytonic)",
+      "ja": "ギリシャ語（多音）",
+      "ko": "그리스어 (폴리토닉)"
+    },
+    "directory": "el"
+  },
   "colemak": {
     "names": {
       "en": "Colemak",
