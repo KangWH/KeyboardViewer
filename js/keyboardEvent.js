@@ -277,4 +277,4 @@ const keyUpEvent = (e) => {
   } catch (err) {}
 }
 document.getElementById('processedText').addEventListener('keydown', keyDownEvent);
-document.getElementById('processedText').addEventListener('keyup', keyUpEvent);
+window.addEventListener('keyup', keyUpEvent);

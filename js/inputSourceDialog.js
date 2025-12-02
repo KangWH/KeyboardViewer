@@ -109,7 +109,7 @@ const showInputSources = async (group) => {
     if (inputSources[id].directory !== group)
       continue;
 
-    const response = await fetch(`https://kangwh.github.io/KeyboardViewer/json/keyboards/${group}/${id}.json`, {method: "HEAD"});
+    const response = await fetch(dataSourceURL + `/json/keyboards/${group}/${id}.json`, {method: "HEAD"});
     if (!response.ok)
       continue;
 

@@ -466,7 +466,7 @@ Object.freeze(Composers);
 const ComposingRulePresets = {};
 const getComposingRulePreset = async (identifier) => {
   try {
-    const response = await fetch(`https://kangwh.github.io/KeyboardViewer/json/composingRules/${identifier}.json`);
+    const response = await fetch(dataSourceURL + `/json/composingRules/${identifier}.json`);
     const array = await response.json();
     ComposingRulePresets[identifier] = array;
   } catch (err) {
@@ -474,215 +474,6 @@ const getComposingRulePreset = async (identifier) => {
     throw new Error(`Composing Rule Preset '${identifier}' does not exist.`);
   }
 }
-const inputSources = {
-  danish: {
-    names: {
-      da: 'Danske',
-      en: 'Danish',
-      ja: 'デンマーク語',
-      ko: '덴마크어'
-    },
-    directory: 'da'
-  },
-  qwertzDE: {
-    names: {
-      de: 'QWERTZ (Deutschland)',
-      en: 'QWERTZ (German)',
-      ja: 'QWERTZ（ドイツ）',
-      ko: 'QWERTZ (독일)',
-    },
-    directory: 'de'
-  },
-  greek: {
-    names: {
-      el: 'Ελληνική',
-      en: 'Greek',
-      ja: 'ギリシャ語',
-      ko: '그리스어',
-    },
-    directory: 'el'
-  },
-  colemak: {
-    names: {
-      en: 'Colemak',
-      ja: 'コールマック',
-      ko: '콜맥',
-    },
-    directory: 'en'
-  },
-  dvorak: {
-    names: {
-      en: 'Dvorak',
-      ja: 'ドヴォラック',
-      ko: '드보락',
-    },
-    directory: 'en'
-  },
-  qwertyUK: {
-    names: {
-      en: 'QWERTY (UK)',
-      ja: 'QWERTY（イギリス）',
-      ko: 'QWERTY (영국)',
-    },
-    directory: 'en'
-  },
-  qwertyUS: {
-    names: {
-      en: 'QWERTY (US)',
-      ja: 'QWERTY（アメリカ）',
-      ko: 'QWERTY (미국)',
-    },
-    directory: 'en'
-  },
-  qwertyUSInternational: {
-    names: {
-      en: 'QWERTY (US International)',
-      ja: 'QWERTY（アメリカ多言語）',
-      ko: 'QWERTY (미국 다국어)',
-    },
-    directory: 'en'
-  },
-  spanish: {
-    names: {
-      en: 'Spanish',
-      es: 'Español',
-      ja: 'スペイン語',
-      ko: '스페인어',
-    },
-    directory: 'es'
-  },
-  spanishLatin: {
-    names: {
-      es: 'Español (América Latina)',
-      en: 'Spanish (Latin America)',
-      ja: 'スペイン語（ラテンアメリカ）',
-      ko: '스페인어 (라틴 아메리카)'
-    },
-    directory: 'es'
-  },
-  azertyFR: {
-    names: {
-      fr: 'AZERTY (Français)',
-      en: 'AZERTY (French)',
-      ja: 'AZERTY（スペイン）',
-      ko: 'AZERTY (프랑스)'
-    },
-    directory: 'fr'
-  },
-  azertyFRStd: {
-    names: {
-      fr: 'AZERTY (norme française)',
-      en: 'AZERTY (French standard)',
-      ja: 'AZERTY（スペイン標準）',
-      ko: 'AZERTY (프랑스 표준)'
-    },
-    directory: 'fr'
-  },
-  kana: {
-    names: {
-      en: 'Kana',
-      ja: 'かな',
-      ko: '가나'
-    },
-    directory: 'ja'
-  },
-  kanaNonJIS: {
-    names: {
-      en: 'Kana (Non-JIS keyboard)',
-      ja: 'かな（非JISキーボード）',
-      ko: '가나 (비 JIS 키보드)'
-    },
-    directory: 'ja'
-  },
-  romaji: {
-    names: {
-      en: 'Romaji',
-      ja: 'ローマ字',
-      ko: '로마지'
-    },
-    directory: 'ja'
-  },
-  dubeolsik: {
-    names: {
-      en: 'Dubeolsik',
-      ja: '２ボル式',
-      ko: '두벌식',
-    },
-    directory: 'ko'
-  },
-  dubeolsikNorth: {
-    names: {
-      en: 'Dubeolsik (North Korea)',
-      ja: '２ボル式（北朝鮮）',
-      ko: '두벌식 (북한)',
-    },
-    directory: 'ko'
-  },
-  dubeolsikYethangul: {
-    names: {
-      en: 'Dubeolsik Old Hangul',
-      ja: '２ボル式古いハングル',
-      ko: '두벌식 옛한글',
-    },
-    directory: 'ko'
-  },
-  sebeolsik390: {
-    names: {
-      en: 'Sebeolsik 3-90',
-      ja: '３ボル式3-90',
-      ko: '세벌식 3-90',
-    },
-    directory: 'ko'
-  },
-  sebeolsik391: {
-    names: {
-      en: 'Sebeolsik 3-91',
-      ja: '３ボル式3-91',
-      ko: '세벌식 3-91',
-    },
-    directory: 'ko'
-  },
-  sebeolsikNoshift: {
-    names: {
-      en: 'Sebeolsik No-shift',
-      ja: '３ボル式純下',
-      ko: '세벌식 순아래',
-    },
-    directory: 'ko'
-  },
-  sebeolsikYethangul: {
-    names: {
-      en: 'Sebeolsik Old Hangul',
-      ja: '３ボル式古いハングル',
-      ko: '세벌식 옛한글',
-    },
-    directory: 'ko'
-  },
-  romaja: {
-    names: {
-      en: 'Latin Hangul Input',
-      ja: 'ローマ字ハングル入力',
-      ko: '로마자 한글 입력',
-    },
-    directory: 'ko'
-  },
-  turkishF: {
-    names: {
-      en: 'Turkish F',
-      ja: 'トルコ語Ｆキーボード',
-      ko: '튀르키예어 F',
-    },
-    directory: 'tr'
-  },
-  turkishQ: {
-    names: {
-      en: 'Turkish Q',
-      ja: 'トルコ語Ｑキーボード',
-      ko: '튀르키예어 Q',
-    },
-    directory: 'tr'
-  },
-};
 const activeInputSources = {
   sources: [],
 
@@ -695,7 +486,7 @@ const activeInputSources = {
       throw new Error(`Input source ${identifier} does not exist.`);
 
     try {
-      const response = await fetch(`https://kangwh.github.io/KeyboardViewer/json/keyboards/${sourceInfo.directory}/${identifier}.json`);
+      const response = await fetch(dataSourceURL + `/json/keyboards/${sourceInfo.directory}/${identifier}.json`);
       const obj = await response.json();
       const source = new InputSource(obj);
       this.sources.unshift(source);
@@ -791,11 +582,6 @@ const activeInputSource = {
     this.endComposition();
   },
 };
-(async () => {
-  const fallbackInputSourceData = await fetch('https://kangwh.github.io/KeyboardViewer/json/keyboards/fallback.json');
-  const fallbackInputSource = await fallbackInputSourceData.json();
-  activeInputSource.fallback = new InputSource(fallbackInputSource);
-})();
 const textBuffer = {
   text: [],
   beginCaretPosition: 0,

@@ -104,7 +104,6 @@ class InputSource {
           keyElement.querySelector('.layer2').remove();
           keyElement.querySelector('.layer3').classList.add('layer0');
         } else if (char0.toLowerCase() === char1.toLowerCase()) {
-          console.log(char0, char1);
           if (char0.toLowerCase() === char0) {
             keyElement.querySelector('.layer2').classList.add('lowercase');
             keyElement.querySelector('.layer3').classList.add('uppercase');

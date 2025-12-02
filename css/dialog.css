@@ -63,7 +63,7 @@ dialog.large {
     border-radius: .5rem;
 
     &[disabled] {
-      opacity: 0.75;
+      opacity: 0.25;
     }
     &.active {
       background-color: #00000020;

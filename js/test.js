@@ -1,8 +1,5 @@
-let languageData = {};
-let currentLanguage = 'en';
-
 const fetchLanguageData = async (langCode) => {
-  const response = await fetch(`https://kangwh.github.io/KeyboardViewer/json/languages/${langCode}.json`);
+  const response = await fetch(dataSourceURL + `/json/languages/${langCode}.json`);
   return response;
 };
 
@@ -20,36 +17,6 @@ const applyLanguageToUI = () => {
     item.textContent = languageData.languages[langCode];
   }
 };
-
-(async () => {
-  let languageSet = false;
-  const userLanguages = navigator.languages;
-  for (let language of userLanguages) {
-    const langCode = language.split("-")[0];
-    const response = await fetchLanguageData(langCode);
-    if (response.ok) {
-      languageSet = true;
-      currentLanguage = langCode;
-      languageData = await response.json()
-      break
-    }
-  }
-  if (!languageSet) {
-    // Use english as the fallback language
-    const response = await fetchLanguageData('en');
-    languageData = await response.json();
-  }
-  console.log(currentLanguage);
-  document.querySelector('select[name="language"]').value = currentLanguage;
-  applyLanguageToUI();
-})();
-
-(async () => {
-  await activeInputSources.addSource('sebeolsik391');
-  await activeInputSources.addSource('dubeolsikYethangul');
-  await activeInputSources.addSource('qwertyUS');
-  activeInputSources.useSource(0);
-})();
 
 document.getElementById('keyboardLayoutVendorType').addEventListener('change', (e) => {
   const element = document.getElementById('keyboard');
